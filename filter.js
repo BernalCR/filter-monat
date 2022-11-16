@@ -850,22 +850,7 @@ filterInputs.forEach(input => {
         allPBox.innerHTML = "";
         
         if(input.checked == true){
-
-            if(input.className == "inputTitle"){
-                let allcategory = document.createElement("div");
-                allcategory.id = input.value;
-                filterPBox.prepend(allcategory);
-                
-                document.querySelectorAll("input[name='"+ input.name +"']:not(.inputTitle)").forEach(i => {
-                    if (i.checked == true) i.click();
-                    showFiltered(i, true, allcategory);
-                });
-                
-            }else{
-                let selectAll = document.querySelector("input[name='"+ input.name +"'].inputTitle");
-                if(selectAll.checked) selectAll.click();
-                showFiltered(input, false, filterPBox);
-            }
+            showFiltered(input, false, filterPBox);
 
             let newTag = document.createElement("div");
             newTag.id = "filterTag_" + valueFormat(input);
@@ -884,13 +869,7 @@ filterInputs.forEach(input => {
             });  
 
         }else{
-
-            if(input.className == "inputTitle"){
-                document.getElementById(input.value).remove();
-            }else{
-                document.getElementById(valueFormat(input)).remove();
-            }
-
+            document.getElementById(valueFormat(input)).remove();
             document.getElementById(`filterTag_${valueFormat(input)}`).remove();
         }
         
@@ -1065,106 +1044,3 @@ clearFilter.forEach(btn =>{
 
 
  
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -44,7 +44,7 @@
                 <div id="filterBtn" class="display_flex a_i_center j_c_space_between">
                     <div class="display_flex">
                         <img id="filterIcon" src="https://monatglobal.com/wp-content/uploads/2022/09/filter.svg">
-                        <p style="margin: 0;">FILTER BY</p>
+                        <p style="margin: 0;">FILTER BY <span class="filtersCount"></span></p>
                     </div>
                 </div>
                 
@@ -70,58 +70,54 @@
                     <li class="filterSection">
                         <p id="concernsAccordion">CONCERNS <span id="concernCount"></span></p>
                         <ul>
-                            <li><label><input class="inputTitle" type="checkbox" name="concerns" value="allConcerns">ALL CONCERNS</label></li>
-                
-                            <li><label><input type="checkbox" name="concerns" value="bestseller">bestseller</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="bestseller"><p>bestseller</p></label></li>
                             
-                            <li><label><input type="checkbox" name="concerns" value="systems">systems</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="systems"><p>systems</p></label></li>
                             
-                            <li><label><input type="checkbox" name="concerns" value="color care">color care</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="color care"><p>color care</p></label></li>
                             
-                            <li><label><input type="checkbox" name="concerns" value="curls, coils, and waves">curls, coils, and waves</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="curls, coils, and waves"><p>curls, coils, and waves</p></label></li>
                         
-                            <li><label><input type="checkbox" name="concerns" value="damage, breakage, and split ends">damage, breakage, and split ends</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="damage, breakage, and split ends"><p>damage, breakage, and split ends</p></label></li>
                             
-                            <li><label><input type="checkbox" name="concerns" value="densifying">densifying</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="densifying"><p>densifying</p></label></li>
                                 
-                            <li><label><input type="checkbox" name="concerns" value="dry hair">dry hair</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="dry hair"><p>dry hair</p></label></li>
                         
-                            <li><label><input type="checkbox" name="concerns" value="frizz">frizz</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="frizz"><p>frizz</p></label></li>
                             
-                            <li><label><input type="checkbox" name="concerns" value="oily hair and scalp">oily hair and scalp</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="oily hair and scalp"><p>oily hair and scalp</p></label></li>
                             
-                            <li><label><input type="checkbox" name="concerns" value="scalp care">scalp care</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="scalp care"><p>scalp care</p></label></li>
                         
-                            <li><label><input type="checkbox" name="concerns" value="shine">shine</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="shine"><p>shine</p></label></li>
                             
-                            <li><label><input type="checkbox" name="concerns" value="thinning">thinning</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="thinning"><p>thinning</p></label></li>
                             
-                            <li><label><input type="checkbox" name="concerns" value="volume">volume</label></li>
+                            <li><label><input type="checkbox" name="concerns" value="volume"><p>volume</p></label></li>
                         </ul>
                     </li>
                     
                     <li class="filterSection">
                         <p id="categoriesAccordion">CATEGORIES <span id="categoryCount"></span></p>
                         <ul>
-                            <li><label><input class="inputTitle" type="checkbox" name="categories" value="allCategories">ALL CATEGORIES</label></li>
-                    
-                            <li><label><input type="checkbox" value="monat for men" name="categories">monat for men™</label></li>
+                            <li><label><input type="checkbox" value="monat for men" name="categories"><p>monat for men™</p></label></li>
                         
-                            <li><label><input type="checkbox" value="monat junior" name="categories">monat junior</label></li>
+                            <li><label><input type="checkbox" value="monat junior" name="categories"><p>monat junior</p></label></li>
                         
-                            <li><label><input type="checkbox" value="styling" name="categories">styling</label></li>
+                            <li><label><input type="checkbox" value="styling" name="categories"><p>styling</p></label></li>
                         </ul>
                     </li>
                 </ul>
                 
-                <button id="applyFilters" class="closeFilter hide_desk">APPLY <span id="applyCount"></span></button>
+                <button id="applyFilters" class="closeFilter hide_desk">APPLY <span class="counterFilters"></span></button>
                 <button class="clearFilter hide_desk">CLEAR FILTER</button>
             </div>
               
             <div id="containerShop" class="col_100">
                 <div id="tagsBar" class="a_i_center">
                     <button class="clearFilter">CLEAR FILTER</button> 
-                    <div id="boxTags"></div>
+                    <div id="boxTags" class="display_flex"></div>
                 </div>
                 
                 <div id="loaderP" class="flex_center"><img src="" alt="MONAT DROP LOGO ANIMATION" width="65" height="65" class="alignnone size-full wp-image-60542" /></div>
@@ -129,7 +125,7 @@
                 <div id="allPBox"></div>
             </div>
         </div>
-    </div>  
+    </div> 
     
     
     <script src="./filter.js"></script>
