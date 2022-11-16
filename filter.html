@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./filter.css">
+</head>
+<body>
+
+    <style>
+        .col_3 { grid-template-columns: repeat(3, 1fr); }
+        
+        @media screen and (min-width: 2100px) {
+        .col_4 { grid-template-columns: repeat(4, 1fr); }
+        }
+        @media screen and (max-width: 992px) {
+        .med_col_2 { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media screen and (max-width: 576px) {
+        .peq_col_1 { grid-template-columns: repeat(1, 1fr); } 
+        }
+    </style>
+    
+    <div id="containerPage">
+        <div class="background_image_banner bkgnd display_flex a_i_center ">
+            <div class="col_70 margin_auto col_100_mobile">
+                <div class="col_60 col_80_tablet margin_mobile">
+                    <div>
+                            <div class="new_product_label_small ">NEW</div>
+                        </div>
+                    <img class="logo_banner" src="https://monatglobal.com/wp-content/uploads/2021/02/monat-logo_web.png" alt="MONAT GLOBAL">
+                    <h1 class="SuisseIntl_Medium  Monat_purple_txt  hedline_sans ">Systems</h1>
+                  
+                    <h2 class="banner_h2 SuisseIntl_Light  Monat_purple_txt  "> Product collections designed<br> for&nbsp;maximum&nbsp;results.</h2>
+                </div>
+            </div>
+        </div>
+        
+        <div id="filterBar" class="display_flex">
+            <div class="display_flex  a_i_center col_100 margin_auto">
+                
+                <div id="filterBtn" class="display_flex a_i_center j_c_space_between">
+                    <div class="display_flex">
+                        <img id="filterIcon" src="https://monatglobal.com/wp-content/uploads/2022/09/filter.svg">
+                        <p style="margin: 0;">FILTER BY</p>
+                    </div>
+                </div>
+                
+                <form id="searchBar" class="display_flex a_i_center">
+                    
+                    <button type="submit" style="background: none; padding: none; border: none;"><img src="https://monatglobal.com/wp-content/uploads/2022/11/Screenshot-2022-11-11-154959.png" style="height: 20px; "></button>
+                    <div class="p_relative">
+                        <input autocomplete="off" type="text" placeholder="SEARCH" name="search">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="display_flex">
+            <div id="filterBox" class="display_flex f_d_column">
+                
+                <div id="head_fBox" class="hide_desk display_flex a_i_center j_c_space_between">
+                    <p>FILTER</p>
+                    <span class="closeFilter">x</span>
+                </div>
+                
+                <ul>
+                    <li class="filterSection">
+                        <p id="concernsAccordion">CONCERNS <span id="concernCount"></span></p>
+                        <ul>
+                            <li><label><input class="inputTitle" type="checkbox" name="concerns" value="allConcerns">ALL CONCERNS</label></li>
+                
+                            <li><label><input type="checkbox" name="concerns" value="bestseller">bestseller</label></li>
+                            
+                            <li><label><input type="checkbox" name="concerns" value="systems">systems</label></li>
+                            
+                            <li><label><input type="checkbox" name="concerns" value="color care">color care</label></li>
+                            
+                            <li><label><input type="checkbox" name="concerns" value="curls, coils, and waves">curls, coils, and waves</label></li>
+                        
+                            <li><label><input type="checkbox" name="concerns" value="damage, breakage, and split ends">damage, breakage, and split ends</label></li>
+                            
+                            <li><label><input type="checkbox" name="concerns" value="densifying">densifying</label></li>
+                                
+                            <li><label><input type="checkbox" name="concerns" value="dry hair">dry hair</label></li>
+                        
+                            <li><label><input type="checkbox" name="concerns" value="frizz">frizz</label></li>
+                            
+                            <li><label><input type="checkbox" name="concerns" value="oily hair and scalp">oily hair and scalp</label></li>
+                            
+                            <li><label><input type="checkbox" name="concerns" value="scalp care">scalp care</label></li>
+                        
+                            <li><label><input type="checkbox" name="concerns" value="shine">shine</label></li>
+                            
+                            <li><label><input type="checkbox" name="concerns" value="thinning">thinning</label></li>
+                            
+                            <li><label><input type="checkbox" name="concerns" value="volume">volume</label></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="filterSection">
+                        <p id="categoriesAccordion">CATEGORIES <span id="categoryCount"></span></p>
+                        <ul>
+                            <li><label><input class="inputTitle" type="checkbox" name="categories" value="allCategories">ALL CATEGORIES</label></li>
+                    
+                            <li><label><input type="checkbox" value="monat for men" name="categories">monat for men™</label></li>
+                        
+                            <li><label><input type="checkbox" value="monat junior" name="categories">monat junior</label></li>
+                        
+                            <li><label><input type="checkbox" value="styling" name="categories">styling</label></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <button id="applyFilters" class="closeFilter hide_desk">APPLY <span id="applyCount"></span></button>
+                <button class="clearFilter hide_desk">CLEAR FILTER</button>
+            </div>
+              
+            <div id="containerShop" class="col_100">
+                <div id="tagsBar" class="a_i_center">
+                    <button class="clearFilter">CLEAR FILTER</button> 
+                    <div id="boxTags"></div>
+                </div>
+                
+                <div id="loaderP" class="flex_center"><img src="" alt="MONAT DROP LOGO ANIMATION" width="65" height="65" class="alignnone size-full wp-image-60542" /></div>
+                <div id="filterPBox"></div>
+                <div id="allPBox"></div>
+            </div>
+        </div>
+    </div>  
+    
+    
+    <script src="./filter.js"></script>
+</body>
+</html>
