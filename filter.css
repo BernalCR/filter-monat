@@ -61,22 +61,32 @@
 	padding: 0.5rem 0;
 }
 
+#tagsBar .clearFilter{
+    background-color: #fff;
+    color: #2f294b;
+    border: none;
+    border-bottom: 1px solid #2f294b;
+    border-radius: 0;
+    padding: 0;
+    margin-right: 1.5rem;
+}
+
 #tagsBar.active {
 	display: flex;
 }
 
-#tagsBar #boxTags>div {
-	margin: 3px;
+#boxTags{
+    overflow-x: auto;
 }
 
-#boxTags>div {
-	display: inline-flex;
-	align-items: center;
-	background-color: #fff;
-	border-radius: 5px;
-	padding: 0.5em;
-	margin-right: 7px;
-	margin-bottom: 7px;
+#boxTags > div {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20rem;
+    padding: 0.5em;
+    margin: 4px;
+    border: solid 1px #d5dae0;
 }
 
 #boxTags>div p {
@@ -84,14 +94,18 @@
 	margin-right: 5px;
 	text-transform: uppercase;
 	font-size: 0.8em;
+	white-space: nowrap;
 }
 
 #boxTags>div span {
-	line-height: 0.4em;
-	background-color: #2E2A4A;
-	color: #fff;
-	border-radius: 15px;
-	padding: 0.4em 0.4em 0.5em 0.4em;
+    cursor: pointer;
+    line-height: 0.8em;
+    font-size: .85em;
+    background-color: #d5dae0;
+    font-weight: bold;
+    color: #2f294b;
+    border-radius: 100%;
+    padding: 0.4em 0.35em 0.35em 0.37em;
 }
 
 #filterBar {
@@ -154,23 +168,47 @@
 	margin-bottom: 0;
 }
 
-/*#filterBox input {*/
-/*    display: inline-block;*/
-/*    width: 30px;*/
-/*    height: 30px;*/
-/*    border-radius: 50px;*/
-/*    padding: 4px;*/
-/*    background-clip: content-box;*/
-/*    border: 1px solid #d5dae0;*/
-/*    background-color: #d5dae0;*/
-/*    margin: 0;*/
-/*    outline: none;*/
-/*    cursor: pointer;*/
-/*}*/
+#filterBox input{
+    display: none;
+}
 
-/*#filterBox input:checked {*/
-/*    border-color: #2f294b;*/
-/*}*/
+#filterBox label{
+    margin-bottom: 15px;
+}
+
+#filterBox label > p {
+    position: relative;
+    padding-left: 40px;
+    display: block;
+    cursor: pointer;
+}
+
+#filterBox label > p:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 100%;
+    border: 2px solid #d5dae0;
+}
+
+#filterBox input:checked + p:before{
+    border: 2px solid #2f294b;
+}
+
+#filterBox input:checked + p:after{
+    background-color: #d5dae0;
+    border-radius: 100%;
+    content: "";
+    height: 12px;
+    left: 7px;
+    position: absolute;
+    top: 6px;
+    width: 12px;
+}
+
+
 
 #searchBar input {
     border: none;

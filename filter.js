@@ -672,7 +672,7 @@ let containerShop = document.getElementById("containerShop");
 let containerPage = document.getElementById("containerPage");
 
 
-let applyCount = document.getElementById("applyCount");
+
 
 
 
@@ -695,7 +695,7 @@ filterBtn.addEventListener("click", () =>{
 
 
 //Funcion para los acordeones de filterbox 
-let filterAccordion = document.querySelectorAll(".filterSection p");
+let filterAccordion = document.querySelectorAll(".filterSection > p");
 filterAccordion.forEach(accordion =>{
     accordion.addEventListener("click", () =>{
         accordion.classList.toggle("active");
@@ -828,6 +828,7 @@ let boxTags = document.getElementById("boxTags");
 let tagsBar = document.getElementById("tagsBar");
 let loaderOverlay = document.getElementById("loaderP");
 let loaderGif = document.querySelector("#loaderP > img");
+let filtersCount = document.querySelectorAll(".filtersCount");
 let concernCount = document.getElementById("concernCount");
 let categoryCount = document.getElementById("categoryCount");
 
@@ -851,28 +852,18 @@ filterInputs.forEach(input => {
         if(input.checked == true){
 
             if(input.className == "inputTitle"){
-                document.querySelectorAll("input[name='"+ input.name +"']:not(.inputTitle)").forEach(i => {
-                    let child = document.getElementById(valueFormat(i));
-                    let childTag = document.getElementById(`filterTag_${valueFormat(i)}`);
-                    if(child){
-                        child.remove();
-                        childTag.remove();
-                    }
-                });
-                
                 let allcategory = document.createElement("div");
                 allcategory.id = input.value;
                 filterPBox.prepend(allcategory);
-                    
-                document.querySelectorAll("input[name='"+ input.name +"']:not(.inputTitle)").forEach(i => {
-                    showFiltered(i, true, allcategory);
-                    i.checked = false;
-                });
-            }else{
-                if(document.querySelector("input[name='"+ input.name +"'].inputTitle").checked){
-                    document.querySelector("input[name='"+ input.name +"'].inputTitle").click();
-                }
                 
+                document.querySelectorAll("input[name='"+ input.name +"']:not(.inputTitle)").forEach(i => {
+                    if (i.checked == true) i.click();
+                    showFiltered(i, true, allcategory);
+                });
+                
+            }else{
+                let selectAll = document.querySelector("input[name='"+ input.name +"'].inputTitle");
+                if(selectAll.checked) selectAll.click();
                 showFiltered(input, false, filterPBox);
             }
 
@@ -881,7 +872,7 @@ filterInputs.forEach(input => {
             
             newTag.innerHTML = `
                 <p>${input.value}</p>
-                <span id="closeTag_${valueFormat(input)}">x</span>
+                <span id="closeTag_${valueFormat(input)}">✕</span>
             `;
             
             boxTags.appendChild(newTag);
@@ -895,8 +886,6 @@ filterInputs.forEach(input => {
         }else{
 
             if(input.className == "inputTitle"){
-                // title = document.querySelector("input[name='"+ input.name +"'].inputTitle");
-                // title.checked = false;
                 document.getElementById(input.value).remove();
             }else{
                 document.getElementById(valueFormat(input)).remove();
@@ -927,7 +916,10 @@ filterInputs.forEach(input => {
             tagsBar.classList.remove("active");
         }
         
-        applyCount.innerText = "( " + checked + " )";
+        filtersCount.forEach(count => {
+            (checked) ? count.innerText = "( " + checked + " )" : count.innerText = "";
+        });
+        
         (checkConcern) ? concernCount.innerText = "( " + checkConcern + " )" : concernCount.innerText = "";
         (checkCategory) ? categoryCount.innerText = "( " + checkCategory + " )" : categoryCount.innerText = "";
         
@@ -1073,3 +1065,106 @@ clearFilter.forEach(btn =>{
 
 
  
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
