@@ -658,6 +658,8 @@ const allProducts = [
 
 ];
 
+let activeItems = [];
+
 window.addEventListener("hashchange", () =>{
     location.reload();
 })
@@ -666,7 +668,6 @@ window.addEventListener("hashchange", () =>{
 let filterPBox = document.getElementById("filterPBox");
 let allPBox = document.getElementById("allPBox");
 let filterInputs = document.querySelectorAll("#filterBox input");
-
 let filterBtn = document.getElementById("filterBtn");
 let containerShop = document.getElementById("containerShop");
 let containerPage = document.getElementById("containerPage");
@@ -739,33 +740,16 @@ window.addEventListener("scroll", () =>{
 });
 
 // Funcion que muestra los productos
-const showP = (array, box, secName, secId, normalOrder) =>{
-    let newCategory = document.createElement("div");
-    newCategory.className = "category_box";
-    newCategory.id = secId;
-    if(secName){
-        newCategory.innerHTML = `
-            <div class="title_box">
-                <h2 class="dash_title">${secName}</h2>
-            </div>
-            
-            <div class="display_grid col_4 col_3 med_col_2 peq_col_1"></div>
-        `;
-        
-        (normalOrder) ? box.appendChild(newCategory) : box.prepend(newCategory);
-    }else{
-        newCategory.innerHTML = `
-            <div class="display_grid col_4 col_3 med_col_2 peq_col_1"></div>
-        `;
-        
-        box.appendChild(newCategory);
-    }
-
+const showP = (arr, box, selected, normalOrder) =>{
+    
+    (normalOrder) ? array = arr : array = arr.reverse();
     
     array.forEach(p => {
+        let newItem = document.createElement("div");
+        (selected) ? newItem.className = "card_product " + selected  : newItem.className = "card_product";
+    
         if(p.category.includes("systems")){
-            document.querySelector("#" + secId + " .display_grid").innerHTML += `
-                <div class="card_product">
+            newItem.innerHTML = `
                     <div class="new_product_label_small a_s_flex_start ${p.newP}">NEW</div>
                     <a>
                         <div class="display_flex flex_center">
@@ -782,11 +766,9 @@ const showP = (array, box, secName, secId, normalOrder) =>{
                         </div>
                     </div>
                     <a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a>
-                </div>
             `;
         }else{
-            document.querySelector("#" + secId + " .display_grid").innerHTML += `
-                <div class="card_product">
+            newItem.innerHTML = `
                     <div class="new_product_label_small a_s_flex_start ${p.newP}">NEW</div>
                     <a href="${p.url}"  aria-label="Go to ${p.name} page">
                         <div class="container_img_product display_flex j_c_center"><img class="img_product" src="${p.img}" alt="${p.name}"></div>
@@ -799,15 +781,18 @@ const showP = (array, box, secName, secId, normalOrder) =>{
                         <p class="retail_price ">$${p.rPrice} / <span class="vip_price">VIP $${p.vipPrice}</span></p>
                     </div>
                     <a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a>
-                </div>
             `;  
         }
+        
+        (normalOrder) ? box.appendChild(newItem) : box.prepend(newItem);
+
     });
+    
 }
 
 // Si no hay filtro se muestran todos los productos
 if (location.hash == ""){
-    showP(allProducts, allPBox, "", "allProducts");
+    showP(allProducts, allPBox, false, true);
 }
 
 // Funcion que filtra la seccion a mostrar
@@ -820,7 +805,7 @@ const showFiltered = (input, normalOrder, box) =>{
         }
     });
     
-    showP(dinamicArray, box, input.value, valueFormat(input), normalOrder);
+    showP(dinamicArray, box, valueFormat(input), normalOrder);
 }
 
 
@@ -869,7 +854,7 @@ filterInputs.forEach(input => {
             });  
 
         }else{
-            document.getElementById(valueFormat(input)).remove();
+            document.querySelectorAll(`.${valueFormat(input)}`).forEach(card => card.remove());
             document.getElementById(`filterTag_${valueFormat(input)}`).remove();
         }
         
@@ -891,7 +876,7 @@ filterInputs.forEach(input => {
         if(checked){
             tagsBar.classList.add("active");
         }else{
-            showP(allProducts, allPBox, "", "allProducts");
+            showP(allProducts, allPBox, false, true);
             tagsBar.classList.remove("active");
         }
         
@@ -932,7 +917,7 @@ searchBar.addEventListener("submit", (e) =>{
     
     allPBox.innerHTML = "";
     
-    showP(dinamicArray, allPBox, "", "searchedProducts");
+    showP(dinamicArray, allPBox, false, false);
     
     searchBar.reset();
 });
