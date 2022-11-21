@@ -11,9 +11,10 @@
 
     <style>
         .col_3 { grid-template-columns: repeat(3, 1fr); }
-        
-        @media screen and (min-width: 2100px) {
+        #filterBtn{ width: 33.3%;}
+        @media screen and (min-width: 1800px) {
         .col_4 { grid-template-columns: repeat(4, 1fr); }
+        #filterBtn{ width: 25%;}
         }
         @media screen and (max-width: 992px) {
         .med_col_2 { grid-template-columns: repeat(2, 1fr); }
@@ -123,16 +124,12 @@
                 
                 <div id="loaderP" class="flex_center"><img src="" alt="MONAT DROP LOGO ANIMATION" width="65" height="65" class="alignnone size-full wp-image-60542" /></div>
                 
-                <br><br>
-                
                 <div id="filterPBox" class="display_grid col_4 col_3 med_col_2 peq_col_1"></div>
                 <div id="allPBox" class="display_grid col_4 col_3 med_col_2 peq_col_1"></div>
-                
-                <br><br>
+    
             </div>
         </div>
     </div> 
-    
     
     <script src="./filter.js"></script>
 </body>

@@ -748,8 +748,25 @@ const showP = (arr, box, selected, normalOrder) =>{
         let newItem = document.createElement("div");
         (selected) ? newItem.className = "card_product " + selected  : newItem.className = "card_product";
     
+        let categories = p.category.split(" | ");
+        
+        let infoCard = document.createElement("div");
+        infoCard.className = "infoCard";
+        
+        categories.forEach(cat =>{
+            infoCard.innerHTML += `<p>${cat}</p>`;
+        })
+        
+        newItem.prepend(infoCard);
+        
         if(p.category.includes("systems")){
-            newItem.innerHTML = `
+            newItem.innerHTML += `
+                   <div class="infoBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+            
                     <div class="new_product_label_small a_s_flex_start ${p.newP}">NEW</div>
                     <a>
                         <div class="display_flex flex_center">
@@ -768,7 +785,13 @@ const showP = (arr, box, selected, normalOrder) =>{
                     <a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a>
             `;
         }else{
-            newItem.innerHTML = `
+            newItem.innerHTML += `
+                    <div class="infoBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
                     <div class="new_product_label_small a_s_flex_start ${p.newP}">NEW</div>
                     <a href="${p.url}"  aria-label="Go to ${p.name} page">
                         <div class="container_img_product display_flex j_c_center"><img class="img_product" src="${p.img}" alt="${p.name}"></div>
@@ -790,9 +813,22 @@ const showP = (arr, box, selected, normalOrder) =>{
     
 }
 
+const infoEvents = () =>{
+    console.log("paso infoEvents();");
+    let btns = document.querySelectorAll(".infoBtn");
+    let info = document.querySelectorAll(".infoCard");
+    btns.forEach((btn, index) =>{
+        btn.onclick = () =>{
+            btn.classList.toggle("active")
+            info[index].classList.toggle("active")
+        }
+    })
+}
+
 // Si no hay filtro se muestran todos los productos
 if (location.hash == ""){
     showP(allProducts, allPBox, false, true);
+    infoEvents();
 }
 
 // Funcion que filtra la seccion a mostrar
@@ -836,6 +872,7 @@ filterInputs.forEach(input => {
         
         if(input.checked == true){
             showFiltered(input, false, filterPBox);
+            infoEvents();
 
             let newTag = document.createElement("div");
             newTag.id = "filterTag_" + valueFormat(input);
@@ -920,6 +957,7 @@ searchBar.addEventListener("submit", (e) =>{
     showP(dinamicArray, allPBox, false, false);
     
     searchBar.reset();
+    infoEvents();
 });
 
 

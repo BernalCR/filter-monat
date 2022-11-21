@@ -60,6 +60,11 @@
 	background-color: #fff;
 	height: 60px;
 	position: relative;
+	padding-left: 3vw;
+	
+	top: 150px;
+	position: sticky;
+	z-index: 10;
 }
 
 #tagsBar:after {
@@ -156,7 +161,7 @@
 }
 
 #filterBtn {
-	width: 25%;
+	/*width: 25%;*/
 	height: 100%;
 	padding: 0 2.5rem;
 	border-right: solid 1px #d5dae0;
@@ -326,10 +331,10 @@
 
 @media screen and (min-width: 700px) {
 
-	#containerShop.active .display_grid,
-	#containerShop.active .title_box>h2 {
-		width: 90%;
-	}
+	/*#containerShop.active .display_grid,*/
+	/*#containerShop.active .title_box>h2 {*/
+	/*	width: 90%;*/
+	/*}*/
 }
 
 
@@ -431,9 +436,9 @@ html {
 
 /******* -DISPLAY GRID *******/
 
-#containerShop .display_grid {
-	gap: 7em 7vw;
-}
+/*#containerShop .display_grid {*/
+/*	gap: 7em 7vw;*/
+/*}*/
 
 /******* DISPLAY GRID- *******/
 
@@ -446,25 +451,25 @@ html {
 
 /**************** -SHOP PAGE **************/
 
-#containerShop .display_grid,
-#containerShop .title_box>h2 {
-	transition: all .4s ease-in-out;
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-}
+/*#containerShop .display_grid,*/
+/*#containerShop .title_box>h2 {*/
+/*	transition: all .4s ease-in-out;*/
+/*	width: 80%;*/
+/*	margin-left: auto;*/
+/*	margin-right: auto;*/
+/*}*/
 
 
-#containerShop .title_box {
-	top: 150px;
-	height: 50px;
-	display: flex;
-	align-items: center;
-	border-bottom: 1px solid #ececec;
-	position: sticky;
-	background-color: #fff;
-	z-index: 10;
-}
+/*#containerShop .title_box {*/
+/*	top: 150px;*/
+/*	height: 50px;*/
+/*	display: flex;*/
+/*	align-items: center;*/
+/*	border-bottom: 1px solid #ececec;*/
+/*	position: sticky;*/
+/*	background-color: #fff;*/
+/*	z-index: 10;*/
+/*}*/
 
 .category_box {
 	position: relative;
@@ -522,10 +527,76 @@ html {
 /* -PRODUCT ELEMENTS */
 
 .card_product {
+    position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
-	align-content: stretch
+	align-content: stretch;
+    padding: 4rem 3vw;
+    border-bottom: solid 1px #d5dae0;
+    border-right: solid 1px #d5dae0;
+}
+
+.card_product:hover {
+    background-color: #f5f4f9;
+}
+
+.card_product .infoBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 3px;
+    background-color: #ebebf3;
+    border: 1px solid #d5dae0;
+    border-radius: 7px;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.card_product .infoBtn > span{
+    background-color: #9998aa;
+    display: block;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+}
+
+.card_product .infoBtn > span:not(:last-child){
+    margin-bottom: 4px;
+}
+
+.infoCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(241 241 241 / 50%);
+    backdrop-filter: blur(1.5px);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px 40px;
+}
+
+.infoCard.active{
+    visibility: visible; 
+    opacity: 1;
+}
+
+.infoCard p {
+    margin: 0;
+    background-color: #f9f9fb;
+    border: 1px solid #d5dae0;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 0.5rem 1rem 0.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
 }
 
 .last_chance_label {
