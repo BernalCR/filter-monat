@@ -497,22 +497,23 @@ html {
 }
 
 .container_img_product::before {
-	content: "VIEW DETAILS";
-	position: absolute;
-	min-width: 13em;
-	padding: 0.7em 1em;
-	top: 50%;
-	opacity: 0;
-	margin-left: -100%;
-	z-index: 1;
-	color: white;
-	background-color: #4b4757;
-	font-size: 0.8em;
-	text-align: center;
-	letter-spacing: 1.5px;
-	border-radius: 2px;
-	pointer-events: none;
-	transition: .3s ease-in-out;
+    content: "VIEW DETAILS";
+    position: absolute;
+    min-width: 13em;
+    padding: 0.7em 1em;
+    top: 50%;
+    opacity: 0;
+    margin-left: -100%;
+    z-index: 1;
+    color: #18162d;
+    background-color: #ffff;
+    border: 1px solid #eeeeee;
+    font-size: 0.8em;
+    text-align: center;
+    letter-spacing: 1.5px;
+    border-radius: 20px;
+    pointer-events: none;
+    transition: .3s ease-in-out;
 }
 
 
@@ -528,6 +529,7 @@ html {
 
 .card_product {
     position: relative;
+    z-index: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: end;
@@ -538,7 +540,7 @@ html {
 }
 
 .card_product:hover {
-    background-color: #f5f4f9;
+    background-color: #f9f9fb;
 }
 
 .card_product .infoBtn {
@@ -546,11 +548,15 @@ html {
     top: 15px;
     right: 15px;
     padding: 3px;
-    background-color: #ebebf3;
-    border: 1px solid #d5dae0;
     border-radius: 7px;
     cursor: pointer;
     z-index: 11;
+}
+
+.card_product .infoBtn:hover, 
+.card_product .infoBtn.active{
+    background-color: #ebebf3;
+    border: 1px solid #d5dae0;
 }
 
 .card_product .infoBtn > span{
@@ -571,7 +577,7 @@ html {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(241 241 241 / 50%);
+    background-color: #f9f9fb9c;
     backdrop-filter: blur(1.5px);
     visibility: hidden;
     opacity: 0;
@@ -590,13 +596,19 @@ html {
 
 .infoCard p {
     margin: 0;
-    background-color: #f9f9fb;
-    border: 1px solid #d5dae0;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
     border-radius: 3px;
+    font-size: 0.75em;
+    letter-spacing: 0.1em;
     width: fit-content;
     padding: 0.5rem 1rem 0.4rem;
     text-transform: uppercase;
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.infoCard p.active {
+    background-color: red;
 }
 
 .last_chance_label {

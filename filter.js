@@ -658,7 +658,7 @@ const allProducts = [
 
 ];
 
-let activeItems = [];
+
 
 window.addEventListener("hashchange", () =>{
     location.reload();
@@ -742,11 +742,21 @@ window.addEventListener("scroll", () =>{
 // Funcion que muestra los productos
 const showP = (arr, box, selected, normalOrder) =>{
     
-    (normalOrder) ? array = arr : array = arr.reverse();
+    // (normalOrder) ? array = arr : array = arr.reverse();
+    
+    if(arr != allProducts) {
+        activeItems = [...arr, ...activeItems];
+        array = activeItems;
+    }else{
+        array = arr;
+    }
+    
+    filterPBox.innerHTML = "";
     
     array.forEach(p => {
         let newItem = document.createElement("div");
-        (selected) ? newItem.className = "card_product " + selected  : newItem.className = "card_product";
+        // (selected) ? newItem.className = "card_product " + selected  : newItem.className = "card_product";
+        newItem.className = "card_product";
     
         let categories = p.category.split(" | ");
         
@@ -754,7 +764,11 @@ const showP = (arr, box, selected, normalOrder) =>{
         infoCard.className = "infoCard";
         
         categories.forEach(cat =>{
-            infoCard.innerHTML += `<p>${cat}</p>`;
+            filterInputs.forEach(inp => {
+                if(inp.value == cat) {
+                    (inp.checked) ? infoCard.innerHTML += `<p class="active">${cat}</p>` : infoCard.innerHTML += `<p>${cat}</p>`;
+                }
+            });
         })
         
         newItem.prepend(infoCard);
@@ -807,14 +821,14 @@ const showP = (arr, box, selected, normalOrder) =>{
             `;  
         }
         
-        (normalOrder) ? box.appendChild(newItem) : box.prepend(newItem);
+        // (normalOrder) ? box.appendChild(newItem) : box.prepend(newItem);
+        box.appendChild(newItem)
 
     });
     
 }
 
 const infoEvents = () =>{
-    console.log("paso infoEvents();");
     let btns = document.querySelectorAll(".infoBtn");
     let info = document.querySelectorAll(".infoCard");
     btns.forEach((btn, index) =>{
@@ -825,6 +839,8 @@ const infoEvents = () =>{
     })
 }
 
+let activeItems = [];
+
 // Si no hay filtro se muestran todos los productos
 if (location.hash == ""){
     showP(allProducts, allPBox, false, true);
@@ -832,17 +848,17 @@ if (location.hash == ""){
 }
 
 // Funcion que filtra la seccion a mostrar
-const showFiltered = (input, normalOrder, box) =>{
-    let dinamicArray = [];
+// const showFiltered = (input, normalOrder, box) =>{
+//     let dinamicArray = [];
     
-    allProducts.forEach(p => {
-        if(p.category.includes(input.value)){
-            dinamicArray.push(p);
-        }
-    });
+//     allProducts.forEach(p => {
+//         if(p.category.includes(input.value)){
+//             dinamicArray.push(p);
+//         }
+//     });
     
-    showP(dinamicArray, box, valueFormat(input), normalOrder);
-}
+//     showP(dinamicArray, box, valueFormat(input), normalOrder);
+// }
 
 
 let boxTags = document.getElementById("boxTags");
@@ -855,7 +871,9 @@ let categoryCount = document.getElementById("categoryCount");
 
 // Se le da funcionalidad a cada input
 filterInputs.forEach(input => {
+    
     input.addEventListener("input", () =>{
+       
         
         // if (window.matchMedia("(min-width: 700px)").matches) {
         //     loaderOverlay.classList.add("active");
@@ -871,7 +889,25 @@ filterInputs.forEach(input => {
         allPBox.innerHTML = "";
         
         if(input.checked == true){
-            showFiltered(input, false, filterPBox);
+            // showFiltered(input, false, filterPBox);
+            
+            let dinamicArray = [];
+            
+            allProducts.forEach(p => {
+                if(p.category.includes(input.value)){
+                    
+                    let pass = true;
+                    
+                    activeItems.forEach(item =>{
+                        if(p.name == item.name) pass = false;
+                    });
+                    
+                    if(pass) dinamicArray.push(p);
+                }
+            });
+            
+            showP(dinamicArray, filterPBox, valueFormat(input), false);
+            
             infoEvents();
 
             let newTag = document.createElement("div");
@@ -891,9 +927,29 @@ filterInputs.forEach(input => {
             });  
 
         }else{
-            document.querySelectorAll(`.${valueFormat(input)}`).forEach(card => card.remove());
+            // document.querySelectorAll(`.${valueFormat(input)}`).forEach(card => card.remove());
+            // si funciona recuerda borrar el valueFormat(input)
+            
             document.getElementById(`filterTag_${valueFormat(input)}`).remove();
+            
+            
+            
+            
+            for (let i = 0; i < activeItems.length; i++) {
+                let deleteItem = true;
+                filterInputs.forEach(inp => {
+                    if(inp.checked && !activeItems[i].category.includes(inp.value) && inp != input){
+                        activeItems.splice(i, 1);
+                        i--;
+                    }
+                });
+            }
+            showP([], filterPBox, valueFormat(input), false);
+            infoEvents();
+
+            // activeItems = [];
         }
+         console.log(activeItems);
         
         let checked = 0;
         let checkConcern = 0;
