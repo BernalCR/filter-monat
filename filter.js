@@ -740,7 +740,7 @@ window.addEventListener("scroll", () =>{
 });
 
 // Funcion que muestra los productos
-const showP = (arr, box, selected, normalOrder) =>{
+const showP = (arr, box, normalOrder) =>{
     
     // (normalOrder) ? array = arr : array = arr.reverse();
     
@@ -755,7 +755,6 @@ const showP = (arr, box, selected, normalOrder) =>{
     
     array.forEach(p => {
         let newItem = document.createElement("div");
-        // (selected) ? newItem.className = "card_product " + selected  : newItem.className = "card_product";
         newItem.className = "card_product";
     
         let categories = p.category.split(" | ");
@@ -843,7 +842,7 @@ let activeItems = [];
 
 // Si no hay filtro se muestran todos los productos
 if (location.hash == ""){
-    showP(allProducts, allPBox, false, true);
+    showP(allProducts, allPBox, true);
     infoEvents();
 }
 
@@ -873,6 +872,22 @@ let categoryCount = document.getElementById("categoryCount");
 filterInputs.forEach(input => {
     
     input.addEventListener("input", () =>{
+        
+        let checked = 0;
+        let checkConcern = 0;
+        let checkCategory = 0;
+        
+        filterInputs.forEach(i =>{
+            if(i.checked) {
+                checked ++;
+                if(i.name === "concerns"){
+                    checkConcern++;
+                }else if(i.name === "categories"){
+                    checkCategory++;
+                }
+            } 
+        });
+        
        
         
         // if (window.matchMedia("(min-width: 700px)").matches) {
@@ -906,7 +921,7 @@ filterInputs.forEach(input => {
                 }
             });
             
-            showP(dinamicArray, filterPBox, valueFormat(input), false);
+            showP(dinamicArray, filterPBox, false);
             
             infoEvents();
 
@@ -928,48 +943,34 @@ filterInputs.forEach(input => {
 
         }else{
             // document.querySelectorAll(`.${valueFormat(input)}`).forEach(card => card.remove());
-            // si funciona recuerda borrar el valueFormat(input)
             
             document.getElementById(`filterTag_${valueFormat(input)}`).remove();
             
-            
-            
-            
+
             for (let i = 0; i < activeItems.length; i++) {
                 let deleteItem = true;
                 filterInputs.forEach(inp => {
                     if(inp.checked && !activeItems[i].category.includes(inp.value) && inp != input){
                         activeItems.splice(i, 1);
                         i--;
+                    }else if(!checked){
+                        activeItems = [];
                     }
                 });
             }
-            showP([], filterPBox, valueFormat(input), false);
+            showP([], filterPBox, false);
             infoEvents();
 
             // activeItems = [];
         }
          console.log(activeItems);
         
-        let checked = 0;
-        let checkConcern = 0;
-        let checkCategory = 0;
-        
-        filterInputs.forEach(i =>{
-            if(i.checked) {
-                checked ++;
-                if(i.name === "concerns"){
-                    checkConcern++;
-                }else if(i.name === "categories"){
-                    checkCategory++;
-                }
-            } 
-        });
-        
+
         if(checked){
             tagsBar.classList.add("active");
         }else{
-            showP(allProducts, allPBox, false, true);
+            showP(allProducts, allPBox, true);
+            infoEvents();
             tagsBar.classList.remove("active");
         }
         
@@ -992,8 +993,11 @@ let searchBar = document.getElementById("searchBar");
 let searchValue = document.querySelector("#searchBar input");
 let searchBtn = document.querySelector("#searchBar > button");
 
+searchValue.addEventListener("click", () => searchBar.classList.add("focus"));
+
 searchBar.addEventListener("submit", (e) =>{
     e.preventDefault();
+    
     
     let dinamicArray = [];
     allProducts.forEach(p => {
@@ -1010,7 +1014,7 @@ searchBar.addEventListener("submit", (e) =>{
     
     allPBox.innerHTML = "";
     
-    showP(dinamicArray, allPBox, false, false);
+    showP(dinamicArray, allPBox, false);
     
     searchBar.reset();
     infoEvents();
@@ -1021,6 +1025,7 @@ function autocomplete(inp, arr) {
     let currentFocus;
     //Execute a function when someone writes in the text field:
     inp.addEventListener("input", function(e) {
+        searchBar.classList.add("focus")
         let autoList, matchItem, val = this.value;
         closeAllLists();
         
@@ -1054,6 +1059,7 @@ function autocomplete(inp, arr) {
                     inp.value = item.name;
                     searchBtn.click();
                     closeAllLists();
+                    searchBar.classList.remove("focus");
                 });
                 
                 autoList.appendChild(matchItem);
@@ -1078,6 +1084,7 @@ function autocomplete(inp, arr) {
             //If the ENTER key is pressed, prevent the form from being submitted
             e.preventDefault();
             if (currentFocus > -1 && list) list[currentFocus].click();
+
         }
     });
     
@@ -1099,7 +1106,9 @@ function autocomplete(inp, arr) {
     //Function to remove the autocomplete-list element
     const closeAllLists = elmnt =>{
         let list = document.getElementById("autocomplete-list");
-        if (elmnt != inp && list != undefined) list.remove();
+        if (elmnt != inp && list != undefined) {
+            list.remove();
+        };
     }
     
     /*Execute a function when someone clicks in the document:*/

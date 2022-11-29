@@ -123,7 +123,7 @@
     align-items: center;
     background-color: #fff;
     border-radius: 20rem;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     margin: 4px;
     border: solid 1px #d5dae0;
 }
@@ -256,12 +256,27 @@
 
 
 
+#searchBar {
+    margin-left: calc(3vw - 1em);
+    border: 2px solid transparent;
+    border-radius: 3em;
+    padding: 0 1em;
+}
 
+#searchBar.focus {
+    border: 2px solid #000;
+}
+
+#searchBar button{
+    background: none; 
+    padding: 0; 
+    border: none;
+}
 
 #searchBar input {
     border: none;
     background-color: #fff;
-    padding: 10px 12px 6px;
+    padding: 7px 10px 6px;
 }
 
 #searchBar input::placeholder {
@@ -534,7 +549,7 @@ html {
 	flex-direction: column;
 	justify-content: end;
 	align-content: stretch;
-    padding: 4rem 3vw;
+    padding: 3.5rem 3vw;
     border-bottom: solid 1px #d5dae0;
     border-right: solid 1px #d5dae0;
 }
@@ -594,21 +609,35 @@ html {
     opacity: 1;
 }
 
+/*.infoCard p {*/
+/*    margin: 0;*/
+/*    background-color: #ffffff;*/
+/*    border: 1px solid #eeeeee;*/
+/*    border-radius: 3px;*/
+/*    font-size: 0.75em;*/
+/*    letter-spacing: 0.1em;*/
+/*    width: fit-content;*/
+/*    padding: 0.5rem 1rem 0.4rem;*/
+/*    text-transform: uppercase;*/
+/*    margin-bottom: 0.3rem;*/
+/*}*/
+
 .infoCard p {
-    margin: 0;
-    background-color: #ffffff;
-    border: 1px solid #eeeeee;
-    border-radius: 3px;
-    font-size: 0.75em;
-    letter-spacing: 0.1em;
+    font-family: 'SuisseIntl-Regular';
+    font-size: 0.85em;
+    letter-spacing: 0.11em;
     width: fit-content;
-    padding: 0.5rem 1rem 0.4rem;
     text-transform: uppercase;
-    margin-bottom: 0.3rem;
+    margin-bottom: 1rem;
+    opacity: 0.6;
+}
+
+#allPBox .infoCard p {
+    opacity: 1;
 }
 
 .infoCard p.active {
-    background-color: red;
+    opacity: 1;
 }
 
 .last_chance_label {
@@ -629,7 +658,7 @@ html {
 }
 
 .module_text_product {
-	margin: 1.5em 0em;
+	margin: 1.5em 0em 1.3em;
 }
 
 .view_details_btn {
@@ -666,6 +695,11 @@ html {
 
 .clasic_btn_MONAT {
 	width: 100%;
+	opacity: 0;
+}
+
+.card_product:hover .clasic_btn_MONAT{
+    opacity: 1;
 }
 
 /* PRODUCT ELEMENTS- */
