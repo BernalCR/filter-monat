@@ -645,6 +645,342 @@ const allProducts = [
         category: "styling",
         newP: "hide",
     },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    {
+        name: "BE PURIFIED™ SYSTEM", 
+        rPrice: "218.00",
+        vipPrice: "186.00", 
+        url: "", 
+        img: "https://monatglobal.com/wp-content/uploads/2022/06/BE-PURIFIED-SYSTEM_ecomm.png ", 
+        shopLink: "/shop/products/be-purified-routine", 
+        use: "FOR OILY SKIN TYPES",
+        discount: "EXTRA 20% OFF WITH PURCHASE+&trade;",
+        category: "systems",
+        newP: "hide",
+    },
+    {
+        name: "BE BALANCED™ System", 
+        rPrice: "302.00",
+        vipPrice: "258.00", 
+        url: "/be-balanced-routine/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-routine-skincare.png", 
+        shopLink: "/shop/products/be-balanced-routine?taxon_id=30", 
+        use: "FOR NORMAL/COMBINATION SKIN",
+        discount: "EXTRA 25% OFF WITH PURCHASE+&trade;",
+        category: "systems | best sellers | routines | moisturizers | cleansers & scrubs",
+        newP: "hide",
+    },
+    {
+        name: "BE GENTLE™ System", 
+        rPrice: "302.00",
+        vipPrice: "258.00", 
+        url: "/be-gentle-routine/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/09/be-gentle-routine-1.png", 
+        shopLink: "/shop/products/be-gentle-routine?taxon_id=30", 
+        use: "FOR DRY / SENSITIVE SKIN",
+        discount: "EXTRA 25% OFF WITH PURCHASE+&trade;",
+        category: "systems | sensitive skin | best sellers | routines | moisturizers | cleansers & scrubs",
+        newP: "hide",
+    },
+    {
+        name: "MAKEUP VANISHING BALM™", 
+        rPrice: "67.00",
+        vipPrice: "57.00", 
+        url: "/makeup-vanishing-balm/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/06/Makeup-Vanishing-Balm_web_.png", 
+        shopLink: "/shop/products/makeup-vanishing-balm/", 
+        category: "sensitive skin | cleansers & scrubs",
+        newP: "hide",
+    },
+    {
+        name: "BE GENTLE™ CREAMY CLEANSER", 
+        rPrice: "50.00",
+        vipPrice: "43.00", 
+        url: "/creamy-cleanser/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/09/monat-Be-Gentle-Cleanser-Skincare-1.png", 
+        shopLink: "/shop/products/creamy-cleanser", 
+        category: "dryness & dehydration | sensitive skin | cleansers & scrubs",
+        newP: "hide",
+    },
+    {
+        name: "BE BALANCED™ FOAMY CLEANSER", 
+        rPrice: "50.00",
+        vipPrice: "43.00", 
+        url: "/foamy-cleanser/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-foamy-cleanser-.png", 
+        shopLink: "/shop/products/be-balanced-foamy-cleanser", 
+        category: "dryness & dehydration | best sellers | cleansers & scrubs",
+        newP: "hide",
+    },
+    {
+        name: "BE PURIFIED™ CLARIFYING CLEANSER", 
+        rPrice: "50.00",
+        vipPrice: "43.00",
+        url: "/skin-clarifying-cleanser/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/02/be-pcc.png", 
+        shopLink: "/shop/products/be-purified-clarifying-cleanser", 
+        category: "oil control | pores | cleansers & scrubs",
+        newP: "hide",
+    },
+    {
+        name: "BERRY REFINED SCRUB™", 
+        rPrice: "62.00",
+        vipPrice: "53.00", 
+        url: "/refined-skin-scrub/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/09/berry-refined-scrub.png", 
+        shopLink: "/shop/products/berry-refined-scrub", 
+        category: "dark Spots | dullness | oil control | pores | uneven tone & texture | best sellers | cleansers & scrubs | serums, treatments, and masks",
+        newP: "hide",
+    },
+    {
+        name: "BE PURIFIED™ COLD CHARCOAL MASK", 
+        rPrice: "44.00",
+        vipPrice: "37.00", 
+        url: "/charcoal-mask/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/02/be-pcharcoal-1.png", 
+        shopLink: "/shop/products/be-purified-cold-charcoal-mask", 
+        category: "oil control | pores | serums, treatments, and masks",
+        newP: "hide",
+    },
+    {
+        name: "SKIN REVITALIZING ESSENCE™", 
+        rPrice: "48.00",
+        vipPrice: "41.00", 
+        url: "/skin-revitalizing/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/09/sking-revitalizing-essence.png", 
+        shopLink: "/shop/products/skin-revitalizing-essence", 
+        category: "dullness | dryness & dehydration | fine lines & wrinkles | oil control | sensitive skin | essence & toners",
+        newP: "hide",
+    },
+    {
+        name: "C. RADIANCE™ ILLUMINATING SERUM", 
+        rPrice: "99.00",
+        vipPrice: "84.00", 
+        url: "/skincare-c-radiance/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/11/c-radiance.png", 
+        shopLink: "/shop/products/c-radiance-illuminating-serum", 
+        category: "dark Spots | dullness | uneven tone & texture | serums, treatments, and masks",
+        newP: "hide",
+    },
+    {
+        name: "REWIND™ AGE CONTROL NECTAR", 
+        rPrice: "128.00",
+        vipPrice: "109.00", 
+        url: "/age-control-nectar/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/09/rewind-age-control-nectar-1.png", 
+        shopLink: "/shop/products/rewind-age-control-nectar", 
+        category: "dryness & dehydration | fine lines & wrinkles | prevention and protection | sensitive skin | best sellers | serums, treatments, and masks",
+        newP: "hide",
+    },
+    {
+        name: "BOTANIC BAKUCHIOL VEGAN RETINOL ALTERNATIVE LOTION", 
+        rPrice: "95.00",
+        vipPrice: "81.00", 
+        url: "/bakuchiol/", 
+        img: "https://monatglobal.com/wp-content/uploads/2020/11/bbvr.png", 
+        shopLink: "/shop/products/botanic-bakuchiol", 
+        category: "dark Spots | dullness | sensitive skin | uneven tone & texture",
+        newP: "hide",
+    },
+    {
+        name: "EYE SMOOTH™", 
+        rPrice: "84.00",
+        vipPrice: "71.00", 
+        url: "/eye-smooth/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/09/eye-smooth-nourishing-eye-cream.png", 
+        shopLink: "/shop/products/eye-smooth", 
+        category: "eye care | best sellers | serums, treatments, and masks",
+        newP: "hide",
+    },
+    {
+        name: "30 SECOND MIRACLE™ INSTANT PERFECTOR", 
+        rPrice: "90.00",
+        vipPrice: "77.00", 
+        url: "/skincare-perfector/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/11/30-second-miracle.png", 
+        shopLink: "/shop/products/30-second-miracle-instant-eye-protector", 
+        category: "eye care | fine lines & wrinkles | best sellers | serums, treatments, and masks",
+        newP: "hide",
+    },
+    {
+        name: "HYDRATION BOOSTER™ HYALURONIC SERUM PLUS", 
+        rPrice: "77.00",
+        vipPrice: "65.00", 
+        url: "/hyaluronic-serum/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/08/Hydration-Booster-Hyaluronic-Serum-Plus_ecomm.png", 
+        shopLink: "/shop/products/hydration-booster-serum", 
+        category: "dullness | dryness & dehydration | fine lines & wrinkles | prevention and protection | sensitive skin",
+        newP: "hide",
+    },
+    {
+        name: "BE GENTLE™ NOURISHING MOISTURIZER", 
+        rPrice: "76.00",
+        vipPrice: "65.00", 
+        url: "/nourishing-moisturizer/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/09/be-gentle-nurishing-moisturizer-1-1.png", 
+        shopLink: "/shop/products/nourishing-moisturizer", 
+        category: "dryness & dehydration | fine lines & wrinkles | sensitive skin | moisturizers",
+        newP: "hide",
+    },
+    {
+        name: "BE BALANCED™ LIGHTWEIGHT MOISTURIZER", 
+        rPrice: "76.00",
+        vipPrice: "65.00",
+        url: "/lightweight-moisturizer/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-lightweight-moisturizer.png", 
+        shopLink: "/shop/products/lightweight-moisturizer/", 
+        category: "fine lines & wrinkles | moisturizers",
+        newP: "hide",
+    },
+    {
+        name: "BE PURIFIED™ OIL-FREE MOISTURIZER", 
+        rPrice: "76.00",
+        vipPrice: "65.00",
+        url: "/skin-oil-free-moisturizer/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/02/be-pmois-1.png", 
+        shopLink: "/shop/products/be-purified-oil-free-moisturizer", 
+        category: "fine lines & wrinkles | oil control | pores | moisturizers",
+        newP: "hide",
+    },
+    {
+        name: "NIGHT HAVEN™ OVERNIGHT AGE CONTROL CREAM", 
+        rPrice: "87.00",
+        vipPrice: "74.00", 
+        url: "/skincare-night-age-control-cream/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/11/night-haven.png", 
+        shopLink: "/shop/products/night-heaven-overnight-age-control-cream", 
+        category: "dryness & dehydration | fine lines & wrinkles | prevention and protection | sensitive skin | moisturizers",
+        newP: "hide",
+    },
+    {
+        name: "SUN VEIL™ DAILY MINERAL PROTECTION SPF 30", 
+        rPrice: "40.00",
+        vipPrice: "34.00", 
+        url: "/sun-veil-sunscreen/", 
+        img: "https://monatglobal.com/wp-content/uploads/2020/08/sv-prod-1.png", 
+        shopLink: "/shop/products/sun-veil-daily-mineral-protection", 
+        category: "dark Spots | dryness & dehydration | prevention and protection | uneven tone & texture | best sellers | specialties",
+        newP: "hide",
+    },
+    {
+        name: "HYDRATE & REFRESH™ FACE MIST", 
+        rPrice: "44.00",
+        vipPrice: "37.00", 
+        url: "/face-mist/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/08/MONAT_HYDRATE-REFRESH_ecomm-optimized.png", 
+        shopLink: "/shop/products/hydrate-refresh-face-mist", 
+        category: "sensitive skin",
+        newP: "hide",
+    },
+    {
+        name: "BRIGHTEN AND RECOVER", 
+        rPrice: "186.00",
+        vipPrice: "158.00", 
+        url: "/skincare-duo/", 
+        img: "https://monatglobal.com/wp-content/uploads/2019/11/Brighten-Recover-Duo-1.png", 
+        shopLink: "/shop/products/brighten-recover-duo", 
+        category: "routines",
+        newP: "hide",
+    },
+    {
+        name: "MONAT BODY CARE™ MOISTURIZE & REPLENISH BODY WASH", 
+        rPrice: "42.00",
+        vipPrice: "36.00", 
+        url: "/body-wash/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/08/Moistturizw-replenish-body-wash-ecomm.png", 
+        shopLink: "/shop/products/monat-body-care-moisture-replenish-body-wash-6000001819", 
+        category: "dryness & dehydration | best sellers | body care | cleansers & scrubs",
+        newP: "hide",
+    },
+    {
+        name: "MONAT BODY CARE™ EXFOLIATE & REFINE BODY POLISH", 
+        rPrice: "52.00",
+        vipPrice: "44.00", 
+        url: "/body-exfoliator/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/08/exfoliate-refine-body-polish-ecomm.png", 
+        shopLink: "/shop/products/monat-body-care-exfoliate-refine-body-polish-6000001821", 
+        category: "uneven tone & texture | body care | cleansers & scrubs",
+        newP: "hide",
+    },
+    {
+        name: "MONAT BODY CARE™ HYDRATE & REPAIR BODY SERUM", 
+        rPrice: "67.00",
+        vipPrice: "57.00", 
+        url: "/body-hydrate-serum/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/08/HYDRATE-REPAIR-BODY-SERUM-ecomm.png", 
+        shopLink: "/shop/products/monat-body-care-hydrate-repair-serum-6000001822", 
+        category: "dullness | dryness & dehydration | prevention and protection | body care | serums, treatments, and masks",
+        newP: "hide",
+    },
+    {
+        name: "MONAT BODY CARE™ SMOOTH & RENEW BODY LOTION", 
+        rPrice: "57.00",
+        vipPrice: "48.00", 
+        url: "/body-lotion/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/08/SMOOTH-RENEW-BODY-LOTION-ecomm-1.png", 
+        shopLink: "/shop/products/monat-body-care-smooth-renew-body-lotion-6000001820", 
+        category: "dryness & dehydration | prevention and protection | body care | moisturizers",
+        newP: "hide",
+    },
+    {
+        name: "MONAT BODY CARE™ SILKY & SOOTHING HAND CREAM", 
+        rPrice: "23.00",
+        vipPrice: "20.00", 
+        url: "/hand-cream/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/08/SILKY-SOOTHING-HAND-CREAM-ecomm.png", 
+        shopLink: "/shop/products/monat-body-care-silky-soothing-hand-cream-6000001963", 
+        category: "dryness & dehydration | prevention and protection | body care | moisturizers",
+        newP: "hide",
+    },
+    {
+        name: "MONAT FOR MEN™ ESSENTIAL FACE WASH", 
+        rPrice: "35.00",
+        vipPrice: "30.00", 
+        url: "/men-face-wash/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/02/MB-ESSENTIAL-FACE-WASH-401x500.png", 
+        shopLink: "/shop/products/essential-face-wash", 
+        category: "oil control | men skincare | cleansers & scrubs",
+        newP: "hide",
+    },
+    {
+        name: "MONAT FOR MEN™ ESSENTIAL FACE SCRUB", 
+        rPrice: "37.00",
+        vipPrice: "31.00", 
+        url: "/men-face-scrub/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/02/MB-ESSENTIAL-FACE-SCRUB-401x500.png", 
+        shopLink: "/shop/products/essential-face-scrub", 
+        category: "dullness | oil control | uneven tone & texture | men skincare | cleansers & scrubs",
+        newP: "hide",
+    },
+    {
+        name: "MONAT FOR MEN™ ESSENTIAL FACE MOISTURIZER", 
+        rPrice: "45.00",
+        vipPrice: "38.00", 
+        url: "/men-face-moisturizer/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/01/MB-ESSENTIAL-FACE-MOISTURIZER-1.7oz_eccom-1.png", 
+        shopLink: "/shop/products/essential-face-moisturizer", 
+        category: "fine lines & wrinkles | oil control | men skincare | moisturizers",
+        newP: "hide",
+    },
+    {
+        name: "MONAT FOR MEN™ ESSENTIAL SHAVING CREAM", 
+        rPrice: "29.00",
+        vipPrice: "25.00", 
+        url: "/men-shaving-cream/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/10/essential-shaving-cream.png", 
+        shopLink: "/shop/products/men-essential-shaving-cream", 
+        category: "men skincare | specialties",
+        newP: "hide",
+    },
     // {
     //     name: "", 
     //     rPrice: ".00",
@@ -654,7 +990,8 @@ const allProducts = [
     //     shopLink: "", 
     //     category: "",
     //     newP: "hide",
-    // }
+    // },
+
 
 ];
 
@@ -752,6 +1089,7 @@ const showP = (arr, box, normalOrder) =>{
     }
     
     filterPBox.innerHTML = "";
+    allPBox.innerHTML = "";
     
     array.forEach(p => {
         let newItem = document.createElement("div");
@@ -846,19 +1184,6 @@ if (location.hash == ""){
     infoEvents();
 }
 
-// Funcion que filtra la seccion a mostrar
-// const showFiltered = (input, normalOrder, box) =>{
-//     let dinamicArray = [];
-    
-//     allProducts.forEach(p => {
-//         if(p.category.includes(input.value)){
-//             dinamicArray.push(p);
-//         }
-//     });
-    
-//     showP(dinamicArray, box, valueFormat(input), normalOrder);
-// }
-
 
 let boxTags = document.getElementById("boxTags");
 let tagsBar = document.getElementById("tagsBar");
@@ -872,6 +1197,7 @@ let categoryCount = document.getElementById("categoryCount");
 filterInputs.forEach(input => {
     
     input.addEventListener("input", () =>{
+        
         
         let checked = 0;
         let checkConcern = 0;
@@ -901,10 +1227,9 @@ filterInputs.forEach(input => {
         //     }, 1700)
         // }
         
-        allPBox.innerHTML = "";
+        // allPBox.innerHTML = "";
         
         if(input.checked == true){
-            // showFiltered(input, false, filterPBox);
             
             let dinamicArray = [];
             
@@ -942,29 +1267,33 @@ filterInputs.forEach(input => {
             });  
 
         }else{
-            // document.querySelectorAll(`.${valueFormat(input)}`).forEach(card => card.remove());
-            
             document.getElementById(`filterTag_${valueFormat(input)}`).remove();
-            
 
-            for (let i = 0; i < activeItems.length; i++) {
-                let deleteItem = true;
-                filterInputs.forEach(inp => {
-                    if(inp.checked && !activeItems[i].category.includes(inp.value) && inp != input){
+            if(!checked){
+                    activeItems = [];
+            }else{
+                for (let i = 0; i < activeItems.length; i++) {
+                    let deleteItem = true;
+                    
+                    filterInputs.forEach(inp => {
+                        if(inp.checked && activeItems[i].category.includes(inp.value) && inp != input){
+                            deleteItem = false;
+                        }
+                    });  
+                    
+                    if(deleteItem){
                         activeItems.splice(i, 1);
-                        i--;
-                    }else if(!checked){
-                        activeItems = [];
+                        --i;
                     }
-                });
+                }
             }
+                
+
             showP([], filterPBox, false);
             infoEvents();
-
-            // activeItems = [];
         }
-         console.log(activeItems);
         
+        console.log(activeItems);
 
         if(checked){
             tagsBar.classList.add("active");
@@ -990,14 +1319,34 @@ filterInputs.forEach(input => {
 });
 
 let searchBar = document.getElementById("searchBar");
+let overlayFilter = document.getElementById("overlayFilter");
 let searchValue = document.querySelector("#searchBar input");
 let searchBtn = document.querySelector("#searchBar > button");
 
-searchValue.addEventListener("click", () => searchBar.classList.add("focus"));
+const overlayTrigger = (trigger) => {
+    if(trigger){
+        searchBar.classList.add("focus");
+        overlayFilter.classList.add("active"); 
+    }else{
+        searchBar.classList.remove("focus");
+        overlayFilter.classList.remove("active"); 
+    }
+}
 
+overlayFilter.addEventListener("click", () =>{
+    closeAllLists();
+    overlayTrigger(false);
+});
+
+searchValue.addEventListener("click", () => overlayTrigger(true));
+
+const closeAllLists = () =>{
+    let list = document.getElementById("autocomplete-list");
+    if(list) list.remove();
+}
+    
 searchBar.addEventListener("submit", (e) =>{
     e.preventDefault();
-    
     
     let dinamicArray = [];
     allProducts.forEach(p => {
@@ -1007,25 +1356,29 @@ searchBar.addEventListener("submit", (e) =>{
         }
     });
     
-    
     filterInputs.forEach(input => {
-        (input.checked) && input.click();
+        if(input.checked) input.checked = false;
     });
-    
-    allPBox.innerHTML = "";
-    
-    showP(dinamicArray, allPBox, false);
-    
-    searchBar.reset();
-    infoEvents();
-});
 
+    boxTags.innerHTML = "";
+    
+    // allPBox.innerHTML = "";
+    
+    activeItems = [];
+    
+    showP(dinamicArray, filterPBox, false);
+    infoEvents();
+    searchBar.reset();
+    
+    closeAllLists();
+    overlayTrigger(false);
+});
 
 function autocomplete(inp, arr) {
     let currentFocus;
     //Execute a function when someone writes in the text field:
     inp.addEventListener("input", function(e) {
-        searchBar.classList.add("focus")
+        overlayTrigger(true);
         let autoList, matchItem, val = this.value;
         closeAllLists();
         
@@ -1058,8 +1411,8 @@ function autocomplete(inp, arr) {
                     //insert the value for the autocomplete text field
                     inp.value = item.name;
                     searchBtn.click();
-                    closeAllLists();
-                    searchBar.classList.remove("focus");
+                    // closeAllLists();
+                    // overlayTrigger(false);
                 });
                 
                 autoList.appendChild(matchItem);
@@ -1082,9 +1435,10 @@ function autocomplete(inp, arr) {
             addActive(list);
         } else if (e.keyCode == 13) {
             //If the ENTER key is pressed, prevent the form from being submitted
-            e.preventDefault();
-            if (currentFocus > -1 && list) list[currentFocus].click();
-
+            if (currentFocus > -1 && list){
+                e.preventDefault();
+                list[currentFocus].click();
+            }
         }
     });
     
@@ -1103,18 +1457,7 @@ function autocomplete(inp, arr) {
     //Function to remove the "active" class from all autocomplete items:
     const removeActive = list => list.forEach(div => div.classList.remove("autocomplete-active"));
     
-    //Function to remove the autocomplete-list element
-    const closeAllLists = elmnt =>{
-        let list = document.getElementById("autocomplete-list");
-        if (elmnt != inp && list != undefined) {
-            list.remove();
-        };
-    }
-    
-    /*Execute a function when someone clicks in the document:*/
-    document.addEventListener("click", function (e) {
-        closeAllLists(e.target);
-    });
+
 }
   
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
