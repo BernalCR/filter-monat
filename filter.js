@@ -1059,6 +1059,21 @@ closeFilter.forEach(close =>{
 });
 
 
+let filterInitial = document.getElementById("state1_filter");
+let filterTabs = document.querySelectorAll("#state1_filter > li > p");
+let backState1 = document.querySelectorAll(".head_state2 span");
+
+filterTabs.forEach((tab, i) =>{
+    tab.addEventListener("click", () =>{
+        filterInitial.classList.add("tabActive");
+        document.querySelector("#" + tab.id + " + ul").style.display = "block";
+    });
+    
+    backState1[i].addEventListener("click", () =>{
+        filterInitial.classList.remove("tabActive");
+        setTimeout(() =>{document.querySelector("#" + tab.id + " + ul").style.display = "none"}, 301);
+    });
+});
 
 const valueFormat = (i) =>{
     return i.value.replace(/,/g, "").replace(/ /g,"-")
@@ -1172,6 +1187,13 @@ const infoEvents = () =>{
         btn.onclick = () =>{
             btn.classList.toggle("active")
             info[index].classList.toggle("active")
+        }
+        
+        info[index].onclick = (e) =>{
+            if(e.target.tagName != "P"){
+                btn.classList.remove("active")
+                info[index].classList.remove("active")
+            }
         }
     })
 }
