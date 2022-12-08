@@ -611,7 +611,7 @@ html {
     z-index: 1;
 	display: flex;
 	flex-direction: column;
-	justify-content: end;
+	justify-content: space-between;
 	align-content: stretch;
     padding: 3.5rem 3vw;
     border-bottom: solid 1px #d5dae09c;
@@ -683,7 +683,7 @@ html {
     letter-spacing: 0.09em;
     width: fit-content;
     text-transform: uppercase;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.7rem;
     opacity: 0.4;
     cursor: auto;
 }
@@ -778,5 +778,18 @@ color: #5456C4;
 
 	.background_image_banner {
 		background-image: url('https://monatglobal.com/wp-content/uploads/2022/07/Systems-Web-Banner-Mobile.jpg');
+	}
+	
+	.card_product{
+	    padding: 1.5rem 3vw;
+	}
+	
+	.purchase_label{
+	    margin-bottom: 0;
+	}
+	
+	.card_product .infoBtn{
+	    top: 10px;
+        right: 10px;
 	}
 }

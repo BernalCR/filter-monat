@@ -6,7 +6,7 @@ const allProducts = [
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/ADVANCED-HYDRATING-SYSTEM_ecomm-.png", 
         shopLink: "/shop/products/advanced-hydrating-system-6000003139", 
-        use: "FOR DRY FINE TO MEDIUM HAIR",
+        use: "FOR DRY FINE TO MEDIUM&nbsp;HAIR",
         discount: "EXTRA 20% OFF WITH PURCHASE+&trade;",
         category: "systems | dry hair",
         newP: "hide",
@@ -18,7 +18,7 @@ const allProducts = [
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/RENEW-HYDRATING-SYSTEM_ecomm.png", 
         shopLink: "/shop/products/renew-hydrating-system-6000003138", 
-        use: "FOR DRY MEDIUM TO THICK HAIR",
+        use: "FOR DRY MEDIUM TO THICK&nbsp;HAIR",
         discount: "EXTRA 15% OFF WITH PURCHASE+&trade;",
         category: "systems | dry hair",
         newP: "hide",
@@ -30,7 +30,7 @@ const allProducts = [
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/REVIVE-VOLUMIZING-SYSTEM_ecomm-.png", 
         shopLink: "/shop/products/volumizing-revive-system", 
-        use: "FOR FLAT FINE TO MEDIUM HAIR",
+        use: "FOR FLAT FINE TO MEDIUM&nbsp;HAIR",
         discount: "EXTRA 15% OFF WITH PURCHASE+&trade;",
         category: "systems | volume",
         newP: "hide",
@@ -42,7 +42,7 @@ const allProducts = [
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-Clinical-SYSTEM-_ecomm-2022.png", 
         shopLink: "/shop/products/ir-clinical-system/ir-clinical-system-6000003460", 
-        use: "FOR THINNING OF ALL HAIR TEXTURES",
+        use: "FOR THINNING OF ALL HAIR&nbsp;TEXTURES",
         discount: "EXTRA 20% OFF WITH PURCHASE+&trade;",
         category: "systems | densifying | thinning",
         newP: "hide",
@@ -54,7 +54,7 @@ const allProducts = [
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/SMOOTHING-ANTI-FRIZZ-SYSTEM-I_ecomm.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-system-i-6000003142", 
-        use: "MINIMIZES FRIZZ FOR FINE TO MEDIUM HAIR",
+        use: "MINIMIZES FRIZZ FOR FINE TO MEDIUM&nbsp;HAIR",
         discount: "EXTRA 15% OFF WITH PURCHASE+&trade;",
         category: "systems | frizz",
         newP: "hide",
@@ -66,7 +66,7 @@ const allProducts = [
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/SMOOTHING-ANTI-FRIZZ-SYSTEM-II_ecomm.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-system-ii-6000003242", 
-        use: "MINIMIZES FRIZZ FOR MEDIUM TO THICK HAIR",
+        use: "MINIMIZES FRIZZ FOR MEDIUM TO THICK&nbsp;HAIR",
         discount: "EXTRA 15% OFF WITH PURCHASE+&trade;",
         category: "systems | frizz",
         newP: "hide",
@@ -78,7 +78,7 @@ const allProducts = [
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/DAMAGE-REPAIR-SYSTEM_ecomm.png", 
         shopLink: "/shop/products/damage-repair-system-6000003143", 
-        use: "REPAIRS DAMAGE FOR ALL HAIR TYPES",
+        use: "REPAIRS DAMAGE FOR ALL HAIR&nbsp;TYPES",
         discount: "EXTRA 20% OFF WITH PURCHASE+&trade;",
         category: "systems | damage, breakage, and split ends",
         newP: "hide",
@@ -90,7 +90,7 @@ const allProducts = [
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/Sclap-Purifying-System-ecomm.png", 
         shopLink: "/scalp-purifying-system-6000003144", 
-        use: "FOR OILY SCALP AND HAIR",
+        use: "FOR OILY SCALP AND&nbsp;HAIR",
         discount: "EXTRA 15% OFF WITH PURCHASE+&trade;",
         category: "systems | scalp care",
         newP: "hide",
@@ -662,7 +662,7 @@ const allProducts = [
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/BE-PURIFIED-SYSTEM_ecomm.png ", 
         shopLink: "/shop/products/be-purified-routine", 
-        use: "FOR OILY SKIN TYPES",
+        use: "FOR OILY SKIN&nbsp;TYPES",
         discount: "EXTRA 20% OFF WITH PURCHASE+&trade;",
         category: "systems",
         newP: "hide",
@@ -674,7 +674,7 @@ const allProducts = [
         url: "/be-balanced-routine/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-routine-skincare.png", 
         shopLink: "/shop/products/be-balanced-routine?taxon_id=30", 
-        use: "FOR NORMAL/COMBINATION SKIN",
+        use: "FOR NORMAL/COMBINATION&nbsp;SKIN",
         discount: "EXTRA 25% OFF WITH PURCHASE+&trade;",
         category: "systems | best sellers | routines | moisturizers | cleansers & scrubs",
         newP: "hide",
@@ -686,7 +686,7 @@ const allProducts = [
         url: "/be-gentle-routine/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-gentle-routine-1.png", 
         shopLink: "/shop/products/be-gentle-routine?taxon_id=30", 
-        use: "FOR DRY / SENSITIVE SKIN",
+        use: "FOR DRY / SENSITIVE&nbsp;SKIN",
         discount: "EXTRA 25% OFF WITH PURCHASE+&trade;",
         category: "systems | sensitive skin | best sellers | routines | moisturizers | cleansers & scrubs",
         newP: "hide",
@@ -1037,8 +1037,7 @@ let filterAccordion = document.querySelectorAll(".filterSection > p");
 filterAccordion.forEach(accordion =>{
     accordion.addEventListener("click", () =>{
         accordion.classList.toggle("active");
-        document.querySelector(`#${accordion.id} + ul`).classList.toggle("active");
-        
+        accordion.nextElementSibling.classList.toggle("active");
     });
 });
 
@@ -1066,11 +1065,13 @@ let backState1 = document.querySelectorAll(".head_state2 span");
 filterTabs.forEach((tab, i) =>{
     tab.addEventListener("click", () =>{
         filterInitial.classList.add("tabActive");
-        document.querySelector("#" + tab.id + " + ul").style.display = "block";
+        // document.querySelector("#" + tab.id + " + ul").style.display = "block";
+        tab.nextElementSibling.style.display = "block";
     });
     
     backState1[i].addEventListener("click", () =>{
         filterInitial.classList.remove("tabActive");
+        // setTimeout(() =>{document.querySelector("#" + tab.id + " + ul").style.display = "none"}, 301);
         setTimeout(() =>{document.querySelector("#" + tab.id + " + ul").style.display = "none"}, 301);
     });
 });
@@ -1212,8 +1213,10 @@ let tagsBar = document.getElementById("tagsBar");
 let loaderOverlay = document.getElementById("loaderP");
 let loaderGif = document.querySelector("#loaderP > img");
 let filtersCount = document.querySelectorAll(".filtersCount");
-let concernCount = document.getElementById("concernCount");
-let categoryCount = document.getElementById("categoryCount");
+let concernHCount = document.getElementById("concernHCount");
+let categoryHCount = document.getElementById("categoryHCount");
+let concernSCount = document.getElementById("concernSCount");
+let categorySCount = document.getElementById("categorySCount");
 
 // Se le da funcionalidad a cada input
 filterInputs.forEach(input => {
@@ -1222,18 +1225,33 @@ filterInputs.forEach(input => {
         
         
         let checked = 0;
-        let checkConcern = 0;
-        let checkCategory = 0;
+        let checkConcernH = 0;
+        let checkCategoryH = 0;
+        
+        let checkConcernS = 0;
+        let checkCategoryS = 0;
         
         filterInputs.forEach(i =>{
+
             if(i.checked) {
                 checked ++;
-                if(i.name === "concerns"){
-                    checkConcern++;
-                }else if(i.name === "categories"){
-                    checkCategory++;
+                
+                switch(i.name) {
+                  case "concernH":
+                    checkConcernH++;
+                    break;
+                  case "concernS":
+                    checkConcernS++;
+                    break;
+                  case "categoryH":
+                    checkCategoryH++;
+                    break;
+                  case "categoryS":
+                    checkCategoryS++;
+                    break;
                 }
             } 
+            
         });
         
        
@@ -1329,8 +1347,10 @@ filterInputs.forEach(input => {
             (checked) ? count.innerText = "( " + checked + " )" : count.innerText = "";
         });
         
-        (checkConcern) ? concernCount.innerText = "( " + checkConcern + " )" : concernCount.innerText = "";
-        (checkCategory) ? categoryCount.innerText = "( " + checkCategory + " )" : categoryCount.innerText = "";
+        (checkConcernH) ? concernHCount.innerText = "( " + checkConcernH + " )" : concernHCount.innerText = "";
+        (checkCategoryH) ? categoryHCount.innerText = "( " + checkCategoryH + " )" : categoryHCount.innerText = "";
+        (checkConcernS) ? concernSCount.innerText = "( " + checkConcernS + " )" : concernSCount.innerText = "";
+        (checkCategoryS) ? categorySCount.innerText = "( " + checkCategoryS + " )" : categorySCount.innerText = "";
         
         window.scrollTo(0, containerShop.offsetTop - filterBar.offsetHeight);
     });
@@ -1496,4 +1516,4 @@ clearFilter.forEach(btn =>{
 
 
 
- 
+  
