@@ -1,177 +1,161 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./filter.css">
-</head>
-<body>
+<style>
+    .col_3 { grid-template-columns: repeat(3, 1fr); }
+    #filterBtn{ width: 33.3%;}
+    @media screen and (min-width: 1300px) {
+    .col_4 { grid-template-columns: repeat(4, 1fr); }
+    #filterBtn{ width: 25%;}
+    }
+    @media screen and (max-width: 992px) {
+    .med_col_2 { grid-template-columns: repeat(2, 1fr); }
+    }
+</style>
 
-    <style>
-        .col_3 { grid-template-columns: repeat(3, 1fr); }
-        #filterBtn{ width: 33.3%;}
-        @media screen and (min-width: 1500px) {
-        .col_4 { grid-template-columns: repeat(4, 1fr); }
-        #filterBtn{ width: 25%;}
-        }
-        @media screen and (max-width: 992px) {
-        .med_col_2 { grid-template-columns: repeat(2, 1fr); }
-        }
-    </style>
-    
-    <div id="containerPage">
-        <div class="background_image_banner bkgnd display_flex a_i_center ">
-            <div class="col_70 margin_auto col_100_mobile">
-                <div class="col_60 col_80_tablet margin_mobile">
-                    <div>
-                            <div class="new_product_label_small ">NEW</div>
-                        </div>
-                    <img class="logo_banner" src="https://monatglobal.com/wp-content/uploads/2021/02/monat-logo_web.png" alt="MONAT GLOBAL">
-                    <h1 class="SuisseIntl_Medium  Monat_purple_txt  hedline_sans ">Systems</h1>
-                  
-                    <h2 class="banner_h2 SuisseIntl_Light  Monat_purple_txt  "> Product collections designed<br> for&nbsp;maximum&nbsp;results.</h2>
-                </div>
-            </div>
-        </div>
-        
-        <div id="filterBar" class="display_flex">
-            <div id="overlayFilter"></div>
-            <div class="display_flex  a_i_center col_100 margin_auto">
-                
-                <div id="filterBtn" class="display_flex a_i_center j_c_space_between">
-                    <div class="display_flex">
-                        <img id="filterIcon" src="https://monatglobal.com/wp-content/uploads/2022/12/filter-icon.svg">
-                        <p style="margin: 0;">FILTER BY <span class="filtersCount"></span></p>
+<div id="containerPage">
+    <div class="background_image_banner bkgnd display_flex a_i_center ">
+        <div class="col_70 margin_auto col_100_mobile">
+            <div class="col_60 col_80_tablet margin_mobile">
+                <div>
+                        <div class="new_product_label_small ">NEW</div>
                     </div>
-                </div>
-                
-                <form id="searchBar" class="display_flex a_i_center">
-                    
-                    <button type="submit" style="background: none; padding: none; border: none;"><img src="https://monatglobal.com/wp-content/uploads/2022/12/search-icon.svg" style="height: 13px; "></button>
-                    <div class="p_relative">
-                        <input autocomplete="off" type="text" placeholder="SEARCH" name="search">
-                    </div>
-                </form>
-            </div>
-        </div>
-        
-        <div class="display_flex">
-            <div id="filterBox" class="display_flex f_d_column">
-                
-                <div id="head_fBox" class="hide_desk display_flex a_i_center j_c_space_between">
-                    <p>FILTER</p>
-                    <span class="closeFilter">x</span>
-                </div>
-                
-                <ul id="state1_filter">
-                    <li>
-                        <p id="hairTab_f">HAIRCARE</p>
-                        <ul>
-                            <li class="head_state2 display_flex a_i_center j_c_space_between">
-                                <p>HAIRCARE</p>
-                                <span>←</span>
-                            </li>
-                            
-                            <li class="filterSection">
-                                <p>CONCERNS <span id="concernHCount"></span></p>
-                                <ul>
-                                    <li><label><input type="checkbox" name="concernH" value="best seller"><p>best seller</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="systems"><p>systems</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="color care"><p>color care</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="curls, coils, and waves"><p>curls, coils, and waves</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="damage, breakage, and split ends"><p>damage, breakage, and split ends</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="densifying"><p>densifying</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="dry hair"><p>dry hair</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="frizz"><p>frizz</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="oily hair and scalp"><p>oily hair and scalp</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="scalp care"><p>scalp care</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="shine"><p>shine</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="thinning"><p>thinning</p></label></li>
-                                    <li><label><input type="checkbox" name="concernH" value="volume"><p>volume</p></label></li>
-                                </ul>
-                            </li>
-                            
-                            <li class="filterSection">
-                                <p>CATEGORIES <span id="categoryHCount"></span></p>
-                                <ul>
-                                    <li><label><input type="checkbox" name="categoryH" value="monat for men"><p>monat for men™</p></label></li>
-                                    <li><label><input type="checkbox" name="categoryH" value="monat junior"><p>monat junior</p></label></li>
-                                    <li><label><input type="checkbox" name="categoryH" value="styling"><p>styling</p></label></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-    
-    
-    
-    
-                    <li>
-                        <p id="skinTab_f">SKINCARE</p>
-                        <ul>
-                            <li class="head_state2 display_flex a_i_center j_c_space_between">
-                                <p>SKINCARE</p>
-                                <span>←</span>
-                            </li>
-                            
-                            <li class="filterSection">
-                                <p>CONCERNS <span id="concernSCount"></span></p>
-                                <ul>
-                                    <li><label><input type="checkbox" name="concernS" value="dark spots"><p>dark spots</p></label></li>
-                                    <li><label><input type="checkbox" name="concernS" value="dullness"><p>dullness</p></label></li>
-                                    <li><label><input type="checkbox" name="concernS" value="eye care"><p>eye care</p></label></li>
-                                    <li><label><input type="checkbox" name="concernS" value="dryness &amp; dehydration"><p>dryness &amp; dehydration</p></label></li>
-                                    <li><label><input type="checkbox" name="concernS" value="fine lines &amp; wrinkles"><p>fine lines &amp; wrinkles</p></label></li>
-                                    <li><label><input type="checkbox" name="concernS" value="oil control"><p>oil control</p></label></li>
-                                    <li><label><input type="checkbox" name="concernS" value="pores"><p>pores</p></label></li>
-                                    <li><label><input type="checkbox" name="concernS" value="prevention and protection"><p>prevention and protection</p></label></li>
-                                    <li><label><input type="checkbox" name="concernS" value="sensitive skin"><p>sensitive skin</p></label></li>
-                                    <li><label><input type="checkbox" name="concernS" value="uneven tone &amp; texture"><p>uneven tone &amp; texture</p></label></li>
-                                </ul>
-                            </li>
-                            
-                            <li class="filterSection">
-                                <p>CATEGORIES <span id="categorySCount"></p>
-                                <ul>
-                                    <li><label><input type="checkbox" name="categoryS" value="best seller"><p>best seller</p></label></li>
-                                    <li><label><input type="checkbox" name="categoryS" value="body care"><p>body care</p></label></li>
-                                    <li><label><input type="checkbox" name="categoryS" value="routines"><p>routines</p></label></li>
-                                    <li><label><input type="checkbox" name="categoryS" value="men skincare"><p>men skincare</p></label></li>
-                                    <li><label><input type="checkbox" name="categoryS" value="moisturizers"><p>moisturizers</p></label></li>
-                                    <li><label><input type="checkbox" name="categoryS" value="cleansers &amp; scrubs"><p>cleansers &amp; scrubs</p></label></li>
-                                    <li><label><input type="checkbox" name="categoryS" value="serums, treatments, and masks"><p>serums, treatments, and masks</p></label></li>
-                                    <li><label><input type="checkbox" name="categoryS" value="essence &amp; toners"><p>essence &amp; toners</p></label></li>
-                                    <li><label><input type="checkbox" name="categoryS" value="specialties"><p>specialties</p></label></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-    
-                </ul>
-                <!--este ul es el que voy a mover-->
-    
-                
-                <button id="applyFilters" class="closeFilter hide_desk">APPLY <span class="counterFilters"></span></button>
-                <button class="clearFilter hide_desk">CLEAR FILTER</button>
-            </div>
+                <img class="logo_banner" src="https://monatglobal.com/wp-content/uploads/2021/02/monat-logo_web.png" alt="MONAT GLOBAL">
+                <h1 class="SuisseIntl_Medium  Monat_purple_txt  hedline_sans ">Systems</h1>
               
-            <div id="containerShop" class="col_100">
-                <div id="tagsBar" class="a_i_center">
-                    <button class="clearFilter">CLEAR FILTER</button> 
-                    <div id="boxTags" class="display_flex">
-                    </div>
-                </div>
-                
-                <div id="loaderP" class="flex_center"><img loading="lazy" src="" alt="MONAT DROP LOGO ANIMATION" width="65" height="65" class="alignnone size-full wp-image-60542"></div>
-                
-                <div id="filterPBox" class="display_grid col_4 col_3 med_col_2"></div>
-                <div id="allPBox" class="display_grid col_4 col_3 med_col_2"></div>
-    
+                <h2 class="banner_h2 SuisseIntl_Light  Monat_purple_txt  "> Product collections designed<br> for&nbsp;maximum&nbsp;results.</h2>
             </div>
         </div>
-    </div> 
+    </div>
     
-    <script src="./filter.js"></script>
-</body>
-</html>
+    <div id="filterBar" class="display_flex">
+        <div id="overlayFilter"></div>
+        <div class="display_flex  a_i_center col_100 margin_auto">
+            
+            <div id="filterBtn" class="display_flex a_i_center j_c_space_between">
+                <div class="display_flex">
+                    <img id="filterIcon" src="https://monatglobal.com/wp-content/uploads/2022/12/filter-icon.svg">
+                    <p style="margin: 0;">FILTER BY <span class="filtersCount"></span></p>
+                </div>
+            </div>
+            
+            <form id="searchBar" class="display_flex a_i_center">
+                
+                <button type="submit" style="background: none; padding: none; border: none;"><img src="https://monatglobal.com/wp-content/uploads/2022/12/search-icon.svg" style="height: 13px; "></button>
+                <div class="p_relative">
+                    <input autocomplete="off" type="text" placeholder="SEARCH" name="search">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <div class="display_flex">
+        <div id="filterBox" class="display_flex f_d_column">
+            
+            <div id="head_fBox" class="hide_desk display_flex a_i_center j_c_space_between">
+                <p>FILTER</p>
+                <span class="closeFilter">x</span>
+            </div>
+            
+            <ul id="state1_filter">
+                <li>
+                    <p id="haircareTab_f">HAIRCARE</p>
+                    <ul id="hairInputs">
+                        <li class="head_state2 display_flex a_i_center j_c_space_between">
+                            <p>HAIRCARE</p>
+                            <span>←</span>
+                        </li>
+                        
+                        <li class="filterSection">
+                            <p>CONCERNS <span id="concernHCount"></span></p>
+                            <ul>
+                                <li><label><input type="checkbox" name="concernH" value="best sellers"><p>best seller</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="systems"><p>systems</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="color care"><p>color care</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="curls, coils, and waves"><p>curls, coils, and waves</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="damage, breakage, and split ends"><p>damage, breakage, and split ends</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="densifying"><p>densifying</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="dry hair"><p>dry hair</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="frizz"><p>frizz</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="oily hair and scalp"><p>oily hair and scalp</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="scalp care"><p>scalp care</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="shine"><p>shine</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="thinning"><p>thinning</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="volume"><p>volume</p></label></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="filterSection">
+                            <p>CATEGORIES <span id="categoryHCount"></span></p>
+                            <ul>
+                                <li><label><input type="checkbox" name="categoryH" value="monat for men"><p>monat for men™</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="monat junior"><p>monat junior</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="styling"><p>styling</p></label></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+
+                <li>
+                    <p id="skincareTab_f">SKINCARE</p>
+                    <ul id="skinInputs">
+                        <li class="head_state2 display_flex a_i_center j_c_space_between">
+                            <p>SKINCARE</p>
+                            <span>←</span>
+                        </li>
+                        
+                        <li class="filterSection">
+                            <p>CONCERNS <span id="concernSCount"></span></p>
+                            <ul>
+                                <li><label><input type="checkbox" name="concernS" value="dark spots"><p>dark spots</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="dullness"><p>dullness</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="eye care"><p>eye care</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="dryness &amp; dehydration"><p>dryness &amp; dehydration</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="fine lines &amp; wrinkles"><p>fine lines &amp; wrinkles</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="oil control"><p>oil control</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="pores"><p>pores</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="prevention and protection"><p>prevention and protection</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="sensitive skin"><p>sensitive skin</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="uneven tone &amp; texture"><p>uneven tone &amp; texture</p></label></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="filterSection">
+                            <p>CATEGORIES <span id="categorySCount"></span></p>
+                            <ul>
+                                <li><label><input type="checkbox" name="categoryS" value="best sellers"><p>best seller</p></label></li>
+                                <li><label><input type="checkbox" name="categoryS" value="body care"><p>body care</p></label></li>
+                                <li><label><input type="checkbox" name="categoryS" value="routines"><p>routines</p></label></li>
+                                <li><label><input type="checkbox" name="categoryS" value="men skincare"><p>men skincare</p></label></li>
+                                <li><label><input type="checkbox" name="categoryS" value="moisturizers"><p>moisturizers</p></label></li>
+                                <li><label><input type="checkbox" name="categoryS" value="cleansers &amp; scrubs"><p>cleansers &amp; scrubs</p></label></li>
+                                <li><label><input type="checkbox" name="categoryS" value="serums, treatments, and masks"><p>serums, treatments, and masks</p></label></li>
+                                <li><label><input type="checkbox" name="categoryS" value="essence &amp; toners"><p>essence &amp; toners</p></label></li>
+                                <li><label><input type="checkbox" name="categoryS" value="specialties"><p>specialties</p></label></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!--este ul es el que voy a mover-->
+
+            
+            <button id="applyFilters" class="closeFilter hide_desk">APPLY <span class="counterFilters"></span></button>
+            <button class="clearFilter hide_desk">CLEAR FILTER</button>
+        </div>
+          
+        <div id="containerShop" class="col_100">
+            <div id="tagsBar" class="a_i_center">
+                <button class="clearFilter">CLEAR FILTER</button> 
+                <div id="boxTags" class="display_flex">
+                </div>
+            </div>
+            
+            <div id="loaderP" class="flex_center"><img loading="lazy" src="" alt="MONAT DROP LOGO ANIMATION" width="65" height="65" class="alignnone size-full wp-image-60542"></div>
+            
+            <div id="filterPBox" class="display_grid col_4 col_3 med_col_2"></div>
+
+        </div>
+    </div>
+</div>  

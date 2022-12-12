@@ -1,6 +1,7 @@
 const allProducts = [
     {
         name: "ADVANCED HYDRATING SYSTEM", 
+        line: "haircare",
         rPrice: "155.00",
         vipPrice: "131.00", 
         url: "", 
@@ -13,6 +14,7 @@ const allProducts = [
     },
     {
         name: "RENEW™ HYDRATING SYSTEM", 
+        line: "haircare",
         rPrice: "143.00",
         vipPrice: "121.00", 
         url: "", 
@@ -25,6 +27,7 @@ const allProducts = [
     },
     {
         name: "REVIVE™ VOLUMIZING SYSTEM", 
+        line: "haircare",
         rPrice: "137.00",
         vipPrice: "116.00",   
         url: "", 
@@ -37,6 +40,7 @@ const allProducts = [
     },
     {
         name: "IR CLINICAL™ SYSTEM", 
+        line: "haircare",
         rPrice: "176.00",
         vipPrice: "149.00", 
         url: "", 
@@ -49,6 +53,7 @@ const allProducts = [
     },
     {
         name: "SMOOTHING ANTI-FRIZZ™ SYSTEM I", 
+        line: "haircare",
         rPrice: "139.00",
         vipPrice: "118.00", 
         url: "", 
@@ -61,6 +66,7 @@ const allProducts = [
     },
     {
         name: "SMOOTHING ANTI-FRIZZ™ SYSTEM II", 
+        line: "haircare",
         rPrice: "139.00",
         vipPrice: "118.00", 
         url: "", 
@@ -73,6 +79,7 @@ const allProducts = [
     },
     {
         name: "DAMAGE REPAIR SYSTEM", 
+        line: "haircare",
         rPrice: "191.00",
         vipPrice: "162.00", 
         url: "", 
@@ -85,6 +92,7 @@ const allProducts = [
     },
     {
         name: "SCALP PURIFYING SYSTEM", 
+        line: "haircare",
         rPrice: "141.00",
         vipPrice: "119.00", 
         url: "", 
@@ -97,36 +105,40 @@ const allProducts = [
     },
     {
         name: "REJUVENIQE® OIL INTENSIVE", 
+        line: "haircare",
         rPrice: "105.00",
         vipPrice: "89.00", 
         url: "/rejuveniqe-tm-oil-intensive/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVENIQE®-OIL-INTENSIVE.png", 
         shopLink: "/shop/products/rejuveniqe-oil-intensive", 
-        category: "bestseller | curls, coils, and waves | dry hair | frizz | shine",
+        category: "best sellers | curls, coils, and waves | dry hair | frizz | shine",
         newP: "hide",
     },
     {
         name: "REJUVENIQE LIGHT BY MONAT™", 
+        line: "haircare",
         rPrice: "105 .00",
         vipPrice: "89.00", 
         url: "/rejuveniqe-light/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVENIQE-LIGHT-BY-MONAT™.png", 
         shopLink: "/shop/products/rejuveniqe-light", 
-        category: "bestseller | curls, coils, and waves | dry hair | frizz | shine",
+        category: "best sellers | curls, coils, and waves | dry hair | frizz | shine",
         newP: "hide",
     },
     {
         name: "REJUVABEADS® BY MONAT", 
+        line: "haircare",
         rPrice: "59.00",
         vipPrice: "50.00", 
         url: "/rejuvabeads-by-monat/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVABEADS®-BY-MONAT.png", 
         shopLink: "/shop/products/rejuvabeads", 
-        category: "bestseller | damage, breakage, and split ends",
+        category: "best sellers | damage, breakage, and split ends",
         newP: "hide",
     },
     {
         name: "COLOUR ENHANCE PERFECTLY PLATINUM SHAMPOO", 
+        line: "haircare",
         rPrice: "32.00",
         vipPrice: "27.00", 
         url: "/colour-enhance-perfectly-platinum-shampoo/", 
@@ -137,6 +149,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ CURL DEFINING CREAM", 
+        line: "haircare",
         rPrice: "42.00",
         vipPrice: "36.00", 
         url: "/curl-cream/", 
@@ -147,6 +160,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ FLEXIBLE HOLD GEL", 
+        line: "haircare",
         rPrice: "38.00",
         vipPrice: "32.00", 
         url: "/flexible-hold-gel/", 
@@ -157,6 +171,7 @@ const allProducts = [
     },
     {
         name: "REPLENISH MASQUE", 
+        line: "haircare",
         rPrice: "58.00",
         vipPrice: "49.00", 
         url: "/replenish-masque/", 
@@ -167,6 +182,7 @@ const allProducts = [
     },
     {
         name: "RESTYLE INSTANT SCULPTING TAFFY", 
+        line: "haircare",
         rPrice: "38.00",
         vipPrice: "32.00", 
         url: "/restyle-instant-sculpting-taffy/", 
@@ -177,6 +193,7 @@ const allProducts = [
     },
     {
         name: "SUPER MOISTURE MASQUE", 
+        line: "haircare",
         rPrice: "58.00",
         vipPrice: "49.00", 
         url: "/super-moisture-masque/", 
@@ -187,6 +204,7 @@ const allProducts = [
     },
     {
         name: "MONAT SUPER NOURISH™ OIL CRÈME CONDITIONER", 
+        line: "haircare",
         rPrice: "52.00",
         vipPrice: "44.00", 
         url: "/super-nourish-oil-creme-conditioner/", 
@@ -197,6 +215,7 @@ const allProducts = [
     },
     {
         name: "MONAT SUPER NOURISH™ OIL CRÈME SHAMPOO", 
+        line: "haircare",
         rPrice: "52.00",
         vipPrice: "44.00", 
         url: "/super-nourish-oil-creme-shampoo/", 
@@ -207,6 +226,7 @@ const allProducts = [
     },
     {
         name: "DAMAGE REPAIR BOND SUPPORT MASQUE", 
+        line: "haircare",
         rPrice: "60.00",
         vipPrice: "51.00", 
         url: "/hair-damage-repair-masque/", 
@@ -217,6 +237,7 @@ const allProducts = [
     },
     {
         name: "DAMAGE REPAIR BOND SUPPORT SHAMPOO", 
+        line: "haircare",
         rPrice: "46.00",
         vipPrice: "39.00", 
         url: "/hair-damage-repair-shampoo/", 
@@ -227,6 +248,7 @@ const allProducts = [
     },
     {
         name: "DAMAGE REPAIR BOND-BUILDING HAIR TREATMENT", 
+        line: "haircare",
         rPrice: "46.00",
         vipPrice: "39.00", 
         url: "/hair-damage-repair-treatment/", 
@@ -237,6 +259,7 @@ const allProducts = [
     },
     {
         name: "DAMAGE REPAIR BOND-FORTIFYING HAIR LEAVE-IN CRÈME", 
+        line: "haircare",
         rPrice: "42.00 ",
         vipPrice: "36.00", 
         url: "/hair-damage-repair/", 
@@ -247,6 +270,7 @@ const allProducts = [
     },
     {
         name: "HAIR TRANSFORMATION MASQUE WITH REJUVENIQE S™", 
+        line: "haircare",
         rPrice: "65.00",
         vipPrice: "55.00", 
         url: "/hair-transformation-masque/", 
@@ -257,6 +281,7 @@ const allProducts = [
     },
     {
         name: "MONAT JUNIOR GENTLE SHAMPOO", 
+        line: "haircare",
         rPrice: "27.00",
         vipPrice: "23.00", 
         url: "/monat-junior-gentle-shampoo/", 
@@ -267,6 +292,7 @@ const allProducts = [
     },
     {
         name: "MONAT JUNIOR GENTLE CONDITIONER", 
+        line: "haircare",
         rPrice: "27.00",
         vipPrice: "23.00", 
         url: "/monat-junior-gentle-conditioner/", 
@@ -277,6 +303,7 @@ const allProducts = [
     },
     {
         name: "MONAT JUNIOR GENTLE DETANGLER", 
+        line: "haircare",
         rPrice: "26.00",
         vipPrice: "22.00", 
         url: "/junior-gentle-detangler/", 
@@ -287,6 +314,7 @@ const allProducts = [
     },
     {
         name: "UNKNOT DETANGLER", 
+        line: "haircare",
         rPrice: "38.00",
         vipPrice: "32.00", 
         url: "/unknot-detangler/", 
@@ -297,6 +325,7 @@ const allProducts = [
     },
     {
         name: "IR CLINICAL™ THICKENING CONDITIONER", 
+        line: "haircare",
         rPrice: "52.00",
         vipPrice: "44.00", 
         url: "/intense-repair-treatment-conditioner/", 
@@ -307,6 +336,7 @@ const allProducts = [
     },
     {
         name: "IR CLINICAL™ THICKENING SHAMPOO", 
+        line: "haircare",
         rPrice: "46.00",
         vipPrice: "39.00", 
         url: "/irt-shampoo/", 
@@ -317,6 +347,7 @@ const allProducts = [
     },
     {
         name: "IR CLINICAL™ HAIR THINNING DEFENSE", 
+        line: "haircare",
         rPrice: "78.00",
         vipPrice: "66.00", 
         url: "/intense-repair-serum/", 
@@ -327,6 +358,7 @@ const allProducts = [
     },
     {
         name: "LASH & BROW ENHANCING SERUM BY MONAT™️", 
+        line: "haircare",
         rPrice: "67.00",
         vipPrice: "57.00", 
         url: "/lash-brow-enhancing-serum/", 
@@ -337,6 +369,7 @@ const allProducts = [
     },
     {
         name: "MONAT BLACK SHAMPOO + CONDITIONER", 
+        line: "haircare",
         rPrice: "46.00",
         vipPrice: "39.00", 
         url: "/monat-black-shampoo-conditioner/", 
@@ -347,6 +380,7 @@ const allProducts = [
     },
     {
         name: "MONAT FOR MEN™ MATTE STYLING CLAY", 
+        line: "haircare",
         rPrice: "35.00",
         vipPrice: "30.00", 
         url: "/men-styling-clay/", 
@@ -357,6 +391,7 @@ const allProducts = [
     },
     {
         name: "ADVANCED HYDRATING CONDITIONER", 
+        line: "haircare",
         rPrice: "52.00 ",
         vipPrice: "44.00", 
         url: "/advanced-hydrating-conditioner/", 
@@ -367,6 +402,7 @@ const allProducts = [
     },
     {
         name: "ADVANCED HYDRATING IN-SHOWER MASQUE", 
+        line: "haircare",
         rPrice: "58.00",
         vipPrice: "49.00", 
         url: "/in-shower-hair-masque/", 
@@ -377,6 +413,7 @@ const allProducts = [
     },
     {
         name: "ADVANCED HYDRATING SHAMPOO WITH REJUVENIQE S™", 
+        line: "haircare",
         rPrice: "45.00",
         vipPrice: "38.00", 
         url: "/advanced-hydrating-shampoo/", 
@@ -387,6 +424,7 @@ const allProducts = [
     },
     {
         name: "RENEW SHAMPOO", 
+        line: "haircare",
         rPrice: "45.00",
         vipPrice: "38.00", 
         url: "/renew-shampoo/", 
@@ -397,6 +435,7 @@ const allProducts = [
     },
     {
         name: "RESTORE LEAVE-IN CONDITIONER", 
+        line: "haircare",
         rPrice: "40.00",
         vipPrice: "34.00", 
         url: "/restore-leave-in-conditioner/", 
@@ -407,6 +446,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ AIR DRY CREAM", 
+        line: "haircare",
         rPrice: "42.00",
         vipPrice: "36.00", 
         url: "/air-dry-cream/", 
@@ -417,6 +457,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ BLOW OUT CREAM INFUSED WITH REJUVENIQE™", 
+        line: "haircare",
         rPrice: "42.00",
         vipPrice: "36.00", 
         url: "/blow-out-cream/", 
@@ -427,6 +468,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ FLEX CONTROL HAIRSPRAY", 
+        line: "haircare",
         rPrice: "48.00",
         vipPrice: "41.00", 
         url: "/control-hairspray/", 
@@ -437,6 +479,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ FRIZZ-FIX SMOOTHING HAIR PRIMER", 
+        line: "haircare",
         rPrice: "39.00",
         vipPrice: "33.00", 
         url: "/frizz-fix-smoothing-hair-primer/", 
@@ -447,6 +490,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ SUPER STRONG HOLD FINISHING HAIRSPRAY", 
+        line: "haircare",
         rPrice: "48.00",
         vipPrice: "41.00", 
         url: "/strong-hold-hairspray/", 
@@ -457,6 +501,7 @@ const allProducts = [
     },
     {
         name: "SMOOTHING ANTI-FRIZZ™ BLOW OUT SPRAY", 
+        line: "haircare",
         rPrice: "42.00",
         vipPrice: "36.00", 
         url: "/smoothing-anti-frizz-spray/", 
@@ -467,6 +512,7 @@ const allProducts = [
     },
     {
         name: "SMOOTHING ANTI-FRIZZ™ DEEP INTENSIVE TREATMENT", 
+        line: "haircare",
         rPrice: "52.00",
         vipPrice: "44.00", 
         url: " /smoothing-anti-frizz-treatment/", 
@@ -477,6 +523,7 @@ const allProducts = [
     },
     {
         name: "SMOOTHING ANTI-FRIZZ™ DEEP CONDITIONER", 
+        line: "haircare",
         rPrice: "52.00",
         vipPrice: "44.00", 
         url: "/smoothing-deep-conditioner/", 
@@ -487,6 +534,7 @@ const allProducts = [
     },
     {
         name: "SMOOTHING ANTI-FRIZZ™ SHAMPOO", 
+        line: "haircare",
         rPrice: "45.00",
         vipPrice: "38.00", 
         url: "/smoothing-shampoo/", 
@@ -497,6 +545,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE THE CHAMP™ CONDITIONING DRY SHAMPOO INFUSED WITH REJUVENIQE™", 
+        line: "haircare",
         rPrice: "42.00",
         vipPrice: "36.00", 
         url: "/the-champ-dry-shampoo/", 
@@ -507,6 +556,7 @@ const allProducts = [
     },
     {
         name: "PURIFYING VINEGAR RINSE", 
+        line: "haircare",
         rPrice: "40.00",
         vipPrice: "34.00", 
         url: "/vinegar-rinse/", 
@@ -517,6 +567,7 @@ const allProducts = [
     },
     {
         name: "PURIFYING VINEGAR SHAMPOO", 
+        line: "haircare",
         rPrice: "45.00",
         vipPrice: "38.00", 
         url: "/vinegar-shampoo/", 
@@ -527,6 +578,7 @@ const allProducts = [
     },
     {
         name: "SCALP PURIFYING SCRUB", 
+        line: "haircare",
         rPrice: "58.00",
         vipPrice: "49.00", 
         url: "/vinegar-scrub-shampoo/", 
@@ -537,6 +589,7 @@ const allProducts = [
     },
     {
         name: "SOOTHING MICELLAR SHAMPOO", 
+        line: "haircare",
         rPrice: "30.00",
         vipPrice: "26.00", 
         url: "/soothing-micellar-shampoo/", 
@@ -547,6 +600,7 @@ const allProducts = [
     },
     {
         name: "MONAT FOR MEN™ MOLDING SHINE POMADE", 
+        line: "haircare",
         rPrice: "35.00",
         vipPrice: "30.00", 
         url: "/men-hair-molding-pomade/", 
@@ -557,6 +611,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ GLOSSY SHINE MIST", 
+        line: "haircare",
         rPrice: "39.00",
         vipPrice: "33.00", 
         url: "/hair-glossy-shine-mist/", 
@@ -567,6 +622,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ DRY TEXTURIZING SPRAY INFUSED WITH REJUVENIQE™", 
+        line: "haircare",
         rPrice: "35.00",
         vipPrice: "30.00", 
         url: "/dry-texturizing-spray/", 
@@ -577,6 +633,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ HEAT PROTECTANT SPRAY", 
+        line: "haircare",
         rPrice: "45.00",
         vipPrice: "38.00", 
         url: "/hair-thermal-protectant/", 
@@ -587,6 +644,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ THE MOXIE MAGNIFYING MOUSSE", 
+        line: "haircare",
         rPrice: "45.00",
         vipPrice: "38.00", 
         url: "/moxie-mousse/", 
@@ -597,6 +655,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ VOLUME & LIFT SPRAY", 
+        line: "haircare",
         rPrice: "40.00",
         vipPrice: "34.00", 
         url: "/volume-spray/", 
@@ -607,6 +666,7 @@ const allProducts = [
     },
     {
         name: "VOLUMIZING REVITALIZE™ CONDITIONER", 
+        line: "haircare",
         rPrice: "52.00",
         vipPrice: "44.00", 
         url: "/volumizing-revitalize-conditioner/", 
@@ -617,6 +677,7 @@ const allProducts = [
     },
     {
         name: "VOLUMIZING REVIVE™ SHAMPOO", 
+        line: "haircare",
         rPrice: "45.00",
         vipPrice: "38.00", 
         url: "/volumizing-revive-shampoo/", 
@@ -627,6 +688,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ WAVE SPRAY", 
+        line: "haircare",
         rPrice: "34.00",
         vipPrice: "29.00", 
         url: "/wave-spray/", 
@@ -637,6 +699,7 @@ const allProducts = [
     },
     {
         name: "MONAT STUDIO ONE™ THERMAL PROTECT STYLING SHIELD", 
+        line: "haircare",
         rPrice: "39.00",
         vipPrice: "33.00", 
         url: "/thermal-protect-styling-shield/", 
@@ -657,6 +720,7 @@ const allProducts = [
     
     {
         name: "BE PURIFIED™ SYSTEM", 
+        line: "skincare",
         rPrice: "218.00",
         vipPrice: "186.00", 
         url: "", 
@@ -669,6 +733,7 @@ const allProducts = [
     },
     {
         name: "BE BALANCED™ System", 
+        line: "skincare",
         rPrice: "302.00",
         vipPrice: "258.00", 
         url: "/be-balanced-routine/", 
@@ -681,6 +746,7 @@ const allProducts = [
     },
     {
         name: "BE GENTLE™ System", 
+        line: "skincare",
         rPrice: "302.00",
         vipPrice: "258.00", 
         url: "/be-gentle-routine/", 
@@ -693,6 +759,7 @@ const allProducts = [
     },
     {
         name: "MAKEUP VANISHING BALM™", 
+        line: "skincare",
         rPrice: "67.00",
         vipPrice: "57.00", 
         url: "/makeup-vanishing-balm/", 
@@ -703,6 +770,7 @@ const allProducts = [
     },
     {
         name: "BE GENTLE™ CREAMY CLEANSER", 
+        line: "skincare",
         rPrice: "50.00",
         vipPrice: "43.00", 
         url: "/creamy-cleanser/", 
@@ -713,6 +781,7 @@ const allProducts = [
     },
     {
         name: "BE BALANCED™ FOAMY CLEANSER", 
+        line: "skincare",
         rPrice: "50.00",
         vipPrice: "43.00", 
         url: "/foamy-cleanser/", 
@@ -723,6 +792,7 @@ const allProducts = [
     },
     {
         name: "BE PURIFIED™ CLARIFYING CLEANSER", 
+        line: "skincare",
         rPrice: "50.00",
         vipPrice: "43.00",
         url: "/skin-clarifying-cleanser/", 
@@ -733,6 +803,7 @@ const allProducts = [
     },
     {
         name: "BERRY REFINED SCRUB™", 
+        line: "skincare",
         rPrice: "62.00",
         vipPrice: "53.00", 
         url: "/refined-skin-scrub/", 
@@ -743,6 +814,7 @@ const allProducts = [
     },
     {
         name: "BE PURIFIED™ COLD CHARCOAL MASK", 
+        line: "skincare",
         rPrice: "44.00",
         vipPrice: "37.00", 
         url: "/charcoal-mask/", 
@@ -753,6 +825,7 @@ const allProducts = [
     },
     {
         name: "SKIN REVITALIZING ESSENCE™", 
+        line: "skincare",
         rPrice: "48.00",
         vipPrice: "41.00", 
         url: "/skin-revitalizing/", 
@@ -763,6 +836,7 @@ const allProducts = [
     },
     {
         name: "C. RADIANCE™ ILLUMINATING SERUM", 
+        line: "skincare",
         rPrice: "99.00",
         vipPrice: "84.00", 
         url: "/skincare-c-radiance/", 
@@ -773,6 +847,7 @@ const allProducts = [
     },
     {
         name: "REWIND™ AGE CONTROL NECTAR", 
+        line: "skincare",
         rPrice: "128.00",
         vipPrice: "109.00", 
         url: "/age-control-nectar/", 
@@ -783,6 +858,7 @@ const allProducts = [
     },
     {
         name: "BOTANIC BAKUCHIOL VEGAN RETINOL ALTERNATIVE LOTION", 
+        line: "skincare",
         rPrice: "95.00",
         vipPrice: "81.00", 
         url: "/bakuchiol/", 
@@ -793,6 +869,7 @@ const allProducts = [
     },
     {
         name: "EYE SMOOTH™", 
+        line: "skincare",
         rPrice: "84.00",
         vipPrice: "71.00", 
         url: "/eye-smooth/", 
@@ -803,6 +880,7 @@ const allProducts = [
     },
     {
         name: "30 SECOND MIRACLE™ INSTANT PERFECTOR", 
+        line: "skincare",
         rPrice: "90.00",
         vipPrice: "77.00", 
         url: "/skincare-perfector/", 
@@ -813,6 +891,7 @@ const allProducts = [
     },
     {
         name: "HYDRATION BOOSTER™ HYALURONIC SERUM PLUS", 
+        line: "skincare",
         rPrice: "77.00",
         vipPrice: "65.00", 
         url: "/hyaluronic-serum/", 
@@ -823,6 +902,7 @@ const allProducts = [
     },
     {
         name: "BE GENTLE™ NOURISHING MOISTURIZER", 
+        line: "skincare",
         rPrice: "76.00",
         vipPrice: "65.00", 
         url: "/nourishing-moisturizer/", 
@@ -833,6 +913,7 @@ const allProducts = [
     },
     {
         name: "BE BALANCED™ LIGHTWEIGHT MOISTURIZER", 
+        line: "skincare",
         rPrice: "76.00",
         vipPrice: "65.00",
         url: "/lightweight-moisturizer/", 
@@ -843,6 +924,7 @@ const allProducts = [
     },
     {
         name: "BE PURIFIED™ OIL-FREE MOISTURIZER", 
+        line: "skincare",
         rPrice: "76.00",
         vipPrice: "65.00",
         url: "/skin-oil-free-moisturizer/", 
@@ -853,6 +935,7 @@ const allProducts = [
     },
     {
         name: "NIGHT HAVEN™ OVERNIGHT AGE CONTROL CREAM", 
+        line: "skincare",
         rPrice: "87.00",
         vipPrice: "74.00", 
         url: "/skincare-night-age-control-cream/", 
@@ -863,6 +946,7 @@ const allProducts = [
     },
     {
         name: "SUN VEIL™ DAILY MINERAL PROTECTION SPF 30", 
+        line: "skincare",
         rPrice: "40.00",
         vipPrice: "34.00", 
         url: "/sun-veil-sunscreen/", 
@@ -873,6 +957,7 @@ const allProducts = [
     },
     {
         name: "HYDRATE & REFRESH™ FACE MIST", 
+        line: "skincare",
         rPrice: "44.00",
         vipPrice: "37.00", 
         url: "/face-mist/", 
@@ -883,6 +968,7 @@ const allProducts = [
     },
     {
         name: "BRIGHTEN AND RECOVER", 
+        line: "skincare",
         rPrice: "186.00",
         vipPrice: "158.00", 
         url: "/skincare-duo/", 
@@ -893,6 +979,7 @@ const allProducts = [
     },
     {
         name: "MONAT BODY CARE™ MOISTURIZE & REPLENISH BODY WASH", 
+        line: "skincare",
         rPrice: "42.00",
         vipPrice: "36.00", 
         url: "/body-wash/", 
@@ -903,6 +990,7 @@ const allProducts = [
     },
     {
         name: "MONAT BODY CARE™ EXFOLIATE & REFINE BODY POLISH", 
+        line: "skincare",
         rPrice: "52.00",
         vipPrice: "44.00", 
         url: "/body-exfoliator/", 
@@ -913,6 +1001,7 @@ const allProducts = [
     },
     {
         name: "MONAT BODY CARE™ HYDRATE & REPAIR BODY SERUM", 
+        line: "skincare",
         rPrice: "67.00",
         vipPrice: "57.00", 
         url: "/body-hydrate-serum/", 
@@ -923,6 +1012,7 @@ const allProducts = [
     },
     {
         name: "MONAT BODY CARE™ SMOOTH & RENEW BODY LOTION", 
+        line: "skincare",
         rPrice: "57.00",
         vipPrice: "48.00", 
         url: "/body-lotion/", 
@@ -933,6 +1023,7 @@ const allProducts = [
     },
     {
         name: "MONAT BODY CARE™ SILKY & SOOTHING HAND CREAM", 
+        line: "skincare",
         rPrice: "23.00",
         vipPrice: "20.00", 
         url: "/hand-cream/", 
@@ -943,6 +1034,7 @@ const allProducts = [
     },
     {
         name: "MONAT FOR MEN™ ESSENTIAL FACE WASH", 
+        line: "skincare",
         rPrice: "35.00",
         vipPrice: "30.00", 
         url: "/men-face-wash/", 
@@ -953,6 +1045,7 @@ const allProducts = [
     },
     {
         name: "MONAT FOR MEN™ ESSENTIAL FACE SCRUB", 
+        line: "skincare",
         rPrice: "37.00",
         vipPrice: "31.00", 
         url: "/men-face-scrub/", 
@@ -963,6 +1056,7 @@ const allProducts = [
     },
     {
         name: "MONAT FOR MEN™ ESSENTIAL FACE MOISTURIZER", 
+        line: "skincare",
         rPrice: "45.00",
         vipPrice: "38.00", 
         url: "/men-face-moisturizer/", 
@@ -973,6 +1067,7 @@ const allProducts = [
     },
     {
         name: "MONAT FOR MEN™ ESSENTIAL SHAVING CREAM", 
+        line: "skincare",
         rPrice: "29.00",
         vipPrice: "25.00", 
         url: "/men-shaving-cream/", 
@@ -995,6 +1090,16 @@ const allProducts = [
 
 ];
 
+let allHair = [];
+let allSkin = [];
+
+allProducts.forEach(p =>{
+    if(p.line === "haircare"){
+        allHair.push(p);
+    }else{
+        allSkin.push(p);
+    }
+});
 
 
 window.addEventListener("hashchange", () =>{
@@ -1003,8 +1108,9 @@ window.addEventListener("hashchange", () =>{
 
 //declaracion de variables
 let filterPBox = document.getElementById("filterPBox");
-let allPBox = document.getElementById("allPBox");
 let filterInputs = document.querySelectorAll("#filterBox input");
+let hairInputs = document.querySelectorAll("#hairInputs input");
+let skinInputs = document.querySelectorAll("#skinInputs input");
 let filterBtn = document.getElementById("filterBtn");
 let containerShop = document.getElementById("containerShop");
 let containerPage = document.getElementById("containerPage");
@@ -1058,23 +1164,7 @@ closeFilter.forEach(close =>{
 });
 
 
-let filterInitial = document.getElementById("state1_filter");
-let filterTabs = document.querySelectorAll("#state1_filter > li > p");
-let backState1 = document.querySelectorAll(".head_state2 span");
 
-filterTabs.forEach((tab, i) =>{
-    tab.addEventListener("click", () =>{
-        filterInitial.classList.add("tabActive");
-        // document.querySelector("#" + tab.id + " + ul").style.display = "block";
-        tab.nextElementSibling.style.display = "block";
-    });
-    
-    backState1[i].addEventListener("click", () =>{
-        filterInitial.classList.remove("tabActive");
-        // setTimeout(() =>{document.querySelector("#" + tab.id + " + ul").style.display = "none"}, 301);
-        setTimeout(() =>{document.querySelector("#" + tab.id + " + ul").style.display = "none"}, 301);
-    });
-});
 
 const valueFormat = (i) =>{
     return i.value.replace(/,/g, "").replace(/ /g,"-")
@@ -1093,19 +1183,14 @@ window.addEventListener("scroll", () =>{
 });
 
 // Funcion que muestra los productos
-const showP = (arr, box, normalOrder) =>{
+const showP = (arr, box, showInfoTag) =>{
+
+    if(arr == allProducts || arr == allHair || arr == allSkin) activeItems = [];
     
-    // (normalOrder) ? array = arr : array = arr.reverse();
-    
-    if(arr != allProducts) {
-        activeItems = [...arr, ...activeItems];
-        array = activeItems;
-    }else{
-        array = arr;
-    }
+    activeItems = [...arr, ...activeItems];
+    array = activeItems;
     
     filterPBox.innerHTML = "";
-    allPBox.innerHTML = "";
     
     array.forEach(p => {
         let newItem = document.createElement("div");
@@ -1115,32 +1200,46 @@ const showP = (arr, box, normalOrder) =>{
         
         let infoCard = document.createElement("div");
         infoCard.className = "infoCard";
+
+        if(p.line === "haircare"){
+            categories.forEach(cat =>{
+                hairInputs.forEach(inp => {
+                    if(inp.value == cat){
+                        (inp.checked || showInfoTag) ? infoCard.innerHTML += `<p>${cat}</p>` : infoCard.innerHTML += `<p class="off">${cat}</p>`;
+                    }
+                });
+            })
+        }else{
+            categories.forEach(cat =>{
+                skinInputs.forEach(inp => {
+                    if(inp.value == cat){
+                        (inp.checked && inp.value == cat) ? infoCard.innerHTML += `<p>${cat}</p>` : infoCard.innerHTML += `<p class="off">${cat}</p>`;
+                    }
+                });
+            }) 
+        }
         
-        categories.forEach(cat =>{
-            filterInputs.forEach(inp => {
-                if(inp.value == cat) {
-                    (inp.checked) ? infoCard.innerHTML += `<p class="active">${cat}</p>` : infoCard.innerHTML += `<p>${cat}</p>`;
-                }
-            });
-        })
+
         
         newItem.prepend(infoCard);
         
         if(p.category.includes("systems")){
             newItem.innerHTML += `
-                   <div class="infoBtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
             
+                <div class="infoBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            
+                <div class="card_content events_none">
                     <div class="new_product_label_small a_s_flex_start ${p.newP}">NEW</div>
-                    <a>
+
                         <div class="display_flex flex_center">
                             <p class="system_label margin_top_30">${p.use}</p>
                         </div>
                         <div class="container_img_product display_flex j_c_center"><img class="img_product" src="${p.img}" alt="${p.name}"></div>
-                    </a> 
+
                     <div class="module_text_product">
                         <p class="product_name">${p.name}</p>
                         <p class="retail_price ">$${p.rPrice} / <span class="vip_price">VIP $${p.vipPrice}</span></p>
@@ -1149,32 +1248,37 @@ const showP = (arr, box, normalOrder) =>{
                              <p class="purchase_label">${p.discount}</p>
                         </div>
                     </div>
-                    <a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a>
+                </div>
+                
+                <div class="shop_btn"><a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a></div>
             `;
         }else{
             newItem.innerHTML += `
-                    <div class="infoBtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    
+            
+                <div class="infoBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            
+                <a class="card_content" href="${p.url}"  aria-label="Go to ${p.name} page">
                     <div class="new_product_label_small a_s_flex_start ${p.newP}">NEW</div>
-                    <a href="${p.url}"  aria-label="Go to ${p.name} page">
+
                         <div class="container_img_product display_flex j_c_center"><img class="img_product" src="${p.img}" alt="${p.name}"></div>
-                    </a> 
+
                     <div class="module_text_product">
-                        <a href="${p.url}"  aria-label="Go to ${p.name} page">
+
                             <p class="view_details_btn hide_desktop">VIEW DETAILS</p>
-                        </a>
+
                         <p class="product_name">${p.name}</p>
                         <p class="retail_price ">$${p.rPrice} / <span class="vip_price">VIP $${p.vipPrice}</span></p>
                     </div>
-                    <a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a>
-            `;  
+                </a>
+                
+                <div class="shop_btn"><a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a></div>
+            `;   
         }
         
-        // (normalOrder) ? box.appendChild(newItem) : box.prepend(newItem);
         box.appendChild(newItem)
 
     });
@@ -1200,10 +1304,48 @@ const infoEvents = () =>{
 }
 
 let activeItems = [];
+let activeTab = "";
+let previousTab = "";
+
+
+let filterInitial = document.getElementById("state1_filter");
+let filterTabs = document.querySelectorAll("#state1_filter > li > p");
+let backState1 = document.querySelectorAll(".head_state2 span");
+
+filterTabs.forEach((tab, i) =>{
+    tab.addEventListener("click", () =>{
+        filterInitial.classList.add("tabActive");
+        tab.nextElementSibling.style.display = "block";
+        activeTab = tab.id;
+        
+        if(activeTab != previousTab){
+            
+            if(tab.id === "haircareTab_f"){
+                skinInputs.forEach(i => {
+                    if(i.checked) i.click();
+                });
+                showP(allHair, filterPBox, true);
+            }else{
+                hairInputs.forEach(i => {
+                    if(i.checked) i.click()
+                });
+                showP(allSkin, filterPBox, true);
+            }
+            infoEvents();
+        }
+        
+        previousTab = tab.id;
+    });
+    
+    backState1[i].addEventListener("click", () =>{
+        filterInitial.classList.remove("tabActive");
+        setTimeout(() =>{document.querySelector("#" + tab.id + " + ul").style.display = "none"}, 301);
+    });
+});
 
 // Si no hay filtro se muestran todos los productos
 if (location.hash == ""){
-    showP(allProducts, allPBox, true);
+    showP(allProducts, filterPBox, true);
     infoEvents();
 }
 
@@ -1254,8 +1396,6 @@ filterInputs.forEach(input => {
             
         });
         
-       
-        
         // if (window.matchMedia("(min-width: 700px)").matches) {
         //     loaderOverlay.classList.add("active");
         //     loaderGif.src = "https://monatglobal.com/wp-content/uploads/2022/04/drop-preloader-11.gif"+"?a="+Math.random();
@@ -1267,14 +1407,15 @@ filterInputs.forEach(input => {
         //     }, 1700)
         // }
         
-        // allPBox.innerHTML = "";
         
-        if(input.checked == true){
+        if(input.checked === true){
+            
+            if(checked === 1) activeItems = [];
             
             let dinamicArray = [];
             
             allProducts.forEach(p => {
-                if(p.category.includes(input.value)){
+                if(p.category.includes(input.value) && activeTab.includes(p.line)){
                     
                     let pass = true;
                     
@@ -1286,7 +1427,7 @@ filterInputs.forEach(input => {
                 }
             });
             
-            showP(dinamicArray, filterPBox, false);
+            showP(dinamicArray, filterPBox);
             
             infoEvents();
 
@@ -1329,7 +1470,7 @@ filterInputs.forEach(input => {
             }
                 
 
-            showP([], filterPBox, false);
+            showP([], filterPBox);
             infoEvents();
         }
         
@@ -1338,7 +1479,12 @@ filterInputs.forEach(input => {
         if(checked){
             tagsBar.classList.add("active");
         }else{
-            showP(allProducts, allPBox, true);
+            if(activeTab === "haircareTab_f"){
+                showP(allHair, filterPBox);
+            }else{
+                showP(allSkin, filterPBox);
+            }
+
             infoEvents();
             tagsBar.classList.remove("active");
         }
@@ -1399,16 +1545,18 @@ searchBar.addEventListener("submit", (e) =>{
     });
     
     filterInputs.forEach(input => {
-        if(input.checked) input.checked = false;
+        if(input.checked) input.click();
     });
 
-    boxTags.innerHTML = "";
-    
-    // allPBox.innerHTML = "";
+    // filterInputs.forEach(input => {
+    //     if(input.checked) input.checked = false;
+    // });
+
+    // boxTags.innerHTML = "";
     
     activeItems = [];
     
-    showP(dinamicArray, filterPBox, false);
+    showP(dinamicArray, filterPBox);
     infoEvents();
     searchBar.reset();
     
@@ -1514,6 +1662,3 @@ clearFilter.forEach(btn =>{
     });
 })
 
-
-
-  

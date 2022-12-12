@@ -596,7 +596,7 @@ html {
 }
 
 
-.container_img_product:hover::before {
+.card_content:hover .container_img_product::before {
 	margin-left: 0%;
 	opacity: 1;
 }
@@ -606,19 +606,25 @@ html {
 
 /* -PRODUCT ELEMENTS */
 
-.card_product {
+.card_product{
     position: relative;
-    z-index: 1;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-content: stretch;
-    padding: 3.5rem 3vw;
     border-bottom: solid 1px #d5dae09c;
     border-right: solid 1px #d5dae09c;
 }
 
-.card_product:hover {
+.card_content {
+    /*position: relative;*/
+    /*z-index: 1;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: stretch;
+    padding: 3.5rem 3vw 8rem;
+}
+
+
+
+.card_content:hover {
     background-color: #f9f9fb;
 }
 
@@ -684,16 +690,12 @@ html {
     width: fit-content;
     text-transform: uppercase;
     margin-bottom: 0.7rem;
-    opacity: 0.4;
+    opacity: 1;
     cursor: auto;
 }
 
-#allPBox .infoCard p {
-    opacity: 1;
-}
-
-.infoCard p.active {
-    opacity: 1;
+.infoCard p.off {
+    opacity: 0.4;
 }
 
 .last_chance_label {
@@ -714,7 +716,7 @@ html {
 }
 
 .module_text_product {
-	margin: 1.5em 0em 1.3em;
+	margin-top: 1.5em;
 }
 
 .view_details_btn {
@@ -754,6 +756,13 @@ color: #5456C4;
     background: #e1e1f442;
 }
 
+.shop_btn{
+    padding: 0 3vw 3rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .clasic_btn_MONAT {
 	width: 100%;
 	opacity: 0;
@@ -780,7 +789,7 @@ color: #5456C4;
 		background-image: url('https://monatglobal.com/wp-content/uploads/2022/07/Systems-Web-Banner-Mobile.jpg');
 	}
 	
-	.card_product{
+	.card_content{
 	    padding: 1.5rem 3vw;
 	}
 	
@@ -788,7 +797,7 @@ color: #5456C4;
 	    margin-bottom: 0;
 	}
 	
-	.card_product .infoBtn{
+	.card_content .infoBtn{
 	    top: 10px;
         right: 10px;
 	}
