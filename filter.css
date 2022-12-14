@@ -93,6 +93,32 @@
 	display: flex;
 }
 
+#btns_FMob{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px 20px;
+}
+
+#btns_FMob > button{
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #1C1932;
+    padding: 10px 0;
+}
+
+#btns_FMob .clearFilter{
+    background-color: #fff;
+    color: #1C1932;
+}
+
+#applyFilters{
+    background-color: #1C1932;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
 
 
 
@@ -160,17 +186,19 @@
 
 
 
+
 .stickyFilterBar {
 	position: sticky !important;
 	top: 100px;
 }
 
 #filterBtn {
-	/*width: 25%;*/
 	height: 100%;
 	padding: 0 2.5rem;
 	border-right: solid 1px #d5dae09c;
 }
+
+
 
 #filterIcon {
 	width: 1.5rem;
@@ -273,6 +301,7 @@
     border: 2px solid #000;
 }
 
+
 #searchBar button{
     background: none; 
     padding: 0; 
@@ -284,6 +313,7 @@
     background-color: #fff;
     padding: 7px 10px 6px;
     width: max(18vw, 15em);
+    transition: width .3s ease-in-out;
 }
 
 #searchBar input::placeholder {
@@ -339,6 +369,10 @@
     transform: translateX(-100%);
 }
 
+.closeFilter{
+    cursor: pointer;
+}
+
 #filterBox ul > li,
 #head_fBox {
 	border-bottom: 1px solid #d5dae09c;
@@ -383,6 +417,11 @@
 	padding: 1.5rem 0 1.2rem;
 }
 
+#head_fBox{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 #state1_filter li:not(.head_state2) > p:after,
 #filterBtn:after {
 	content: url(https://monatglobal.com/wp-content/uploads/2022/08/dropdown-arrow.svg);
@@ -408,52 +447,18 @@
 }
 
 
-@media screen and (min-width: 700px) {
-
-	/*#containerShop.active .display_grid,*/
-	/*#containerShop.active .title_box>h2 {*/
-	/*	width: 90%;*/
-	/*}*/
-}
 
 
-@media screen and (max-width: 700px) {
-
-	#filterBox #boxTags {
-		margin-top: 20px;
-	}
 
 
-	#containerShop.active {
-		width: 100%;
-	}
-
-	#filterBox {
-		position: fixed;
-		top: 0;
-		height: 100%;
-		z-index: 100;
-	}
-
-	#filterBox.active {
-		width: 100%;
-	}
-
-	#filterBox #boxTags {
-		order: 1;
-	}
 
 
-}
+
+
 
 
 .background_image_banner {
 	background-image: url('https://monatglobal.com/wp-content/uploads/2022/07/monat_systems_banner_desk.jpg');
-}
-
-.icon_promise {
-	width: clamp(18em, 20vw, 22em);
-	display: block;
 }
 
 .logo_banner {
@@ -461,29 +466,15 @@
 	margin: 1em 0;
 }
 
-.hedline_sans {
-	font-size: clamp(3em, 5vw, 10em);
-	letter-spacing: 0.01em !important;
-	line-height: clamp(0.5em, 4vw, 2em);
-}
-
-
 .banner_h2 {
 	font-size: clamp(1em, 1.5vw, 2em);
 	line-height: 1.5em;
 	letter-spacing: 0.03em !important;
-
-}
-
-
-html {
-	overflow: unset !important;
 }
 
 .system_label {
 	border: solid 2px #F4F4F9;
 	padding: 0.6em 0.9em;
-
 	margin: auto;
 	letter-spacing: 0.07em;
 	font-size: 0.75em;
@@ -492,80 +483,14 @@ html {
 	text-align: center;
 }
 
-
-.sup_purchase {
-	font-size: 0.4em;
-	top: -1.3em;
-
-}
-
 .purchase_label {
 	font-family: 'SuisseIntl-Regular', Fallback, sans-serif !important;
-
-	/* margin: auto; */
 	border-bottom: solid 1px #c2c3fd;
 	letter-spacing: 0.07em;
 	font-size: 0.82em;
-
 	color: #5456c4;
 	text-transform: uppercase;
-
 }
-
-
-/******* -DISPLAY GRID *******/
-
-/*#containerShop .display_grid {*/
-/*	gap: 7em 7vw;*/
-/*}*/
-
-/******* DISPLAY GRID- *******/
-
-.image_banner {
-	width: 100%;
-	height: clamp(26em, 38vw, 50em) !important;
-	object-fit: cover;
-}
-
-
-/**************** -SHOP PAGE **************/
-
-/*#containerShop .display_grid,*/
-/*#containerShop .title_box>h2 {*/
-/*	transition: all .4s ease-in-out;*/
-/*	width: 80%;*/
-/*	margin-left: auto;*/
-/*	margin-right: auto;*/
-/*}*/
-
-
-/*#containerShop .title_box {*/
-/*	top: 150px;*/
-/*	height: 50px;*/
-/*	display: flex;*/
-/*	align-items: center;*/
-/*	border-bottom: 1px solid #ececec;*/
-/*	position: sticky;*/
-/*	background-color: #fff;*/
-/*	z-index: 10;*/
-/*}*/
-
-.category_box {
-	position: relative;
-}
-
-
-/* -PRODUCT CATEGORIES */
-.dash_title {
-	font-family: 'SuisseIntl-Medium' !important;
-	letter-spacing: 0.08em;
-	font-size: 0.85em;
-	color: #2f294b;
-	text-transform: uppercase;
-	margin: 0;
-}
-
-/* PRODUCT CATEGORIES- */
 
 
 /* -VIEW DETAILS SLIDING MODULE */
@@ -608,13 +533,14 @@ html {
 
 .card_product{
     position: relative;
+    z-index: 1;
     border-bottom: solid 1px #d5dae09c;
     border-right: solid 1px #d5dae09c;
 }
 
 .card_content {
-    /*position: relative;*/
-    /*z-index: 1;*/
+    width: 100%;
+    height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -757,10 +683,12 @@ color: #5456C4;
 }
 
 .shop_btn{
-    padding: 0 3vw 3rem;
+    margin-bottom: 3rem;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: calc(100% - 6vw);
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .clasic_btn_MONAT {
@@ -774,7 +702,12 @@ color: #5456C4;
 
 /* PRODUCT ELEMENTS- */
 
-/******* SHOP PAGE- *******/
+@media screen and (min-width: 700px) {
+
+	#filterBtn.active {
+	    width: 25%;
+    }
+}
 
 @media screen and (max-width: 700px) {
 	.container_img_product::before {
@@ -790,8 +723,68 @@ color: #5456C4;
 	}
 	
 	.card_content{
-	    padding: 1.5rem 3vw;
+	    padding: 2rem 3vw 8rem;
 	}
+	
+	#filterBox #boxTags {
+		margin-top: 20px;
+	}
+
+
+	#containerShop.active {
+		width: 100%;
+	}
+
+	#filterBox {
+		position: fixed;
+		top: 0;
+		height: 100%;
+		z-index: 100;
+	}
+
+	#filterBox.active {
+		width: 100%;
+	}
+
+	#filterBox #boxTags {
+		order: 1;
+	}
+	
+	.shop_btn {
+        margin-bottom: 2rem;
+	}
+	
+	#filterBtn {
+    	border: none;
+    	padding: 0;
+    }
+    
+    #filterBtn:after {
+	    display: none;
+    }
+
+    .clasic_btn_MONAT {
+    	opacity: 1;
+    }
+    
+    #filterBar > div:last-child{
+        justify-content: space-between;
+        padding: 0 3vw;
+    }
+
+    #state1_filter > li > ul{
+        height: calc(100vh - 190px);
+        overflow-y: auto;
+    }
+
+
+    #searchBar input{
+        width: 6em;
+    }
+        
+    #searchBar.focus input{
+        width: 10em;
+    }
 	
 	.purchase_label{
 	    margin-bottom: 0;
@@ -801,4 +794,4 @@ color: #5456C4;
 	    top: 10px;
         right: 10px;
 	}
-}
+} 

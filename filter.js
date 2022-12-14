@@ -809,7 +809,7 @@ const allProducts = [
         url: "/refined-skin-scrub/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/berry-refined-scrub.png", 
         shopLink: "/shop/products/berry-refined-scrub", 
-        category: "dark Spots | dullness | oil control | pores | uneven tone & texture | best sellers | cleansers & scrubs | serums, treatments, and masks",
+        category: "dark spots | dullness | oil control | pores | uneven tone & texture | best sellers | cleansers & scrubs | serums, treatments, and masks",
         newP: "hide",
     },
     {
@@ -842,7 +842,7 @@ const allProducts = [
         url: "/skincare-c-radiance/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/11/c-radiance.png", 
         shopLink: "/shop/products/c-radiance-illuminating-serum", 
-        category: "dark Spots | dullness | uneven tone & texture | serums, treatments, and masks",
+        category: "dark spots | dullness | uneven tone & texture | serums, treatments, and masks",
         newP: "hide",
     },
     {
@@ -864,7 +864,7 @@ const allProducts = [
         url: "/bakuchiol/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/11/bbvr.png", 
         shopLink: "/shop/products/botanic-bakuchiol", 
-        category: "dark Spots | dullness | sensitive skin | uneven tone & texture",
+        category: "dark spots | dullness | sensitive skin | uneven tone & texture",
         newP: "hide",
     },
     {
@@ -952,7 +952,7 @@ const allProducts = [
         url: "/sun-veil-sunscreen/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/08/sv-prod-1.png", 
         shopLink: "/shop/products/sun-veil-daily-mineral-protection", 
-        category: "dark Spots | dryness & dehydration | prevention and protection | uneven tone & texture | best sellers | specialties",
+        category: "dark spots | dryness & dehydration | prevention and protection | uneven tone & texture | best sellers | specialties",
         newP: "hide",
     },
     {
@@ -1076,28 +1076,142 @@ const allProducts = [
         category: "men skincare | specialties",
         newP: "hide",
     },
-    // {
-    //     name: "", 
-    //     rPrice: ".00",
-    //     vipPrice: ".00", 
-    //     url: "", 
-    //     img: "", 
-    //     shopLink: "", 
-    //     category: "",
-    //     newP: "hide",
-    // },
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    {
+        name: "WELLNESS STARTER SYSTEM", 
+        line: "wellness",
+        rPrice: "193.00",
+        vipPrice: "164.00", 
+        url: "", 
+        img: "https://monatglobal.com/wp-content/uploads/2022/06/WELLNESS-STARTER-SYSTEM-ecomm.png", 
+        shopLink: "/shop/products/wellness-starter-system-6000003042", 
+        use: "beauty from within",
+        discount: "EXTRA 20% OFF WITH PURCHASE+&trade;",
+        category: "systems",
+        newP: "hide",
+    },
+    {
+        name: "MONAT APPLE CIDER VINEGAR GUMMIES", 
+        line: "wellness",
+        rPrice: "43.00",
+        vipPrice: "37.00", 
+        url: "/apple-cider-vinegar-gummies/", 
+        img: "https://monatglobal.com/wp-content/uploads/2022/04/Apple-Cider-Vinegar-Gummies-comm-1.png", 
+        shopLink: "/shop/products/monat-apple-cider-vinegar-gummies-6000002126", 
+        category: "focus and productivity | skin, hair, and nail health | beauty from within | brain health",
+        newP: "hide",
+    },
+    {
+        name: "MONAT VEGAN PROTEIN", 
+        line: "wellness",
+        rPrice: "85.00",
+        vipPrice: "72.00", 
+        url: "/vegan-protein/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/08/VEGAN-PROTEIN-POWDER-ECOM_-2021.png", 
+        shopLink: "/shop/products/monat-vegan-protein", 
+        category: "focus and productivity | healthy aging | mood support | sleep support | active | brain health | nutrition",
+        newP: "hide",
+    },
+    {
+        name: "TOTAL GREENS™", 
+        line: "wellness",
+        rPrice: "59.00",
+        vipPrice: "50.00", 
+        url: "/total-greens/", 
+        img: "https://monatglobal.com/wp-content/uploads/2020/12/total-greens-E-comm.png", 
+        shopLink: "/shop/products/total-greens", 
+        category: "digestive support | energy support | mood support | brain health | best seller",
+        newP: "hide",
+    },
+    {
+        name: "COLLAGEN KEY™", 
+        line: "wellness",
+        rPrice: "65.00",
+        vipPrice: "55.00", 
+        url: "/collagen/", 
+        img: "https://monatglobal.com/wp-content/uploads/2020/12/MONAT-Collagen-key-E-comm-1.png", 
+        shopLink: "/shop/products/collagen_key", 
+        category: "healthy aging | skin, hair, and nail health | beauty from within | best seller",
+        newP: "hide",
+    },
+    {
+        name: "MONAT BALANCE™", 
+        line: "wellness",
+        rPrice: "69.00",
+        vipPrice: "59.00",   
+        url: "/balance/", 
+        img: "https://monatglobal.com/wp-content/uploads/2020/12/Balance-E-comm.png", 
+        shopLink: "/shop/products/monat-balance", 
+        category: "digestive support | immune support | skin, hair, and nail health | beauty from within | brain health | best seller",
+        newP: "hide",
+    },
+    {
+        name: "MONAT ENERGY™", 
+        line: "wellness",
+        rPrice: "69.00",
+        vipPrice: "59.00", 
+        url: "/energy/", 
+        img: "https://monatglobal.com/wp-content/uploads/2020/12/Energy-Ecomm-2.png", 
+        shopLink: "/shop/products/monat-energy-berry", 
+        category: "energy support | focus and productivity | mood support | active | brain health",
+        newP: "hide",
+    },
+    {
+        name: "SLEEP DROPS", 
+        line: "wellness",
+        rPrice: "69.00",
+        vipPrice: "59.00", 
+        url: "/sleep-drops/", 
+        img: "https://monatglobal.com/wp-content/uploads/2020/12/Sleep-drops-E-comm.png", 
+        shopLink: "/shop/products/monat-sleep-drops-6000001060", 
+        category: "mood support | sleep support",
+        newP: "hide",
+    },
+    {
+        name: "immune support*", 
+        line: "wellness",
+        rPrice: "55.00",
+        vipPrice: "47.00", 
+        url: "/immune-support/", 
+        img: "https://monatglobal.com/wp-content/uploads/2021/04/I-s-APR-2021-1.png", 
+        shopLink: "/shop/products/monat-immunity-support", 
+        category: "immune support | skin, hair, and nail health | nutrition",
+        newP: "hide",
+    },
 
 
 ];
 
 let allHair = [];
 let allSkin = [];
+let allWellness = [];
 
 allProducts.forEach(p =>{
     if(p.line === "haircare"){
         allHair.push(p);
-    }else{
+    }else if(p.line === "skincare"){
         allSkin.push(p);
+    }else{
+        allWellness.push(p);
     }
 });
 
@@ -1111,6 +1225,7 @@ let filterPBox = document.getElementById("filterPBox");
 let filterInputs = document.querySelectorAll("#filterBox input");
 let hairInputs = document.querySelectorAll("#hairInputs input");
 let skinInputs = document.querySelectorAll("#skinInputs input");
+let wellnessInputs = document.querySelectorAll("#wellnessInputs input");
 let filterBtn = document.getElementById("filterBtn");
 let containerShop = document.getElementById("containerShop");
 let containerPage = document.getElementById("containerPage");
@@ -1185,7 +1300,9 @@ window.addEventListener("scroll", () =>{
 // Funcion que muestra los productos
 const showP = (arr, box, showInfoTag) =>{
 
-    if(arr == allProducts || arr == allHair || arr == allSkin) activeItems = [];
+    if(arr == allProducts || arr == allHair || arr == allSkin || arr == allWellness) {
+        activeItems = [];
+    }
     
     activeItems = [...arr, ...activeItems];
     array = activeItems;
@@ -1200,26 +1317,24 @@ const showP = (arr, box, showInfoTag) =>{
         
         let infoCard = document.createElement("div");
         infoCard.className = "infoCard";
-
-        if(p.line === "haircare"){
+        
+        const printCateg = (line) =>{
+            let inputsCateg;
+            (line === "haircare") ? inputsCateg = hairInputs : (line === "skincare") ? inputsCateg = skinInputs : inputsCateg = wellnessInputs ;
+            
+            
+            
+            
             categories.forEach(cat =>{
-                hairInputs.forEach(inp => {
+                inputsCateg.forEach(inp => {
                     if(inp.value == cat){
                         (inp.checked || showInfoTag) ? infoCard.innerHTML += `<p>${cat}</p>` : infoCard.innerHTML += `<p class="off">${cat}</p>`;
                     }
                 });
             })
-        }else{
-            categories.forEach(cat =>{
-                skinInputs.forEach(inp => {
-                    if(inp.value == cat){
-                        (inp.checked && inp.value == cat) ? infoCard.innerHTML += `<p>${cat}</p>` : infoCard.innerHTML += `<p class="off">${cat}</p>`;
-                    }
-                });
-            }) 
         }
         
-
+        printCateg(p.line);
         
         newItem.prepend(infoCard);
         
@@ -1320,18 +1435,22 @@ filterTabs.forEach((tab, i) =>{
         
         if(activeTab != previousTab){
             
-            if(tab.id === "haircareTab_f"){
-                skinInputs.forEach(i => {
+            const uncheck = (id) =>{
+                let inputsCateg = document.querySelectorAll("#state1_filter > li > p:not(#"+ id +") + ul input");
+                let arr;
+                
+                inputsCateg.forEach(i => {
                     if(i.checked) i.click();
                 });
-                showP(allHair, filterPBox, true);
-            }else{
-                hairInputs.forEach(i => {
-                    if(i.checked) i.click()
-                });
-                showP(allSkin, filterPBox, true);
+                
+                (tab.id === "haircareTab_f") ? arr = allHair : (tab.id === "skincareTab_f") ? arr = allSkin : arr = allWellness ;
+                
+                showP(arr, filterPBox, true);
             }
+            
+            uncheck(tab.id);
             infoEvents();
+            window.scrollTo(0, containerShop.offsetTop - filterBar.offsetHeight);
         }
         
         previousTab = tab.id;
@@ -1359,12 +1478,13 @@ let concernHCount = document.getElementById("concernHCount");
 let categoryHCount = document.getElementById("categoryHCount");
 let concernSCount = document.getElementById("concernSCount");
 let categorySCount = document.getElementById("categorySCount");
+let concernWCount = document.getElementById("concernWCount");
+let categoryWCount = document.getElementById("categoryWCount");
 
 // Se le da funcionalidad a cada input
 filterInputs.forEach(input => {
     
     input.addEventListener("input", () =>{
-        
         
         let checked = 0;
         let checkConcernH = 0;
@@ -1372,6 +1492,9 @@ filterInputs.forEach(input => {
         
         let checkConcernS = 0;
         let checkCategoryS = 0;
+
+        let checkConcernW = 0;
+        let checkCategoryW = 0;
         
         filterInputs.forEach(i =>{
 
@@ -1385,10 +1508,16 @@ filterInputs.forEach(input => {
                   case "concernS":
                     checkConcernS++;
                     break;
+                  case "concernW":
+                    checkConcernW++;
+                    break;
                   case "categoryH":
                     checkCategoryH++;
                     break;
                   case "categoryS":
+                    checkCategoryS++;
+                    break;
+                  case "categoryW":
                     checkCategoryS++;
                     break;
                 }
@@ -1474,15 +1603,16 @@ filterInputs.forEach(input => {
             infoEvents();
         }
         
-        console.log(activeItems);
 
         if(checked){
             tagsBar.classList.add("active");
         }else{
             if(activeTab === "haircareTab_f"){
-                showP(allHair, filterPBox);
+                showP(allHair, filterPBox, true);
+            }else if(activeTab === "skincareTab_f"){
+                showP(allSkin, filterPBox, true);
             }else{
-                showP(allSkin, filterPBox);
+                showP(allWellness, filterPBox, true);
             }
 
             infoEvents();
@@ -1497,6 +1627,8 @@ filterInputs.forEach(input => {
         (checkCategoryH) ? categoryHCount.innerText = "( " + checkCategoryH + " )" : categoryHCount.innerText = "";
         (checkConcernS) ? concernSCount.innerText = "( " + checkConcernS + " )" : concernSCount.innerText = "";
         (checkCategoryS) ? categorySCount.innerText = "( " + checkCategoryS + " )" : categorySCount.innerText = "";
+        (checkConcernW) ? concernWCount.innerText = "( " + checkConcernW + " )" : concernWCount.innerText = "";
+        (checkCategoryW) ? categoryWCount.innerText = "( " + checkCategoryW + " )" : categoryWCount.innerText = "";
         
         window.scrollTo(0, containerShop.offsetTop - filterBar.offsetHeight);
     });
@@ -1556,7 +1688,7 @@ searchBar.addEventListener("submit", (e) =>{
     
     activeItems = [];
     
-    showP(dinamicArray, filterPBox);
+    showP(dinamicArray, filterPBox, true);
     infoEvents();
     searchBar.reset();
     
@@ -1662,3 +1794,6 @@ clearFilter.forEach(btn =>{
     });
 })
 
+
+
+   
