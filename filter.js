@@ -111,7 +111,7 @@ const allProducts = [
         url: "/rejuveniqe-tm-oil-intensive/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVENIQE®-OIL-INTENSIVE.png", 
         shopLink: "/shop/products/rejuveniqe-oil-intensive", 
-        category: "best sellers | curls, coils, and waves | dry hair | frizz | shine",
+        category: "curls, coils, and waves | dry hair | frizz | shine | best sellers | leave-in care | masques & treatments",
         newP: "hide",
     },
     {
@@ -122,7 +122,7 @@ const allProducts = [
         url: "/rejuveniqe-light/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVENIQE-LIGHT-BY-MONAT™.png", 
         shopLink: "/shop/products/rejuveniqe-light", 
-        category: "best sellers | curls, coils, and waves | dry hair | frizz | shine",
+        category: "curls, coils, and waves | dry hair | frizz | shine | best sellers | leave-in care | masques & treatments",
         newP: "hide",
     },
     {
@@ -133,7 +133,7 @@ const allProducts = [
         url: "/rejuvabeads-by-monat/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVABEADS®-BY-MONAT.png", 
         shopLink: "/shop/products/rejuvabeads", 
-        category: "best sellers | damage, breakage, and split ends",
+        category: "damage, breakage, and split ends | best sellers | leave-in care | masques & treatments",
         newP: "hide",
     },
     {
@@ -144,7 +144,7 @@ const allProducts = [
         url: "/colour-enhance-perfectly-platinum-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/PERFECTLY-PLATINUM-SHAMPOO.png", 
         shopLink: "/shop/products/perfectly-platinum-shampoo-fgplatsha", 
-        category: "color care",
+        category: "color care | shampoos",
         newP: "hide",
     },
     {
@@ -155,7 +155,7 @@ const allProducts = [
         url: "/curl-cream/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/CURL-DEFINING-CREAM.png", 
         shopLink: "/shop/products/curl-cream", 
-        category: "curls, coils, and waves | styling",
+        category: "curls, coils, and waves | dry hair | frizz | shine | styling | leave-in care",
         newP: "hide",
     },
     {
@@ -166,7 +166,7 @@ const allProducts = [
         url: "/flexible-hold-gel/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/FLEXIBLE-HOLD-GEL-ecomm-pic.png", 
         shopLink: "/shop/products/flexible-hold-gel-5-0-oz?taxon_id=21", 
-        category: "curls, coils, and waves | frizz | styling",
+        category: "curls, coils, and waves | frizz | volume | texture | styling",
         newP: "hide",
     },
     {
@@ -177,7 +177,7 @@ const allProducts = [
         url: "/replenish-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/REPLENISH-MASQUE-ecomm-pic.png", 
         shopLink: "/shop/products/replenish-masque", 
-        category: "curls, coils, and waves | dry hair",
+        category: "curls, coils, and waves | dry hair | best sellers | masques & treatments",
         newP: "hide",
     },
     {
@@ -188,7 +188,7 @@ const allProducts = [
         url: "/restyle-instant-sculpting-taffy/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/RESTYLE-INSTANT-SCULPTING-TAFFY.png", 
         shopLink: "/shop/products/restyle-sculpting-taffy", 
-        category: "curls, coils, and waves",
+        category: "curls, coils, and waves | volume | texture | styling",
         newP: "hide",
     },
     {
@@ -199,7 +199,7 @@ const allProducts = [
         url: "/super-moisture-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/SUPER-MOISTURE-MASQUE-ecomm-small.png", 
         shopLink: "/shop/products/super-moisture-masque", 
-        category: "curls, coils, and waves",
+        category: "curls, coils, and waves | dry hair | masques & treatments",
         newP: "hide",
     },
     {
@@ -210,7 +210,7 @@ const allProducts = [
         url: "/super-nourish-oil-creme-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/OIL-CRE%CC%80ME-CONDITIONER.png", 
         shopLink: "/shop/products/monat-super-nourish-oil-creme-conditioner?taxon_id=30", 
-        category: "curls, coils, and waves",
+        category: "curls, coils, and waves | dry hair | conditioners",
         newP: "hide",
     },
     {
@@ -221,7 +221,7 @@ const allProducts = [
         url: "/super-nourish-oil-creme-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/OIL-CRE%CC%80ME-SHAMPOO.png", 
         shopLink: "/shop/products/nourishing-oil-creme-shampoo?taxon_id=30", 
-        category: "curls, coils, and waves",
+        category: "curls, coils, and waves | dry hair | shampoos",
         newP: "hide",
     },
     {
@@ -232,7 +232,7 @@ const allProducts = [
         url: "/hair-damage-repair-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/09/ADVANCED-HYDRATING-masque_allprod.png", 
         shopLink: "/shop/products/damage-repair-bond-support-masque", 
-        category: "damage, breakage, and split ends",
+        category: "damage, breakage, and split ends | masques & treatments",
         newP: "hide",
     },
     {
@@ -243,7 +243,7 @@ const allProducts = [
         url: "/hair-damage-repair-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/09/ADVANCED-HYDRATING-SHAMPOO-all-prod.png", 
         shopLink: "/shop/products/damage-repair-bond-support-shampoo", 
-        category: "damage, breakage, and split ends",
+        category: "damage, breakage, and split ends | shampoos",
         newP: "hide",
     },
     {
@@ -254,7 +254,7 @@ const allProducts = [
         url: "/hair-damage-repair-treatment/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/09/ADVANCED-HYDRATING-Tratment-all-prod.png", 
         shopLink: "/shop/products/damage-repair-bond-building-treatment", 
-        category: "damage, breakage, and split ends",
+        category: "damage, breakage, and split ends | masques & treatments",
         newP: "hide",
     },
     {
@@ -265,7 +265,7 @@ const allProducts = [
         url: "/hair-damage-repair/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/09/ADVANCED-HYDRATING-creme_all-prod.png", 
         shopLink: "/shop/products/damage-repair-bond-fortifying-hair-leave-in-creme", 
-        category: "damage, breakage, and split ends",
+        category: "damage, breakage, and split ends | leave-in care",
         newP: "hide",
     },
     {
@@ -276,7 +276,7 @@ const allProducts = [
         url: "/hair-transformation-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/HAIR-TRANSFORMATION-MASQUE.png", 
         shopLink: "/shop/products/hair-transformation-masque?taxon_id=30", 
-        category: "damage, breakage, and split ends",
+        category: "damage, breakage, and split ends | masques & treatments",
         newP: "hide",
     },
     {
@@ -287,7 +287,7 @@ const allProducts = [
         url: "/monat-junior-gentle-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/MONAT-JUNIOR-GENTLE-SHAMPOO.png", 
         shopLink: "/shop/products/junior-gentle-shampoo-8-oz", 
-        category: "monat junior",
+        category: "damage, breakage & split ends | kids",
         newP: "hide",
     },
     {
@@ -298,7 +298,7 @@ const allProducts = [
         url: "/monat-junior-gentle-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/09/MONAT-JUNIOR-GENTLE-CONDITIONER-ecomm-hair.png", 
         shopLink: "/shop/products/junior-gentle-conditioner-6-oz", 
-        category: "damage, breakage, and split ends | monat junior",
+        category: "damage, breakage, and split ends | kids",
         newP: "hide",
     },
     {
@@ -309,7 +309,7 @@ const allProducts = [
         url: "/junior-gentle-detangler/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/MONAT-JUNIOR-GENTLE-DETANGLER.png", 
         shopLink: "/shop/products/junior-gentle-detangler-spray-6-oz", 
-        category: "damage, breakage, and split ends | dry hair | monat junior",
+        category: "damage, breakage, and split ends | dry hair | kids",
         newP: "hide",
     },
     {
@@ -320,7 +320,7 @@ const allProducts = [
         url: "/unknot-detangler/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/UNKNOT-DETANGLER.png", 
         shopLink: "/shop/products/unknot-detangler", 
-        category: "damage, breakage, and split ends | dry hair",
+        category: "damage, breakage, and split ends | dry hair | leave-in care",
         newP: "hide",
     },
     {
@@ -331,7 +331,7 @@ const allProducts = [
         url: "/intense-repair-treatment-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-THICKENING-CONDITIONER_ecomm-2022.png", 
         shopLink: "/shop/products/ir-clinical-thickening-conditioner-6000002977", 
-        category: "densifying | dry hair | thinning",
+        category: "densifying | scalp Care | thinning | best sellers | conditioners",
         newP: "hide",
     },
     {
@@ -342,7 +342,7 @@ const allProducts = [
         url: "/irt-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-THICKENING-SHAMPOO_ecomm-2022.png", 
         shopLink: "/shop/products/ir-clinical-thickening-shampoo-6000002975", 
-        category: "densifying | dry hair | thinning",
+        category: "densifying | scalp Care | thinning | best sellers | shampoos",
         newP: "hide",
     },
     {
@@ -353,7 +353,7 @@ const allProducts = [
         url: "/intense-repair-serum/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-HAIR-THINNING-DEFENSE-SERUM_ecomm-2022.png", 
         shopLink: "/shop/products/ir-clinical-hair-thinning-defense", 
-        category: "densifying | dry hair | thinning",
+        category: "densifying | scalp Care | thinning | best sellers | leave-in care",
         newP: "hide",
     },
     {
@@ -364,7 +364,7 @@ const allProducts = [
         url: "/lash-brow-enhancing-serum/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/09/LASH-BROW-ENHANCING-SERUM_ecomm-hair.png", 
         shopLink: "/shop/products/eye-wonder-eyelash-enhancer-10ml", 
-        category: "densifying",
+        category: "densifying | thinning | volume | specialties",
         newP: "hide",
     },
     {
@@ -375,7 +375,7 @@ const allProducts = [
         url: "/monat-black-shampoo-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/BLACK-2-in-1-Shampoo-Conditioner-ecomm-pic-.png", 
         shopLink: "/shop/products/black-men-s-2-in-1", 
-        category: "densifying | oily hair and scalp",
+        category: "densifying | oily hair and scalp | best sellers | shampoos | conditioners | men",
         newP: "hide",
     },
     {
@@ -386,7 +386,7 @@ const allProducts = [
         url: "/men-styling-clay/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/02/MONAT-FOR-MEN-Matte-Styling-Clay-ecomm-2022.png", 
         shopLink: "/shop/products/monat-for-men-matte-styling-clay", 
-        category: "densifying | monat for men",
+        category: "densifying | texture | styling | men",
         newP: "hide",
     },
     {
@@ -397,7 +397,7 @@ const allProducts = [
         url: "/advanced-hydrating-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/ADVANCED-HYDRATING-CONDITIONER.png", 
         shopLink: "/shop/products/advanced-hydrating-conditioner", 
-        category: "dry hair",
+        category: "dry hair | conditioners",
         newP: "hide",
     },
     {
@@ -408,7 +408,7 @@ const allProducts = [
         url: "/in-shower-hair-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/ADVANCED-HYDRATING-IN-SHOWER-MASQUE.png", 
         shopLink: "/shop/products/advanced-hydrating-in-shower-masque", 
-        category: "dry hair",
+        category: "dry hair | masques & treatments",
         newP: "hide",
     },
     {
@@ -419,7 +419,7 @@ const allProducts = [
         url: "/advanced-hydrating-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/ADVANCED-HYDRATING-SHAMPOO.png", 
         shopLink: "/shop/products/advanced-hydrating-shampoo", 
-        category: "dry hair",
+        category: "dry hair | shampoos",
         newP: "hide",
     },
     {
@@ -430,7 +430,7 @@ const allProducts = [
         url: "/renew-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/RENEW-SHAMPOO-ecomm-pic.png", 
         shopLink: "/shop/products/renew-shampoo", 
-        category: "dry hair",
+        category: "dry hair | Shine | best sellers | shampoos",
         newP: "hide",
     },
     {
@@ -441,7 +441,7 @@ const allProducts = [
         url: "/restore-leave-in-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/RESTORE-LEAVE-IN-CONDITIONER-ecomm-pic.png", 
         shopLink: "/shop/products/restore-leave-in-conditioner?taxon_id=30", 
-        category: "dry hair",
+        category: "dry hair | best sellers | leave-in care",
         newP: "hide",
     },
     {
@@ -452,7 +452,7 @@ const allProducts = [
         url: "/air-dry-cream/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/AIR-DRY-CREAM.png", 
         shopLink: "/shop/products/air-dry-cream-6-oz", 
-        category: "frizz | styling",
+        category: "curls, coils & waves | dry hair | frizz | shine | styling",
         newP: "hide",
     },
     {
@@ -463,7 +463,7 @@ const allProducts = [
         url: "/blow-out-cream/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/BLOW-OUT-CREAM-1.png", 
         shopLink: "/shop/products/blow-out-cream", 
-        category: "frizz | styling",
+        category: "frizz | thermal protection | styling",
         newP: "hide",
     },
     {
@@ -474,7 +474,7 @@ const allProducts = [
         url: "/control-hairspray/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/STUDIO-ONE-FLEX-CONTROL-HAIRSPRAY.png", 
         shopLink: "/shop/products/flex-control-hairspray", 
-        category: "frizz | styling",
+        category: "frizz | volume | texture | best sellers | styling",
         newP: "hide",
     },
     {
@@ -485,7 +485,7 @@ const allProducts = [
         url: "/frizz-fix-smoothing-hair-primer/", 
         img: "https://monatglobal.com/wp-content/uploads/2018/12/studio-one-frizz-fix-1.png", 
         shopLink: "/shop/products/frizz-fix-smoothing-primer-4-3-oz", 
-        category: "frizz | styling",
+        category: "dry hair | frizz | shine | styling | leave-in care",
         newP: "hide",
     },
     {
@@ -496,7 +496,7 @@ const allProducts = [
         url: "/strong-hold-hairspray/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/STUDIO-ONE-STRONG-FLEXI-HOLD.png", 
         shopLink: "/shop/products/monat-studio-one-super-strong-hold-finishing-hairspray-6000001306", 
-        category: "frizz | styling",
+        category: "frizz | volume | texture | styling",
         newP: "hide",
     },
     {
@@ -507,7 +507,7 @@ const allProducts = [
         url: "/smoothing-anti-frizz-spray/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/smoothing-anti-frizz-blow-out-spray_all-prod-.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-blow-out-spray", 
-        category: "frizz",
+        category: "frizz | thermal protection | shine | styling",
         newP: "hide",
     },
     {
@@ -518,7 +518,7 @@ const allProducts = [
         url: " /smoothing-anti-frizz-treatment/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/smoothing-anti-flizz-deep-treatment_all-prod-.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-deep-intensive-treatment", 
-        category: "frizz",
+        category: "frizz | shine | conditioners",
         newP: "hide",
     },
     {
@@ -529,7 +529,7 @@ const allProducts = [
         url: "/smoothing-deep-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/smoothing-anti-frizz-deep-conditioner_all-prod-.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-deep-conditioner", 
-        category: "frizz",
+        category: "frizz | shine | best sellers | conditioners",
         newP: "hide",
     },
     {
@@ -540,7 +540,7 @@ const allProducts = [
         url: "/smoothing-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/smoothing-anti-frizz-shampoo-all-prod.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-shampoo", 
-        category: "frizz",
+        category: "frizz | shine | shampoos",
         newP: "hide",
     },
     {
@@ -551,7 +551,7 @@ const allProducts = [
         url: "/the-champ-dry-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/CONDITIONING-DRY-SHAMPOO.png", 
         shopLink: "/shop/products/the-champ-conditioning-dry-shampoo", 
-        category: "oily hair and scalp | volume | styling",
+        category: "oily hair and scalp | volume | texture | best sellers | shampoos | styling",
         newP: "hide",
     },
     {
@@ -562,7 +562,7 @@ const allProducts = [
         url: "/vinegar-rinse/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/04/Purifying-Vinegar-Rinset-all-prod.png", 
         shopLink: "/shop/products/purifying-vinegar-rinse-6000001827?taxon_id=30", 
-        category: "oily hair and scalp",
+        category: "oily hair and scalp | scalp Care | masques & treatments",
         newP: "hide",
     },
     {
@@ -573,7 +573,7 @@ const allProducts = [
         url: "/vinegar-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/PURIFYING-VINEGAR-SHAMPOO.png", 
         shopLink: "/shop/products/purifying-vinegar-shampoo", 
-        category: "oily hair and scalp | scalp care",
+        category: "oily hair and scalp | scalp care | shampoos",
         newP: "hide",
     },
     {
@@ -584,7 +584,7 @@ const allProducts = [
         url: "/vinegar-scrub-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/SCALP-PURIFYING-SCRUB.png", 
         shopLink: "/shop/products/scalp-purifying-scrub", 
-        category: "oily hair and scalp | scalp care",
+        category: "oily hair and scalp | scalp care | masques & treatments",
         newP: "hide",
     },
     {
@@ -595,7 +595,7 @@ const allProducts = [
         url: "/soothing-micellar-shampoo/", 
         img: "https://monatglobal.com/ca/wp-content/uploads/sites/5/2021/04/soothing-micellar-shampoo_876x1000-800x913.png", 
         shopLink: "/shop/products/soothing-micellar-shampoo", 
-        category: "oily hair and scalp | scalp care",
+        category: "oily hair and scalp | scalp care | shampoos",
         newP: "hide",
     },
     {
@@ -606,7 +606,7 @@ const allProducts = [
         url: "/men-hair-molding-pomade/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/02/monat-men-molding-shine-pomade-ecomm-2022.png", 
         shopLink: "/shop/products/men-molding-shine-pomade", 
-        category: "shine | monat for men",
+        category: "Frizz | shine | styling | men",
         newP: "hide",
     },
     {
@@ -628,7 +628,7 @@ const allProducts = [
         url: "/dry-texturizing-spray/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/DRY-TEXTURIZING-SPRAY-ecomm-pic.png", 
         shopLink: "/shop/products/dry-texturizing-spray-6000000418", 
-        category: "texture | styling",
+        category: "thinning | volume | texture | styling",
         newP: "hide",
     },
     {
@@ -650,7 +650,7 @@ const allProducts = [
         url: "/moxie-mousse/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/THE-MOXIE-MAGNIFYING-MOUSSE.png", 
         shopLink: "/shop/products/monat-studio-one-the-moxie-mouse", 
-        category: "volume | styling",
+        category: "curls, coils & waves | volume | texture | styling",
         newP: "hide",
     },
     {
@@ -672,7 +672,7 @@ const allProducts = [
         url: "/volumizing-revitalize-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/VOLUMIZING-REVITALIZE%E2%84%A2-CONDITIONER.png", 
         shopLink: "/shop/products/revitalize-conditioner?taxon_id=30", 
-        category: "volume",
+        category: "volume | shine | best sellers | conditioners",
         newP: "hide",
     },
     {
@@ -683,7 +683,7 @@ const allProducts = [
         url: "/volumizing-revive-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/VOLUMIZING-REVIVE%E2%84%A2-SHAMPOO.png", 
         shopLink: "/shop/products/revive-shampoo", 
-        category: "volume",
+        category: "volume | shine | best sellers | shampoos",
         newP: "hide",
     },
     {
@@ -1462,11 +1462,7 @@ filterTabs.forEach((tab, i) =>{
     });
 });
 
-// Si no hay filtro se muestran todos los productos
-if (location.hash == ""){
-    showP(allProducts, filterPBox, true);
-    infoEvents();
-}
+
 
 
 let boxTags = document.getElementById("boxTags");
@@ -1637,6 +1633,24 @@ filterInputs.forEach(input => {
         input.click();
     }
 });
+
+
+// Si no hay filtro se muestran todos los productos
+if (location.hash == ""){
+    showP(allProducts, filterPBox, true);
+    infoEvents();
+}else{
+    // let hash = location.hash.replace(/-/g, ' ').substring(1);
+    // filterInputs.forEach(input => {
+    //     if(input.value === hash) {
+    //         console.log(input);
+    //         input.click();
+    //     }
+    // });
+    
+    
+}
+
 
 let searchBar = document.getElementById("searchBar");
 let overlayFilter = document.getElementById("overlayFilter");
