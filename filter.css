@@ -7,19 +7,26 @@
 	/*position the autocomplete items to be the same width as the container:*/
 	top: 127%;
 	left: 0;
+	 overflow-y: scroll;
+    height: 20em;
 	right: 0;
+	  background-color: white;
 }
 
 #autocomplete-list div {
 	padding: 10px;
 	cursor: pointer;
 	background-color: #fff;
-	border-bottom: 1px solid #d4d4d4;
+	border-bottom: 1px solid #d5dae09c;
+	 color: #2e2a4a;
+    letter-spacing: 0.03em;
+    font-size: 0.9em;
+
 }
 
 /*when hovering an item:*/
 #autocomplete-list div:hover {
-	background-color: #e9e9e9;
+  background-color: #f4f4f7;
 }
 
 /*when navigating through the items using the arrow keys:*/
@@ -57,7 +64,7 @@
 	width: 100%;
 	border-bottom: solid 1px #d5dae09c;
 	background-color: #fff;
-	height: 60px;
+	height: 55px;
 	position: relative;
 	padding-left: 3vw;
 	
@@ -89,6 +96,15 @@
     white-space: nowrap;
 }
 
+.filter_main_title {
+   
+    color: #2f294b;
+    letter-spacing: 0.05em;
+    font-size: 0.95em;
+    font-family: 'SuisseIntl-Medium', Fallback, sans-serif;
+ 
+}
+
 #tagsBar.active {
 	display: flex;
 }
@@ -106,6 +122,9 @@
     border-radius: 0;
     border: 1px solid #1C1932;
     padding: 10px 0;
+      text-transform: uppercase;
+    font-size: 0.8em ;
+    letter-spacing: 0.14em;
 }
 
 #btns_FMob .clearFilter{
@@ -159,7 +178,7 @@
 	margin-bottom: -2px;
 	margin-right: 5px;
 	text-transform: uppercase;
-	font-size: 0.8em;
+	font-size: 0.75em;
 	white-space: nowrap;
 	letter-spacing: 0.1em;
 }
@@ -168,7 +187,7 @@
     cursor: pointer;
     line-height: 0.8em;
     font-size: .85em;
-    background-color: #d5dae0;
+    background-color: #efeff2;
     font-weight: bold;
     color: #2f294b;
     border-radius: 100%;
@@ -178,7 +197,7 @@
 #filterBar {
 	width: 100%;
 	border-bottom: solid 1px #d5dae09c;
-	height: 50px;
+	height: 55px;
 	background-color: #fff;
 	z-index: 11;
 	position: relative;
@@ -206,7 +225,7 @@
 }
 
 #filterBox {
-	padding-top: 20px;
+	
 	padding-bottom: 20px;
 	width: 0;
 	left: 0;
@@ -251,6 +270,7 @@
     padding-left: 40px;
     display: block;
     cursor: pointer;
+    font-size: 1em;
 }
 
 #filterBox label > p:before{
@@ -288,17 +308,20 @@
 
 
 #searchBar {
+
     margin-left: calc(3vw - 1em);
-    border: 2px solid transparent;
+    border: 1px solid #D8D8E0;
     border-radius: 3em;
     padding: 0 1em;
+    height: 65%;
     z-index: 10;
-    background-color: #fff;
+    background-color: #f4f4f7;
     transition: opacity .1s ease-in-out;
+
 }
 
 #searchBar.focus {
-    border: 2px solid #000;
+    border: 1px solid #2e2a4a;
 }
 
 
@@ -310,9 +333,11 @@
 
 #searchBar input {
     border: none;
-    background-color: #fff;
-    padding: 7px 10px 6px;
+    background-color: #fff0;
+    padding: 10px 10px 7px;
     width: max(18vw, 15em);
+        font-size: 0.95em;
+
     transition: width .3s ease-in-out;
 }
 
@@ -361,7 +386,7 @@
 
 
 #state1_filter{
-    padding: 0 20px !important;
+    padding: 0 2em !important;
     transition: all .3s ease-in-out;
 }
 
@@ -388,17 +413,24 @@
     top: 0;
     right: 0;
     width: 100%;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+  padding: 0 2em 0 2em ;
     background-color: #fff;
     transform: translateX(100%);
     display: none;
 }
 
-.head_state2 span{
-    border: 1px solid #d5dae09c; 
-    border-radius: 1rem;
+.head_state2 span {
+    border: 1px solid #d5dae09c;
+    border-radius: 2rem;
     cursor: pointer;
+    width: 2em;
+    transition: all .3s ease-in-out;
+}
+
+.head_state2 span:hover {
+   
+    background-color: #d5dae09c;
+
 }
 
 .filterSection ul {
@@ -414,7 +446,7 @@
 
 #state1_filter li > p,
 #head_fBox {
-	padding: 1.5rem 0 1.2rem;
+	padding: 1.7rem 0;
 }
 
 #head_fBox{
@@ -608,7 +640,7 @@
 
 .infoCard p {
     font-family: 'SuisseIntl-Regular';
-    font-size: 0.8em;
+    font-size: 0.75em;
     background: white;
     padding: 0.2em 0.6em;
     border-radius: 3px;
@@ -643,6 +675,10 @@
 
 .module_text_product {
 	margin-top: 1.5em;
+}
+
+.filtersCount{
+    	font-family: 'SuisseIntl-Light', Fallback, sans-serif !important;
 }
 
 .view_details_btn {
@@ -741,7 +777,14 @@ color: #5456C4;
 		height: 100%;
 		z-index: 100;
 	}
-
+	.product_name,
+	.retail_price {
+	    font-size: 0.8em;
+}
+.clasic_btn_MONAT {
+   
+    min-width: 12em;
+}
 	#filterBox.active {
 		width: 100%;
 	}
@@ -794,4 +837,7 @@ color: #5456C4;
 	    top: 10px;
         right: 10px;
 	}
+		#filterBtn.active {
+	    width: 50%;
+    }
 } 

@@ -32,7 +32,7 @@
             <div id="filterBtn" class="display_flex a_i_center j_c_space_between">
                 <div class="display_flex">
                     <img id="filterIcon" src="https://monatglobal.com/wp-content/uploads/2022/12/filter-icon.svg">
-                    <p style="margin: 0;">FILTER BY <span class="filtersCount"></span></p>
+                    <p style="margin: 0;" class="filter_main_title">FILTER BY <span class="filtersCount"></span></p>
                 </div>
             </div>
             
@@ -50,44 +50,51 @@
         <div id="filterBox" class="display_flex f_d_column">
             
             <div id="head_fBox" class="hide_desk display_flex a_i_center j_c_space_between">
-                <p>FILTER</p>
-                <span class="closeFilter">x</span>
+                <img id="filterIcon" src="https://monatglobal.com/wp-content/uploads/2022/12/filter-icon.svg">
+                <p class="filter_main_title">FILTER</p>
+                <span class="closeFilter">✕</span>
             </div>
             
             <ul id="state1_filter">
                 <li>
-                    <p id="haircareTab_f">HAIRCARE</p>
+                    <p id="haircareTab_f" class="filter_main_title">HAIRCARE</p>
                     <ul id="hairInputs">
                         <li class="head_state2 display_flex a_i_center j_c_space_between">
-                            <p>HAIRCARE</p>
-                            <span>←</span>
+                            <p class="filter_main_title">HAIRCARE</p>
+                            <span><img src="https://monatglobal.com/wp-content/uploads/2022/12/back-arrow_.svg"></span>
                         </li>
                         
                         <li class="filterSection">
-                            <p>CONCERNS <span id="concernHCount"></span></p>
+                            <p class="filter_main_title">CONCERNS <span id="concernHCount"  class="filtersCount"></span></p>
                             <ul>
-                                <li><label><input type="checkbox" name="concernH" value="best sellers"><p>best seller</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="systems"><p>systems</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="color care"><p>color care</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="curls, coils, and waves"><p>curls, coils, and waves</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="damage, breakage, and split ends"><p>damage, breakage, and split ends</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="densifying"><p>densifying</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="dry hair"><p>dry hair</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="frizz"><p>frizz</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="oily hair and scalp"><p>oily hair and scalp</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="scalp care"><p>scalp care</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="shine"><p>shine</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="thinning"><p>thinning</p></label></li>
-                                <li><label><input type="checkbox" name="concernH" value="volume"><p>volume</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="color care"><p>Color Care</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="curls, coils, and waves"><p>Curls, Coils, and Waves</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="damage, breakage, and split ends"><p>Damage, Breakage, and Split Ends</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="densifying"><p>Densifying</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="dry hair"><p>Dry Hair</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="frizz"><p>Frizz</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="oily hair and scalp"><p>Oily Hair and Scalp</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="scalp care"><p>Scalp Care</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="thermal protection"><p>Thermal Protection</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="thinning"><p>Thinning</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="volume"><p>Volume</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="shine"><p>Shine</p></label></li>
+                                <li><label><input type="checkbox" name="concernH" value="texture"><p>Texture</p></label></li>
                             </ul>
                         </li>
                         
                         <li class="filterSection">
-                            <p>CATEGORIES <span id="categoryHCount"></span></p>
+                            <p class="filter_main_title">CATEGORIES <span id="categoryHCount"  class="filtersCount"></span></p>
                             <ul>
-                                <li><label><input type="checkbox" name="categoryH" value="monat for men"><p>monat for men™</p></label></li>
-                                <li><label><input type="checkbox" name="categoryH" value="monat junior"><p>monat junior</p></label></li>
-                                <li><label><input type="checkbox" name="categoryH" value="styling"><p>styling</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="best sellers"><p>Best Seller</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="shampoos"><p>Shampoos</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="conditioners"><p>Conditioners</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="styling"><p>Styling</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="leave-in care"><p>Leave-in Care</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="men"><p>Men</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="kids"><p>Kids</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="masques & treatments"><p>Masques & Treatments</p></label></li>
+                                <li><label><input type="checkbox" name="categoryH" value="specialties"><p>Specialties</p></label></li>
                             </ul>
                         </li>
                     </ul>
@@ -97,39 +104,39 @@
 
 
                 <li>
-                    <p id="skincareTab_f">SKINCARE</p>
+                    <p id="skincareTab_f" class="filter_main_title">SKINCARE</p>
                     <ul id="skinInputs">
                         <li class="head_state2 display_flex a_i_center j_c_space_between">
-                            <p>SKINCARE</p>
-                            <span>←</span>
+                            <p class="filter_main_title">SKINCARE</p>
+                             <span><img src="https://monatglobal.com/wp-content/uploads/2022/12/back-arrow_.svg"></span>
                         </li>
                         
                         <li class="filterSection">
-                            <p>CONCERNS <span id="concernSCount"></span></p>
+                            <p class="filter_main_title">CONCERNS <span id="concernSCount" class="filtersCount"></span></p>
                             <ul>
                                 <li><label><input type="checkbox" name="concernS" value="dark spots"><p>Dark Spots</p></label></li>
                                 <li><label><input type="checkbox" name="concernS" value="dullness"><p>Dullness</p></label></li>
-                                <li><label><input type="checkbox" name="concernS" value="eye care"><p>Eye care</p></label></li>
-                                <li><label><input type="checkbox" name="concernS" value="dryness & dehydration"><p>Dryness & dehydration</p></label></li>
-                                <li><label><input type="checkbox" name="concernS" value="fine lines & wrinkles"><p>Fine lines & wrinkles</p></label></li>
-                                <li><label><input type="checkbox" name="concernS" value="oil control"><p>Oil control</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="eye care"><p>Eye Care</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="dryness & dehydration"><p>Dryness & Dehydration</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="fine lines & wrinkles"><p>Fine Lines & Wrinkles</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="oil control"><p>Oil Control</p></label></li>
                                 <li><label><input type="checkbox" name="concernS" value="pores"><p>Pores</p></label></li>
                                 <li><label><input type="checkbox" name="concernS" value="prevention and protection"><p>Prevention and Protection</p></label></li>
-                                <li><label><input type="checkbox" name="concernS" value="sensitive skin"><p>Sensitive skin</p></label></li>
-                                <li><label><input type="checkbox" name="concernS" value="uneven tone & texture"><p>Uneven tone & texture</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="sensitive skin"><p>Sensitive Skin</p></label></li>
+                                <li><label><input type="checkbox" name="concernS" value="uneven tone & texture"><p>Uneven Tone & Texture</p></label></li>
                             </ul>
                         </li>
                         
                         <li class="filterSection">
-                            <p>CATEGORIES <span id="categorySCount"></span></p>
+                            <p class="filter_main_title">CATEGORIES <span id="categorySCount" class="filtersCount"></span></p>
                             <ul>
                                 <li><label><input type="checkbox" name="categoryS" value="best sellers"><p>Best sellers</p></label></li>
                                 <li><label><input type="checkbox" name="categoryS" value="body care"><p>Body Care</p></label></li>
                                 <li><label><input type="checkbox" name="categoryS" value="routines"><p>Routines</p></label></li>
                                 <li><label><input type="checkbox" name="categoryS" value="men skincare"><p>Men Skincare</p></label></li>
                                 <li><label><input type="checkbox" name="categoryS" value="moisturizers"><p>Moisturizers</p></label></li>
-                                <li><label><input type="checkbox" name="categoryS" value="cleansers & scrubs"><p>Cleansers & scrubs</p></label></li>
-                                <li><label><input type="checkbox" name="categoryS" value="serums, treatments, and masks"><p>Serums, treatments, and Masks</p></label></li>
+                                <li><label><input type="checkbox" name="categoryS" value="cleansers & scrubs"><p>Cleansers & Scrubs</p></label></li>
+                                <li><label><input type="checkbox" name="categoryS" value="serums, treatments, and masks"><p>Serums, Treatments, and Masks</p></label></li>
                                 <li><label><input type="checkbox" name="categoryS" value="essence & toners"><p>Essence & Toners</p></label></li>
                                 <li><label><input type="checkbox" name="categoryS" value="specialties"><p>Specialties</p></label></li>
                             </ul>
@@ -141,15 +148,15 @@
 
 
                 <li>
-                    <p id="wellnessTab_f">WELLNESS</p>
+                    <p id="wellnessTab_f" class="filter_main_title">WELLNESS</p>
                     <ul id="wellnessInputs">
                         <li class="head_state2 display_flex a_i_center j_c_space_between">
-                            <p>WELLNESS</p>
-                            <span>←</span>
+                            <p class="filter_main_title">WELLNESS</p>
+                        <span><img src="https://monatglobal.com/wp-content/uploads/2022/12/back-arrow_.svg"></span>
                         </li>
                         
                         <li class="filterSection">
-                            <p>CONCERNS <span id="concernWCount"></span></p>
+                            <p class="filter_main_title">CONCERNS <span id="concernWCount"  class="filtersCount"></span></p>
                             <ul>
                                 <li><label><input type="checkbox" name="concernW" value="digestive support"><p>Digestive Support</p></label></li>
                                 <li><label><input type="checkbox" name="concernW" value="energy support"><p>Energy Support</p></label></li>
@@ -163,13 +170,13 @@
                         </li>
                         
                         <li class="filterSection">
-                            <p>CATEGORIES <span id="categoryWCount"></span></p>
+                            <p class="filter_main_title">CATEGORIES <span id="categoryWCount"  class="filtersCount"></span></p>
                             <ul>
                                 <li><label><input type="checkbox" name="categoryW" value="active"><p>Active</p></label></li>
                                 <li><label><input type="checkbox" name="categoryW" value="beauty from within"><p>Beauty From Within</p></label></li>
                                 <li><label><input type="checkbox" name="categoryW" value="brain health"><p>Brain Health</p></label></li>
                                 <li><label><input type="checkbox" name="categoryW" value="nutrition"><p>Nutrition</p></label></li>
-                                <li><label><input type="checkbox" name="categoryW" value="best seller"><p>Best Seller</p></label></li>
+                                <li><label><input type="checkbox" name="categoryW" value="best sellers"><p>Best Seller</p></label></li>
                             </ul>
                         </li>
                     </ul>

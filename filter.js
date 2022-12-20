@@ -1199,7 +1199,7 @@ const allProducts = [
     },
 
 
-];
+]; 
 
 let allHair = [];
 let allSkin = [];
@@ -1327,7 +1327,7 @@ const showP = (arr, box, showInfoTag) =>{
             
             categories.forEach(cat =>{
                 inputsCateg.forEach(inp => {
-                    if(inp.value == cat){
+                    if(cat == inp.value){
                         (inp.checked || showInfoTag) ? infoCard.innerHTML += `<p>${cat}</p>` : infoCard.innerHTML += `<p class="off">${cat}</p>`;
                     }
                 });
@@ -1431,7 +1431,7 @@ filterTabs.forEach((tab, i) =>{
     tab.addEventListener("click", () =>{
         filterInitial.classList.add("tabActive");
         tab.nextElementSibling.style.display = "block";
-        activeTab = tab.id;
+        activeTab = tab.id.replace('Tab_f', '');
         
         if(activeTab != previousTab){
             
@@ -1444,12 +1444,11 @@ filterTabs.forEach((tab, i) =>{
                 });
                 
                 (tab.id === "haircareTab_f") ? arr = allHair : (tab.id === "skincareTab_f") ? arr = allSkin : arr = allWellness ;
-                
                 showP(arr, filterPBox, true);
+                infoEvents();
             }
             
             uncheck(tab.id);
-            infoEvents();
             window.scrollTo(0, containerShop.offsetTop - filterBar.offsetHeight);
         }
         
@@ -1540,16 +1539,20 @@ filterInputs.forEach(input => {
             let dinamicArray = [];
             
             allProducts.forEach(p => {
-                if(p.category.includes(input.value) && activeTab.includes(p.line)){
-                    
-                    let pass = true;
-                    
-                    activeItems.forEach(item =>{
-                        if(p.name == item.name) pass = false;
-                    });
-                    
-                    if(pass) dinamicArray.push(p);
-                }
+                let categories = p.category.split(" | ");
+                categories.forEach(cat =>{
+                    if(cat == input.value && activeTab == p.line){
+                        console.log("paso al add");
+                        let pass = true;
+                        
+                        activeItems.forEach(item =>{
+                            if(p.name == item.name) pass = false;
+                        });
+                        
+                        if(pass) dinamicArray.push(p);
+                    }
+                });
+
             });
             
             showP(dinamicArray, filterPBox);
@@ -1603,11 +1606,12 @@ filterInputs.forEach(input => {
         if(checked){
             tagsBar.classList.add("active");
         }else{
-            if(activeTab === "haircareTab_f"){
+            if(activeTab === "haircare"){
                 showP(allHair, filterPBox, true);
-            }else if(activeTab === "skincareTab_f"){
+            }else if(activeTab === "skincare"){
                 showP(allSkin, filterPBox, true);
             }else{
+                console.log("paso por show allWellness");
                 showP(allWellness, filterPBox, true);
             }
 
@@ -1629,26 +1633,41 @@ filterInputs.forEach(input => {
         window.scrollTo(0, containerShop.offsetTop - filterBar.offsetHeight);
     });
     
-    if(location.hash.includes(valueFormat(input))){
-        input.click();
-    }
+    // if(location.hash.includes(valueFormat(input))){
+    //     input.click();
+    // }
 });
-
 
 // Si no hay filtro se muestran todos los productos
 if (location.hash == ""){
     showP(allProducts, filterPBox, true);
     infoEvents();
 }else{
-    // let hash = location.hash.replace(/-/g, ' ').substring(1);
-    // filterInputs.forEach(input => {
-    //     if(input.value === hash) {
-    //         console.log(input);
-    //         input.click();
-    //     }
-    // });
+    let hash = location.hash;
+    
+    if(hash.includes("-hair")){
+        activeTab = "haircare"
+        hash = hash.replace('-hair', '');
+    }else if(hash.includes("-skin")){
+        activeTab = "skincare"
+        hash = hash.replace('-skin', '');
+    }else if (hash.includes("-wellness")){
+        activeTab = "wellness"
+        hash = hash.replace('-wellness', ''); 
+    }
     
     
+    hash = hash.replace(/-/g, ' ').substring(1);
+
+    
+    let selectInput = document.querySelector("input[value='"+ hash +"']");
+    
+    console.log(selectInput);
+    if (!activeTab) {
+        (selectInput.name.slice(-1) === "H") ? activeTab = "haircare" : (selectInput.name.slice(-1) === "S") ? activeTab = "skincare" : activeTab = "wellness" ;
+    }
+
+    selectInput.click();
 }
 
 
