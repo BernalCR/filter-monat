@@ -110,6 +110,7 @@ const allProducts = [
         vipPrice: "89.00", 
         url: "/rejuveniqe-tm-oil-intensive/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVENIQE®-OIL-INTENSIVE.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2000/10/The_REJUVENIQE™_Story_HEADER_v1.jpg",
         shopLink: "/shop/products/rejuveniqe-oil-intensive", 
         category: "curls, coils, and waves | dry hair | frizz | shine | best sellers | leave-in care | masques & treatments",
         newP: "hide",
@@ -121,6 +122,7 @@ const allProducts = [
         vipPrice: "89.00", 
         url: "/rejuveniqe-light/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVENIQE-LIGHT-BY-MONAT™.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2000/10/The_REJUVENIQE™_Story_HEADER.jpg",
         shopLink: "/shop/products/rejuveniqe-light", 
         category: "curls, coils, and waves | dry hair | frizz | shine | best sellers | leave-in care | masques & treatments",
         newP: "hide",
@@ -132,6 +134,7 @@ const allProducts = [
         vipPrice: "50.00", 
         url: "/rejuvabeads-by-monat/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVABEADS®-BY-MONAT.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2022/12/rejuvabeads-banner-mobile.jpg",
         shopLink: "/shop/products/rejuvabeads", 
         category: "damage, breakage, and split ends | best sellers | leave-in care | masques & treatments",
         newP: "hide",
@@ -176,6 +179,7 @@ const allProducts = [
         vipPrice: "49.00", 
         url: "/replenish-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/REPLENISH-MASQUE-ecomm-pic.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2022/06/replenish-directions.jpg",
         shopLink: "/shop/products/replenish-masque", 
         category: "curls, coils, and waves | dry hair | best sellers | masques & treatments",
         newP: "hide",
@@ -330,6 +334,7 @@ const allProducts = [
         vipPrice: "44.00", 
         url: "/intense-repair-treatment-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-THICKENING-CONDITIONER_ecomm-2022.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2022/08/IR-Clinical-Conditioner-directions.jpg",
         shopLink: "/shop/products/ir-clinical-thickening-conditioner-6000002977", 
         category: "densifying | scalp Care | thinning | best sellers | conditioners",
         newP: "hide",
@@ -341,6 +346,7 @@ const allProducts = [
         vipPrice: "39.00", 
         url: "/irt-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-THICKENING-SHAMPOO_ecomm-2022.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2022/08/IR-Clinical-Conditioner-directions.jpg",
         shopLink: "/shop/products/ir-clinical-thickening-shampoo-6000002975", 
         category: "densifying | scalp Care | thinning | best sellers | shampoos",
         newP: "hide",
@@ -352,6 +358,7 @@ const allProducts = [
         vipPrice: "66.00", 
         url: "/intense-repair-serum/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-HAIR-THINNING-DEFENSE-SERUM_ecomm-2022.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/ir-clinical-hair-thinning-defense", 
         category: "densifying | scalp Care | thinning | best sellers | leave-in care",
         newP: "hide",
@@ -374,6 +381,7 @@ const allProducts = [
         vipPrice: "39.00", 
         url: "/monat-black-shampoo-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/BLACK-2-in-1-Shampoo-Conditioner-ecomm-pic-.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/black-men-s-2-in-1", 
         category: "densifying | oily hair and scalp | best sellers | shampoos | conditioners | men",
         newP: "hide",
@@ -429,6 +437,7 @@ const allProducts = [
         vipPrice: "38.00", 
         url: "/renew-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/RENEW-SHAMPOO-ecomm-pic.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/renew-shampoo", 
         category: "dry hair | Shine | best sellers | shampoos",
         newP: "hide",
@@ -440,6 +449,7 @@ const allProducts = [
         vipPrice: "34.00", 
         url: "/restore-leave-in-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/RESTORE-LEAVE-IN-CONDITIONER-ecomm-pic.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/restore-leave-in-conditioner?taxon_id=30", 
         category: "dry hair | best sellers | leave-in care",
         newP: "hide",
@@ -473,6 +483,7 @@ const allProducts = [
         vipPrice: "41.00", 
         url: "/control-hairspray/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/STUDIO-ONE-FLEX-CONTROL-HAIRSPRAY.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/flex-control-hairspray", 
         category: "frizz | volume | texture | best sellers | styling",
         newP: "hide",
@@ -528,6 +539,7 @@ const allProducts = [
         vipPrice: "44.00", 
         url: "/smoothing-deep-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/smoothing-anti-frizz-deep-conditioner_all-prod-.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/smoothing-anti-frizz-deep-conditioner", 
         category: "frizz | shine | best sellers | conditioners",
         newP: "hide",
@@ -550,6 +562,7 @@ const allProducts = [
         vipPrice: "36.00", 
         url: "/the-champ-dry-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/CONDITIONING-DRY-SHAMPOO.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/the-champ-conditioning-dry-shampoo", 
         category: "oily hair and scalp | volume | texture | best sellers | shampoos | styling",
         newP: "hide",
@@ -671,6 +684,7 @@ const allProducts = [
         vipPrice: "44.00", 
         url: "/volumizing-revitalize-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/VOLUMIZING-REVITALIZE%E2%84%A2-CONDITIONER.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/revitalize-conditioner?taxon_id=30", 
         category: "volume | shine | best sellers | conditioners",
         newP: "hide",
@@ -682,6 +696,7 @@ const allProducts = [
         vipPrice: "38.00", 
         url: "/volumizing-revive-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/VOLUMIZING-REVIVE%E2%84%A2-SHAMPOO.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/revive-shampoo", 
         category: "volume | shine | best sellers | shampoos",
         newP: "hide",
@@ -738,6 +753,7 @@ const allProducts = [
         vipPrice: "258.00", 
         url: "/be-balanced-routine/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-routine-skincare.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/be-balanced-routine?taxon_id=30", 
         use: "FOR NORMAL/COMBINATION&nbsp;SKIN",
         discount: "EXTRA 25% OFF WITH PURCHASE+&trade;",
@@ -751,6 +767,7 @@ const allProducts = [
         vipPrice: "258.00", 
         url: "/be-gentle-routine/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-gentle-routine-1.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/be-gentle-routine?taxon_id=30", 
         use: "FOR DRY / SENSITIVE&nbsp;SKIN",
         discount: "EXTRA 25% OFF WITH PURCHASE+&trade;",
@@ -786,6 +803,7 @@ const allProducts = [
         vipPrice: "43.00", 
         url: "/foamy-cleanser/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-foamy-cleanser-.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/be-balanced-foamy-cleanser", 
         category: "dryness & dehydration | best sellers | cleansers & scrubs",
         newP: "hide",
@@ -808,6 +826,7 @@ const allProducts = [
         vipPrice: "53.00", 
         url: "/refined-skin-scrub/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/berry-refined-scrub.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/berry-refined-scrub", 
         category: "dark spots | dullness | oil control | pores | uneven tone & texture | best sellers | cleansers & scrubs | serums, treatments, and masks",
         newP: "hide",
@@ -852,6 +871,7 @@ const allProducts = [
         vipPrice: "109.00", 
         url: "/age-control-nectar/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/rewind-age-control-nectar-1.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/rewind-age-control-nectar", 
         category: "dryness & dehydration | fine lines & wrinkles | prevention and protection | sensitive skin | best sellers | serums, treatments, and masks",
         newP: "hide",
@@ -874,6 +894,7 @@ const allProducts = [
         vipPrice: "71.00", 
         url: "/eye-smooth/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/eye-smooth-nourishing-eye-cream.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/eye-smooth", 
         category: "eye care | best sellers | serums, treatments, and masks",
         newP: "hide",
@@ -885,6 +906,7 @@ const allProducts = [
         vipPrice: "77.00", 
         url: "/skincare-perfector/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/11/30-second-miracle.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/30-second-miracle-instant-eye-protector", 
         category: "eye care | fine lines & wrinkles | best sellers | serums, treatments, and masks",
         newP: "hide",
@@ -951,6 +973,7 @@ const allProducts = [
         vipPrice: "34.00", 
         url: "/sun-veil-sunscreen/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/08/sv-prod-1.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/sun-veil-daily-mineral-protection", 
         category: "dark spots | dryness & dehydration | prevention and protection | uneven tone & texture | best sellers | specialties",
         newP: "hide",
@@ -984,6 +1007,7 @@ const allProducts = [
         vipPrice: "36.00", 
         url: "/body-wash/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/08/Moistturizw-replenish-body-wash-ecomm.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/monat-body-care-moisture-replenish-body-wash-6000001819", 
         category: "dryness & dehydration | best sellers | body care | cleansers & scrubs",
         newP: "hide",
@@ -1138,8 +1162,9 @@ const allProducts = [
         vipPrice: "50.00", 
         url: "/total-greens/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/total-greens-E-comm.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/total-greens", 
-        category: "digestive support | energy support | mood support | brain health | best seller",
+        category: "digestive support | energy support | mood support | brain health | best sellers",
         newP: "hide",
     },
     {
@@ -1149,8 +1174,9 @@ const allProducts = [
         vipPrice: "55.00", 
         url: "/collagen/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/MONAT-Collagen-key-E-comm-1.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/collagen_key", 
-        category: "healthy aging | skin, hair, and nail health | beauty from within | best seller",
+        category: "healthy aging | skin, hair, and nail health | beauty from within | best sellers",
         newP: "hide",
     },
     {
@@ -1160,8 +1186,9 @@ const allProducts = [
         vipPrice: "59.00",   
         url: "/balance/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/Balance-E-comm.png", 
+        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/monat-balance", 
-        category: "digestive support | immune support | skin, hair, and nail health | beauty from within | brain health | best seller",
+        category: "digestive support | immune support | skin, hair, and nail health | beauty from within | brain health | best sellers",
         newP: "hide",
     },
     {
@@ -1307,12 +1334,18 @@ const showP = (arr, box, showInfoTag) =>{
     activeItems = [...arr, ...activeItems];
     array = activeItems;
     
+    let lowToH = activeItems.sort((a, b) => a.rPrice - b.rPrice);
+    let highToL = activeItems.sort((a, b) => b.rPrice - a.rPrice);
+    
+    console.log(lowToH);
+    console.log(highToL);
+    
     filterPBox.innerHTML = "";
     
     array.forEach(p => {
         let newItem = document.createElement("div");
         newItem.className = "card_product";
-    
+        
         let categories = p.category.split(" | ");
         
         let infoCard = document.createElement("div");
@@ -1395,6 +1428,31 @@ const showP = (arr, box, showInfoTag) =>{
         }
         
         box.appendChild(newItem)
+        
+        // if(p.category.includes("best sellers")) {
+        //     let BSimg = document.createElement("a");
+        //     let BStag = document.createElement("span");
+        //     BStag.innerText = "BEST SELLERS";
+        //     BSimg.className = "BSimg";
+        //     BSimg.href = p.url;
+        //     BSimg.style.backgroundImage = "url('"+ p.img +"')";
+        //     BSimg.appendChild(BStag)
+        //     box.appendChild(BSimg)
+        // }
+        
+        
+        if(p.category.includes("best sellers")) {
+            let BScard = document.createElement("a");
+            BScard.className = "BScard";
+            
+            BScard.innerHTML = `
+                <img src="${p.BSimg}">
+                <span>BEST SELLERS</span>
+            `;
+
+            BScard.href = p.url;
+            box.appendChild(BScard)
+        }
 
     });
     
@@ -1417,6 +1475,31 @@ const infoEvents = () =>{
         }
     })
 }
+let loaderOverlay = document.getElementById("loaderP");
+let loaderGif = document.querySelector("#loaderP > img");
+
+window.addEventListener("scroll", () =>{
+    if(loaderOverlay.className.includes("active") && window.scrollY > containerBanners.offsetHeight){
+        window.scrollTo(0, containerBanners.offsetHeight + 1)
+        document.documentElement.style.overflowY = "hidden";
+    }
+});
+
+const loader = () =>{
+    if (window.matchMedia("(min-width: 700px)").matches) {
+        loaderOverlay.classList.add("active");
+        loaderGif.src = "https://monatglobal.com/wp-content/uploads/2022/04/drop-preloader-11.gif"+"?a="+Math.random();
+        if(window.scrollY > containerBanners.offsetHeight) {
+            window.scrollTo(0, containerBanners.offsetHeight + 1)
+            document.documentElement.style.overflowY = "hidden";
+        }
+        
+        setTimeout(() =>{
+            loaderOverlay.classList.remove("active");
+            document.documentElement.style.overflowY = "visible";
+        }, 800)
+    }
+}
 
 let activeItems = [];
 let activeTab = "";
@@ -1424,6 +1507,8 @@ let previousTab = "";
 
 
 let filterInitial = document.getElementById("state1_filter");
+let containerBanners = document.getElementById("containerBanners");
+let banners = document.querySelectorAll("#containerBanners > div");
 let filterTabs = document.querySelectorAll("#state1_filter > li > p");
 let backState1 = document.querySelectorAll(".head_state2 span");
 
@@ -1434,6 +1519,7 @@ filterTabs.forEach((tab, i) =>{
         activeTab = tab.id.replace('Tab_f', '');
         
         if(activeTab != previousTab){
+            loader();
             
             const uncheck = (id) =>{
                 let inputsCateg = document.querySelectorAll("#state1_filter > li > p:not(#"+ id +") + ul input");
@@ -1444,15 +1530,19 @@ filterTabs.forEach((tab, i) =>{
                 });
                 
                 (tab.id === "haircareTab_f") ? arr = allHair : (tab.id === "skincareTab_f") ? arr = allSkin : arr = allWellness ;
+                banners.forEach(banner => (tab.id.includes(banner.id.slice(0, 4))) ? banner.classList.add("active") : banner.classList.remove("active"));
+
+
+                
                 showP(arr, filterPBox, true);
                 infoEvents();
             }
             
             uncheck(tab.id);
-            window.scrollTo(0, containerShop.offsetTop - filterBar.offsetHeight);
+            // if(window.scrollY > containerBanners.offsetHeight) window.scrollTo(0, containerBanners.offsetHeight);
         }
         
-        previousTab = tab.id;
+        previousTab = tab.id.replace('Tab_f', '');
     });
     
     backState1[i].addEventListener("click", () =>{
@@ -1466,8 +1556,6 @@ filterTabs.forEach((tab, i) =>{
 
 let boxTags = document.getElementById("boxTags");
 let tagsBar = document.getElementById("tagsBar");
-let loaderOverlay = document.getElementById("loaderP");
-let loaderGif = document.querySelector("#loaderP > img");
 let filtersCount = document.querySelectorAll(".filtersCount");
 let concernHCount = document.getElementById("concernHCount");
 let categoryHCount = document.getElementById("categoryHCount");
@@ -1520,16 +1608,7 @@ filterInputs.forEach(input => {
             
         });
         
-        // if (window.matchMedia("(min-width: 700px)").matches) {
-        //     loaderOverlay.classList.add("active");
-        //     loaderGif.src = "https://monatglobal.com/wp-content/uploads/2022/04/drop-preloader-11.gif"+"?a="+Math.random();
-        //     document.body.style.overflowY = "hidden";
-            
-        //     setTimeout(() =>{
-        //         loaderOverlay.classList.remove("active");
-        //         document.body.style.overflowY = "visible";
-        //     }, 1700)
-        // }
+        loader();
         
         
         if(input.checked === true){
@@ -1542,7 +1621,6 @@ filterInputs.forEach(input => {
                 let categories = p.category.split(" | ");
                 categories.forEach(cat =>{
                     if(cat == input.value && activeTab == p.line){
-                        console.log("paso al add");
                         let pass = true;
                         
                         activeItems.forEach(item =>{
@@ -1630,7 +1708,7 @@ filterInputs.forEach(input => {
         (checkConcernW) ? concernWCount.innerText = "( " + checkConcernW + " )" : concernWCount.innerText = "";
         (checkCategoryW) ? categoryWCount.innerText = "( " + checkCategoryW + " )" : categoryWCount.innerText = "";
         
-        window.scrollTo(0, containerShop.offsetTop - filterBar.offsetHeight);
+        // if(window.scrollY > containerBanners.offsetHeight) window.scrollTo(0, containerBanners.offsetHeight);
     });
     
     // if(location.hash.includes(valueFormat(input))){
@@ -1712,15 +1790,9 @@ searchBar.addEventListener("submit", (e) =>{
     filterInputs.forEach(input => {
         if(input.checked) input.click();
     });
-
-    // filterInputs.forEach(input => {
-    //     if(input.checked) input.checked = false;
-    // });
-
-    // boxTags.innerHTML = "";
     
     activeItems = [];
-    
+    loader();
     showP(dinamicArray, filterPBox, true);
     infoEvents();
     searchBar.reset();
@@ -1766,8 +1838,6 @@ function autocomplete(inp, arr) {
                     //insert the value for the autocomplete text field
                     inp.value = item.name;
                     searchBtn.click();
-                    // closeAllLists();
-                    // overlayTrigger(false);
                 });
                 
                 autoList.appendChild(matchItem);
@@ -1827,6 +1897,3 @@ clearFilter.forEach(btn =>{
     });
 })
 
-
-
-   

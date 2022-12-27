@@ -1,3 +1,63 @@
+/* - search bar */
+
+#searchBar {
+    margin-left: calc(3vw - 1em);
+    border: 1px solid #D8D8E0;
+    border-radius: 3em;
+    padding: 0 1em;
+    height: 65%;
+    z-index: 10;
+    background-color: #f4f4f7;
+    transition: opacity .1s ease-in-out;
+}
+
+#searchBar.focus {
+    border: 1px solid #2e2a4a;
+}
+
+#searchBar button{
+    background: none; 
+    padding: 0; 
+    border: none;
+}
+
+#searchBar input {
+    border: none;
+    background-color: #fff0;
+    padding: 10px 10px 7px;
+    width: max(18vw, 15em);
+    font-size: 0.95em;
+    transition: width .3s ease-in-out;
+}
+
+#searchBar input::placeholder {
+	font-family: "SuisseIntl-Medium";
+	font-size: 1em;
+	letter-spacing: 0.05em;
+}
+
+#overlayFilter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: block;
+    transition: opacity .1s ease-in-out;
+}
+
+#overlayFilter.active{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
 #autocomplete-list {
 	position: absolute;
 	border: 1px solid #d4d4d4;
@@ -34,17 +94,30 @@
 	background-color: #f9f9fb !important;
 }
 
+/* search bar- */
+
+
+
+
+
+
+
+
+
+
+
+/* -Loader */
 
 #loaderP {
 	height: calc(100vh - 150px);
 	background-color: #fff;
-	/*display: none;*/
-	opacity: 0;
 	position: absolute;
 	top: 0;
+	/*position: sticky;*/
+ /*   top: 155px;*/
 	left: 0;
 	width: 100%;
-	z-index: 100;
+	z-index: 10;
 	display: flex;
 
 	visibility: hidden;
@@ -58,6 +131,60 @@
 	transition: none;
 }
 
+/* Loader- */
+
+
+
+/* -filter tags */
+
+#boxTags{
+    overflow-x: auto;
+	position: relative;
+}
+
+#boxTags::-webkit-scrollbar {
+  height: 0.5em;
+}
+
+#boxTags::-webkit-scrollbar-thumb {
+	background: #d5dae0;
+	border :none;
+	border-radius: 10px;
+}
+
+#boxTags::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+#boxTags > div {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20rem;
+    padding: 0.5em 1em;
+    margin: 4px;
+    border: solid 1px #d5dae0;
+}
+
+#boxTags>div p {
+	margin-bottom: -2px;
+	margin-right: 5px;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	white-space: nowrap;
+	letter-spacing: 0.1em;
+}
+
+#boxTags>div span {
+    cursor: pointer;
+    line-height: 0.8em;
+    font-size: .85em;
+    background-color: #efeff2;
+    font-weight: bold;
+    color: #2f294b;
+    border-radius: 100%;
+    padding: 0.4em 0.35em 0.35em 0.37em;
+}
 
 #tagsBar {
 	display: none;
@@ -67,10 +194,9 @@
 	height: 55px;
 	position: relative;
 	padding-left: 3vw;
-	
 	top: 150px;
 	position: sticky;
-	z-index: 10;
+	z-index: 11;
 }
 
 #tagsBar:after {
@@ -96,18 +222,21 @@
     white-space: nowrap;
 }
 
+#tagsBar.active {
+	display: flex;
+}
+
+/* filter tags- */
+
+
+
 .filter_main_title {
-   
     color: #2f294b;
     letter-spacing: 0.05em;
     font-size: 0.95em;
     font-family: 'SuisseIntl-Medium', Fallback, sans-serif;
- 
 }
 
-#tagsBar.active {
-	display: flex;
-}
 
 #btns_FMob{
     position: absolute;
@@ -142,69 +271,14 @@
 
 
 
-
-#boxTags{
-    overflow-x: auto;
-	position: relative;
-}
-
-#boxTags::-webkit-scrollbar {
-  height: 0.5em;
-}
-
-#boxTags::-webkit-scrollbar-thumb {
-	background: #d5dae0;
-	border :none;
-	border-radius: 10px;
-}
-
-#boxTags::-webkit-scrollbar-track {
-    background-color: #fff;
-}
-
-
-
-#boxTags > div {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 20rem;
-    padding: 0.5em 1em;
-    margin: 4px;
-    border: solid 1px #d5dae0;
-}
-
-#boxTags>div p {
-	margin-bottom: -2px;
-	margin-right: 5px;
-	text-transform: uppercase;
-	font-size: 0.75em;
-	white-space: nowrap;
-	letter-spacing: 0.1em;
-}
-
-#boxTags>div span {
-    cursor: pointer;
-    line-height: 0.8em;
-    font-size: .85em;
-    background-color: #efeff2;
-    font-weight: bold;
-    color: #2f294b;
-    border-radius: 100%;
-    padding: 0.4em 0.35em 0.35em 0.37em;
-}
-
 #filterBar {
 	width: 100%;
 	border-bottom: solid 1px #d5dae09c;
 	height: 55px;
 	background-color: #fff;
-	z-index: 11;
+	z-index: 12;
 	position: relative;
 }
-
-
-
 
 .stickyFilterBar {
 	position: sticky !important;
@@ -215,9 +289,8 @@
 	height: 100%;
 	padding: 0 2.5rem;
 	border-right: solid 1px #d5dae09c;
+	transition: width .3s ease-in-out;
 }
-
-
 
 #filterIcon {
 	width: 1.5rem;
@@ -225,7 +298,6 @@
 }
 
 #filterBox {
-	
 	padding-bottom: 20px;
 	width: 0;
 	left: 0;
@@ -307,64 +379,6 @@
 
 
 
-#searchBar {
-
-    margin-left: calc(3vw - 1em);
-    border: 1px solid #D8D8E0;
-    border-radius: 3em;
-    padding: 0 1em;
-    height: 65%;
-    z-index: 10;
-    background-color: #f4f4f7;
-    transition: opacity .1s ease-in-out;
-
-}
-
-#searchBar.focus {
-    border: 1px solid #2e2a4a;
-}
-
-
-#searchBar button{
-    background: none; 
-    padding: 0; 
-    border: none;
-}
-
-#searchBar input {
-    border: none;
-    background-color: #fff0;
-    padding: 10px 10px 7px;
-    width: max(18vw, 15em);
-        font-size: 0.95em;
-
-    transition: width .3s ease-in-out;
-}
-
-#searchBar input::placeholder {
-	font-family: "SuisseIntl-Medium";
-	font-size: 1em;
-	letter-spacing: 0.05em;
-}
-
-#overlayFilter {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: 9;
-    visibility: hidden;
-    opacity: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-    display: block;
-    transition: opacity .1s ease-in-out;
-}
-
-#overlayFilter.active{
-    visibility: visible;
-    opacity: 1;
-}
 
 
 
@@ -384,6 +398,9 @@
 	margin-bottom: 0;
 }
 
+#filterPBox{
+    transition: width .3s ease-in-out;
+}
 
 #state1_filter{
     padding: 0 2em !important;
@@ -428,9 +445,7 @@
 }
 
 .head_state2 span:hover {
-   
     background-color: #d5dae09c;
-
 }
 
 .filterSection ul {
@@ -478,19 +493,41 @@
 	transform: rotate(-180deg);
 }
 
+.filtersCount{
+    font-family: 'SuisseIntl-Light', Fallback, sans-serif !important;
+}
 
 
 
 
 
 
+#containerBanners{
+    position: relative;
+}
 
+#containerBanners > div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
 
+#containerBanners > div.active{
+    opacity: 1;
+}
 
-
-
-.background_image_banner {
-	background-image: url('https://monatglobal.com/wp-content/uploads/2022/07/monat_systems_banner_desk.jpg');
+#containerBanners > div#hairBanner{
+    background-image: url('https://monatglobal.com/wp-content/uploads/2022/09/IR-clinical_banner_desk_haircare_.jpg');
+}
+#containerBanners > div#skinBanner{
+    background-image: url('https://monatglobal.com/wp-content/uploads/2021/09/Exfoliate-Refine-Body-Polish-benefits.jpg');
+}
+#containerBanners > div#wellnessBanner{
+    background-image: url('https://monatglobal.com/wp-content/uploads/2022/02/monat-energy-pineapple-benefits.jpg');
 }
 
 .logo_banner {
@@ -502,26 +539,6 @@
 	font-size: clamp(1em, 1.5vw, 2em);
 	line-height: 1.5em;
 	letter-spacing: 0.03em !important;
-}
-
-.system_label {
-	border: solid 2px #F4F4F9;
-	padding: 0.6em 0.9em;
-	margin: auto;
-	letter-spacing: 0.07em;
-	font-size: 0.75em;
-	color: #2f294b;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-.purchase_label {
-	font-family: 'SuisseIntl-Regular', Fallback, sans-serif !important;
-	border-bottom: solid 1px #c2c3fd;
-	letter-spacing: 0.07em;
-	font-size: 0.82em;
-	color: #5456c4;
-	text-transform: uppercase;
 }
 
 
@@ -563,7 +580,27 @@
 
 /* -PRODUCT ELEMENTS */
 
-.card_product{
+.BScard img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.BScard span{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border-radius: 2px;
+    color: #1C1932;
+    background-color: #fff;
+    padding: 5px 8px 2px;
+    font-family: 'SuisseIntl-Medium';
+    font-size: 0.8em;
+    letter-spacing: 0.08em;
+}
+
+.card_product,
+.BScard{
     position: relative;
     z-index: 1;
     border-bottom: solid 1px #d5dae09c;
@@ -579,8 +616,6 @@
 	align-content: stretch;
     padding: 3.5rem 3vw 8rem;
 }
-
-
 
 .card_content:hover {
     background-color: #f9f9fb;
@@ -656,16 +691,24 @@
     opacity: 0.4;
 }
 
-.last_chance_label {
-	background-color: #1c1932;
-	color: #fff;
-	width: 45%;
+.system_label {
+	border: solid 2px #F4F4F9;
+	padding: 0.6em 0.9em;
+	margin: auto;
+	letter-spacing: 0.07em;
+	font-size: 0.75em;
+	color: #2f294b;
 	text-transform: uppercase;
-	padding: 0.26em 0.5em;
-	margin-bottom: 2.5em;
 	text-align: center;
-	letter-spacing: 1px;
-	font-size: 0.8em;
+}
+
+.purchase_label {
+	font-family: 'SuisseIntl-Regular', Fallback, sans-serif !important;
+	border-bottom: solid 1px #c2c3fd;
+	letter-spacing: 0.07em;
+	font-size: 0.82em;
+	color: #5456c4;
+	text-transform: uppercase;
 }
 
 .img_product {
@@ -675,10 +718,6 @@
 
 .module_text_product {
 	margin-top: 1.5em;
-}
-
-.filtersCount{
-    	font-family: 'SuisseIntl-Light', Fallback, sans-serif !important;
 }
 
 .view_details_btn {
@@ -739,7 +778,6 @@ color: #5456C4;
 /* PRODUCT ELEMENTS- */
 
 @media screen and (min-width: 700px) {
-
 	#filterBtn.active {
 	    width: 25%;
     }
@@ -840,4 +878,4 @@ color: #5456C4;
 		#filterBtn.active {
 	    width: 50%;
     }
-} 
+}  
