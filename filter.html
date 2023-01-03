@@ -12,8 +12,6 @@
     }
 </style>
 
-
-
 <div id="containerPage">
     <div id="containerBanners" class="background_image_banner">
         <div id="hairBanner" class="bkgnd display_flex a_i_center active">
@@ -70,13 +68,23 @@
                 </div>
             </div>
             
-            <form id="searchBar" class="display_flex a_i_center">
+            <div class="display_flex j_c_space_between a_i_center" style="flex-grow: 2;">
+                <form id="searchBar" class="display_flex a_i_center">
+                    
+                    <button type="submit" style="background: none; padding: none; border: none;"><img src="https://monatglobal.com/wp-content/uploads/2022/12/search-icon.svg" style="height: 13px; "></button>
+                    <div class="p_relative">
+                        <input autocomplete="off" type="text" placeholder="SEARCH" name="search">
+                    </div>
+                </form>
                 
-                <button type="submit" style="background: none; padding: none; border: none;"><img src="https://monatglobal.com/wp-content/uploads/2022/12/search-icon.svg" style="height: 13px; "></button>
-                <div class="p_relative">
-                    <input autocomplete="off" type="text" placeholder="SEARCH" name="search">
+                <div id="orderBy">
+                    <p>ORDER BY <span></span></p>
+                    <div>
+                        <p>LOWER - HIGHER</p>
+                        <p>HIGHER - LOWER</p>
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
     
@@ -232,10 +240,10 @@
             </div>
             
             <!--<div class="p_relative">-->
-                <div id="loaderP" class="flex_center"><img src="" alt="MONAT DROP LOGO ANIMATION" width="65" height="65"></div>
+                <div id="loaderP" class="flex_center"><img loading="lazy" src="" alt="MONAT DROP LOGO ANIMATION" width="65" height="65"></div>
                 
                 <div id="filterPBox" class="display_grid col_4 col_3 med_col_2"></div>
             <!--</div>-->
         </div>
     </div>
-</div>   
+</div>  

@@ -2,8 +2,8 @@ const allProducts = [
     {
         name: "ADVANCED HYDRATING SYSTEM", 
         line: "haircare",
-        rPrice: "155.00",
-        vipPrice: "131.00", 
+        rPrice: 155.00,
+        vipPrice: 131.00, 
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/ADVANCED-HYDRATING-SYSTEM_ecomm-.png", 
         shopLink: "/shop/products/advanced-hydrating-system-6000003139", 
@@ -15,8 +15,8 @@ const allProducts = [
     {
         name: "RENEW™ HYDRATING SYSTEM", 
         line: "haircare",
-        rPrice: "143.00",
-        vipPrice: "121.00", 
+        rPrice: 143.00,
+        vipPrice: 121.00, 
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/RENEW-HYDRATING-SYSTEM_ecomm.png", 
         shopLink: "/shop/products/renew-hydrating-system-6000003138", 
@@ -28,8 +28,8 @@ const allProducts = [
     {
         name: "REVIVE™ VOLUMIZING SYSTEM", 
         line: "haircare",
-        rPrice: "137.00",
-        vipPrice: "116.00",   
+        rPrice: 137.00,
+        vipPrice: 116.00,   
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/REVIVE-VOLUMIZING-SYSTEM_ecomm-.png", 
         shopLink: "/shop/products/volumizing-revive-system", 
@@ -41,8 +41,8 @@ const allProducts = [
     {
         name: "IR CLINICAL™ SYSTEM", 
         line: "haircare",
-        rPrice: "176.00",
-        vipPrice: "149.00", 
+        rPrice: 176.00,
+        vipPrice: 149.00, 
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-Clinical-SYSTEM-_ecomm-2022.png", 
         shopLink: "/shop/products/ir-clinical-system/ir-clinical-system-6000003460", 
@@ -54,8 +54,8 @@ const allProducts = [
     {
         name: "SMOOTHING ANTI-FRIZZ™ SYSTEM I", 
         line: "haircare",
-        rPrice: "139.00",
-        vipPrice: "118.00", 
+        rPrice: 139.00,
+        vipPrice: 118.00, 
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/SMOOTHING-ANTI-FRIZZ-SYSTEM-I_ecomm.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-system-i-6000003142", 
@@ -67,8 +67,8 @@ const allProducts = [
     {
         name: "SMOOTHING ANTI-FRIZZ™ SYSTEM II", 
         line: "haircare",
-        rPrice: "139.00",
-        vipPrice: "118.00", 
+        rPrice: 139.00,
+        vipPrice: 118.00, 
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/SMOOTHING-ANTI-FRIZZ-SYSTEM-II_ecomm.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-system-ii-6000003242", 
@@ -80,8 +80,8 @@ const allProducts = [
     {
         name: "DAMAGE REPAIR SYSTEM", 
         line: "haircare",
-        rPrice: "191.00",
-        vipPrice: "162.00", 
+        rPrice: 191.00,
+        vipPrice: 162.00, 
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/DAMAGE-REPAIR-SYSTEM_ecomm.png", 
         shopLink: "/shop/products/damage-repair-system-6000003143", 
@@ -93,8 +93,8 @@ const allProducts = [
     {
         name: "SCALP PURIFYING SYSTEM", 
         line: "haircare",
-        rPrice: "141.00",
-        vipPrice: "119.00", 
+        rPrice: 141.00,
+        vipPrice: 119.00, 
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/Sclap-Purifying-System-ecomm.png", 
         shopLink: "/scalp-purifying-system-6000003144", 
@@ -106,8 +106,8 @@ const allProducts = [
     {
         name: "REJUVENIQE® OIL INTENSIVE", 
         line: "haircare",
-        rPrice: "105.00",
-        vipPrice: "89.00", 
+        rPrice: 105.00,
+        vipPrice: 89.00, 
         url: "/rejuveniqe-tm-oil-intensive/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVENIQE®-OIL-INTENSIVE.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2000/10/The_REJUVENIQE™_Story_HEADER_v1.jpg",
@@ -118,8 +118,8 @@ const allProducts = [
     {
         name: "REJUVENIQE LIGHT BY MONAT™", 
         line: "haircare",
-        rPrice: "105 .00",
-        vipPrice: "89.00", 
+        rPrice: 105.00,
+        vipPrice: 89.00, 
         url: "/rejuveniqe-light/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVENIQE-LIGHT-BY-MONAT™.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2000/10/The_REJUVENIQE™_Story_HEADER.jpg",
@@ -130,8 +130,8 @@ const allProducts = [
     {
         name: "REJUVABEADS® BY MONAT", 
         line: "haircare",
-        rPrice: "59.00",
-        vipPrice: "50.00", 
+        rPrice: 59.00,
+        vipPrice: 50.00, 
         url: "/rejuvabeads-by-monat/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVABEADS®-BY-MONAT.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2022/12/rejuvabeads-banner-mobile.jpg",
@@ -142,8 +142,8 @@ const allProducts = [
     {
         name: "COLOUR ENHANCE PERFECTLY PLATINUM SHAMPOO", 
         line: "haircare",
-        rPrice: "32.00",
-        vipPrice: "27.00", 
+        rPrice: 32.00,
+        vipPrice: 27.00, 
         url: "/colour-enhance-perfectly-platinum-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/PERFECTLY-PLATINUM-SHAMPOO.png", 
         shopLink: "/shop/products/perfectly-platinum-shampoo-fgplatsha", 
@@ -153,8 +153,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ CURL DEFINING CREAM", 
         line: "haircare",
-        rPrice: "42.00",
-        vipPrice: "36.00", 
+        rPrice: 42.00,
+        vipPrice: 36.00, 
         url: "/curl-cream/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/CURL-DEFINING-CREAM.png", 
         shopLink: "/shop/products/curl-cream", 
@@ -164,8 +164,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ FLEXIBLE HOLD GEL", 
         line: "haircare",
-        rPrice: "38.00",
-        vipPrice: "32.00", 
+        rPrice: 38.00,
+        vipPrice: 32.00, 
         url: "/flexible-hold-gel/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/FLEXIBLE-HOLD-GEL-ecomm-pic.png", 
         shopLink: "/shop/products/flexible-hold-gel-5-0-oz?taxon_id=21", 
@@ -175,8 +175,8 @@ const allProducts = [
     {
         name: "REPLENISH MASQUE", 
         line: "haircare",
-        rPrice: "58.00",
-        vipPrice: "49.00", 
+        rPrice: 58.00,
+        vipPrice: 49.00, 
         url: "/replenish-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/REPLENISH-MASQUE-ecomm-pic.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2022/06/replenish-directions.jpg",
@@ -187,8 +187,8 @@ const allProducts = [
     {
         name: "RESTYLE INSTANT SCULPTING TAFFY", 
         line: "haircare",
-        rPrice: "38.00",
-        vipPrice: "32.00", 
+        rPrice: 38.00,
+        vipPrice: 32.00, 
         url: "/restyle-instant-sculpting-taffy/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/RESTYLE-INSTANT-SCULPTING-TAFFY.png", 
         shopLink: "/shop/products/restyle-sculpting-taffy", 
@@ -198,8 +198,8 @@ const allProducts = [
     {
         name: "SUPER MOISTURE MASQUE", 
         line: "haircare",
-        rPrice: "58.00",
-        vipPrice: "49.00", 
+        rPrice: 58.00,
+        vipPrice: 49.00, 
         url: "/super-moisture-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/SUPER-MOISTURE-MASQUE-ecomm-small.png", 
         shopLink: "/shop/products/super-moisture-masque", 
@@ -209,8 +209,8 @@ const allProducts = [
     {
         name: "MONAT SUPER NOURISH™ OIL CRÈME CONDITIONER", 
         line: "haircare",
-        rPrice: "52.00",
-        vipPrice: "44.00", 
+        rPrice: 52.00,
+        vipPrice: 44.00, 
         url: "/super-nourish-oil-creme-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/OIL-CRE%CC%80ME-CONDITIONER.png", 
         shopLink: "/shop/products/monat-super-nourish-oil-creme-conditioner?taxon_id=30", 
@@ -220,8 +220,8 @@ const allProducts = [
     {
         name: "MONAT SUPER NOURISH™ OIL CRÈME SHAMPOO", 
         line: "haircare",
-        rPrice: "52.00",
-        vipPrice: "44.00", 
+        rPrice: 52.00,
+        vipPrice: 44.00, 
         url: "/super-nourish-oil-creme-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/OIL-CRE%CC%80ME-SHAMPOO.png", 
         shopLink: "/shop/products/nourishing-oil-creme-shampoo?taxon_id=30", 
@@ -231,8 +231,8 @@ const allProducts = [
     {
         name: "DAMAGE REPAIR BOND SUPPORT MASQUE", 
         line: "haircare",
-        rPrice: "60.00",
-        vipPrice: "51.00", 
+        rPrice: 60.00,
+        vipPrice: 51.00, 
         url: "/hair-damage-repair-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/09/ADVANCED-HYDRATING-masque_allprod.png", 
         shopLink: "/shop/products/damage-repair-bond-support-masque", 
@@ -242,8 +242,8 @@ const allProducts = [
     {
         name: "DAMAGE REPAIR BOND SUPPORT SHAMPOO", 
         line: "haircare",
-        rPrice: "46.00",
-        vipPrice: "39.00", 
+        rPrice: 46.00,
+        vipPrice: 39.00, 
         url: "/hair-damage-repair-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/09/ADVANCED-HYDRATING-SHAMPOO-all-prod.png", 
         shopLink: "/shop/products/damage-repair-bond-support-shampoo", 
@@ -253,8 +253,8 @@ const allProducts = [
     {
         name: "DAMAGE REPAIR BOND-BUILDING HAIR TREATMENT", 
         line: "haircare",
-        rPrice: "46.00",
-        vipPrice: "39.00", 
+        rPrice: 46.00,
+        vipPrice: 39.00, 
         url: "/hair-damage-repair-treatment/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/09/ADVANCED-HYDRATING-Tratment-all-prod.png", 
         shopLink: "/shop/products/damage-repair-bond-building-treatment", 
@@ -264,8 +264,8 @@ const allProducts = [
     {
         name: "DAMAGE REPAIR BOND-FORTIFYING HAIR LEAVE-IN CRÈME", 
         line: "haircare",
-        rPrice: "42.00 ",
-        vipPrice: "36.00", 
+        rPrice: 42.00,
+        vipPrice: 36.00, 
         url: "/hair-damage-repair/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/09/ADVANCED-HYDRATING-creme_all-prod.png", 
         shopLink: "/shop/products/damage-repair-bond-fortifying-hair-leave-in-creme", 
@@ -275,8 +275,8 @@ const allProducts = [
     {
         name: "HAIR TRANSFORMATION MASQUE WITH REJUVENIQE S™", 
         line: "haircare",
-        rPrice: "65.00",
-        vipPrice: "55.00", 
+        rPrice: 65.00,
+        vipPrice: 55.00, 
         url: "/hair-transformation-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/HAIR-TRANSFORMATION-MASQUE.png", 
         shopLink: "/shop/products/hair-transformation-masque?taxon_id=30", 
@@ -286,8 +286,8 @@ const allProducts = [
     {
         name: "MONAT JUNIOR GENTLE SHAMPOO", 
         line: "haircare",
-        rPrice: "27.00",
-        vipPrice: "23.00", 
+        rPrice: 27.00,
+        vipPrice: 23.00, 
         url: "/monat-junior-gentle-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/MONAT-JUNIOR-GENTLE-SHAMPOO.png", 
         shopLink: "/shop/products/junior-gentle-shampoo-8-oz", 
@@ -297,8 +297,8 @@ const allProducts = [
     {
         name: "MONAT JUNIOR GENTLE CONDITIONER", 
         line: "haircare",
-        rPrice: "27.00",
-        vipPrice: "23.00", 
+        rPrice: 27.00,
+        vipPrice: 23.00, 
         url: "/monat-junior-gentle-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/09/MONAT-JUNIOR-GENTLE-CONDITIONER-ecomm-hair.png", 
         shopLink: "/shop/products/junior-gentle-conditioner-6-oz", 
@@ -308,8 +308,8 @@ const allProducts = [
     {
         name: "MONAT JUNIOR GENTLE DETANGLER", 
         line: "haircare",
-        rPrice: "26.00",
-        vipPrice: "22.00", 
+        rPrice: 26.00,
+        vipPrice: 22.00, 
         url: "/junior-gentle-detangler/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/MONAT-JUNIOR-GENTLE-DETANGLER.png", 
         shopLink: "/shop/products/junior-gentle-detangler-spray-6-oz", 
@@ -319,8 +319,8 @@ const allProducts = [
     {
         name: "UNKNOT DETANGLER", 
         line: "haircare",
-        rPrice: "38.00",
-        vipPrice: "32.00", 
+        rPrice: 38.00,
+        vipPrice: 32.00, 
         url: "/unknot-detangler/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/UNKNOT-DETANGLER.png", 
         shopLink: "/shop/products/unknot-detangler", 
@@ -330,8 +330,8 @@ const allProducts = [
     {
         name: "IR CLINICAL™ THICKENING CONDITIONER", 
         line: "haircare",
-        rPrice: "52.00",
-        vipPrice: "44.00", 
+        rPrice: 52.00,
+        vipPrice: 44.00, 
         url: "/intense-repair-treatment-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-THICKENING-CONDITIONER_ecomm-2022.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2022/08/IR-Clinical-Conditioner-directions.jpg",
@@ -342,8 +342,8 @@ const allProducts = [
     {
         name: "IR CLINICAL™ THICKENING SHAMPOO", 
         line: "haircare",
-        rPrice: "46.00",
-        vipPrice: "39.00", 
+        rPrice: 46.00,
+        vipPrice: 39.00, 
         url: "/irt-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-THICKENING-SHAMPOO_ecomm-2022.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2022/08/IR-Clinical-Conditioner-directions.jpg",
@@ -354,8 +354,8 @@ const allProducts = [
     {
         name: "IR CLINICAL™ HAIR THINNING DEFENSE", 
         line: "haircare",
-        rPrice: "78.00",
-        vipPrice: "66.00", 
+        rPrice: 78.00,
+        vipPrice: 66.00, 
         url: "/intense-repair-serum/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-HAIR-THINNING-DEFENSE-SERUM_ecomm-2022.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -366,8 +366,8 @@ const allProducts = [
     {
         name: "LASH & BROW ENHANCING SERUM BY MONAT™️", 
         line: "haircare",
-        rPrice: "67.00",
-        vipPrice: "57.00", 
+        rPrice: 67.00,
+        vipPrice: 57.00, 
         url: "/lash-brow-enhancing-serum/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/09/LASH-BROW-ENHANCING-SERUM_ecomm-hair.png", 
         shopLink: "/shop/products/eye-wonder-eyelash-enhancer-10ml", 
@@ -377,8 +377,8 @@ const allProducts = [
     {
         name: "MONAT BLACK SHAMPOO + CONDITIONER", 
         line: "haircare",
-        rPrice: "46.00",
-        vipPrice: "39.00", 
+        rPrice: 46.00,
+        vipPrice: 39.00, 
         url: "/monat-black-shampoo-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/BLACK-2-in-1-Shampoo-Conditioner-ecomm-pic-.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -389,8 +389,8 @@ const allProducts = [
     {
         name: "MONAT FOR MEN™ MATTE STYLING CLAY", 
         line: "haircare",
-        rPrice: "35.00",
-        vipPrice: "30.00", 
+        rPrice: 35.00,
+        vipPrice: 30.00, 
         url: "/men-styling-clay/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/02/MONAT-FOR-MEN-Matte-Styling-Clay-ecomm-2022.png", 
         shopLink: "/shop/products/monat-for-men-matte-styling-clay", 
@@ -400,8 +400,8 @@ const allProducts = [
     {
         name: "ADVANCED HYDRATING CONDITIONER", 
         line: "haircare",
-        rPrice: "52.00 ",
-        vipPrice: "44.00", 
+        rPrice: 52.00,
+        vipPrice: 44.00, 
         url: "/advanced-hydrating-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/ADVANCED-HYDRATING-CONDITIONER.png", 
         shopLink: "/shop/products/advanced-hydrating-conditioner", 
@@ -411,8 +411,8 @@ const allProducts = [
     {
         name: "ADVANCED HYDRATING IN-SHOWER MASQUE", 
         line: "haircare",
-        rPrice: "58.00",
-        vipPrice: "49.00", 
+        rPrice: 58.00,
+        vipPrice: 49.00, 
         url: "/in-shower-hair-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/ADVANCED-HYDRATING-IN-SHOWER-MASQUE.png", 
         shopLink: "/shop/products/advanced-hydrating-in-shower-masque", 
@@ -422,8 +422,8 @@ const allProducts = [
     {
         name: "ADVANCED HYDRATING SHAMPOO WITH REJUVENIQE S™", 
         line: "haircare",
-        rPrice: "45.00",
-        vipPrice: "38.00", 
+        rPrice: 45.00,
+        vipPrice: 38.00, 
         url: "/advanced-hydrating-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/ADVANCED-HYDRATING-SHAMPOO.png", 
         shopLink: "/shop/products/advanced-hydrating-shampoo", 
@@ -433,8 +433,8 @@ const allProducts = [
     {
         name: "RENEW SHAMPOO", 
         line: "haircare",
-        rPrice: "45.00",
-        vipPrice: "38.00", 
+        rPrice: 45.00,
+        vipPrice: 38.00, 
         url: "/renew-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/RENEW-SHAMPOO-ecomm-pic.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -445,8 +445,8 @@ const allProducts = [
     {
         name: "RESTORE LEAVE-IN CONDITIONER", 
         line: "haircare",
-        rPrice: "40.00",
-        vipPrice: "34.00", 
+        rPrice: 40.00,
+        vipPrice: 34.00, 
         url: "/restore-leave-in-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/RESTORE-LEAVE-IN-CONDITIONER-ecomm-pic.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -457,8 +457,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ AIR DRY CREAM", 
         line: "haircare",
-        rPrice: "42.00",
-        vipPrice: "36.00", 
+        rPrice: 42.00,
+        vipPrice: 36.00, 
         url: "/air-dry-cream/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/AIR-DRY-CREAM.png", 
         shopLink: "/shop/products/air-dry-cream-6-oz", 
@@ -468,8 +468,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ BLOW OUT CREAM INFUSED WITH REJUVENIQE™", 
         line: "haircare",
-        rPrice: "42.00",
-        vipPrice: "36.00", 
+        rPrice: 42.00,
+        vipPrice: 36.00, 
         url: "/blow-out-cream/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/BLOW-OUT-CREAM-1.png", 
         shopLink: "/shop/products/blow-out-cream", 
@@ -479,8 +479,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ FLEX CONTROL HAIRSPRAY", 
         line: "haircare",
-        rPrice: "48.00",
-        vipPrice: "41.00", 
+        rPrice: 48.00,
+        vipPrice: 41.00, 
         url: "/control-hairspray/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/STUDIO-ONE-FLEX-CONTROL-HAIRSPRAY.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -491,8 +491,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ FRIZZ-FIX SMOOTHING HAIR PRIMER", 
         line: "haircare",
-        rPrice: "39.00",
-        vipPrice: "33.00", 
+        rPrice: 39.00,
+        vipPrice: 33.00, 
         url: "/frizz-fix-smoothing-hair-primer/", 
         img: "https://monatglobal.com/wp-content/uploads/2018/12/studio-one-frizz-fix-1.png", 
         shopLink: "/shop/products/frizz-fix-smoothing-primer-4-3-oz", 
@@ -502,8 +502,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ SUPER STRONG HOLD FINISHING HAIRSPRAY", 
         line: "haircare",
-        rPrice: "48.00",
-        vipPrice: "41.00", 
+        rPrice: 48.00,
+        vipPrice: 41.00, 
         url: "/strong-hold-hairspray/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/STUDIO-ONE-STRONG-FLEXI-HOLD.png", 
         shopLink: "/shop/products/monat-studio-one-super-strong-hold-finishing-hairspray-6000001306", 
@@ -513,8 +513,8 @@ const allProducts = [
     {
         name: "SMOOTHING ANTI-FRIZZ™ BLOW OUT SPRAY", 
         line: "haircare",
-        rPrice: "42.00",
-        vipPrice: "36.00", 
+        rPrice: 42.00,
+        vipPrice: 36.00, 
         url: "/smoothing-anti-frizz-spray/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/smoothing-anti-frizz-blow-out-spray_all-prod-.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-blow-out-spray", 
@@ -524,8 +524,8 @@ const allProducts = [
     {
         name: "SMOOTHING ANTI-FRIZZ™ DEEP INTENSIVE TREATMENT", 
         line: "haircare",
-        rPrice: "52.00",
-        vipPrice: "44.00", 
+        rPrice: 52.00,
+        vipPrice: 44.00, 
         url: " /smoothing-anti-frizz-treatment/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/smoothing-anti-flizz-deep-treatment_all-prod-.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-deep-intensive-treatment", 
@@ -535,8 +535,8 @@ const allProducts = [
     {
         name: "SMOOTHING ANTI-FRIZZ™ DEEP CONDITIONER", 
         line: "haircare",
-        rPrice: "52.00",
-        vipPrice: "44.00", 
+        rPrice: 52.00,
+        vipPrice: 44.00, 
         url: "/smoothing-deep-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/smoothing-anti-frizz-deep-conditioner_all-prod-.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -547,8 +547,8 @@ const allProducts = [
     {
         name: "SMOOTHING ANTI-FRIZZ™ SHAMPOO", 
         line: "haircare",
-        rPrice: "45.00",
-        vipPrice: "38.00", 
+        rPrice: 45.00,
+        vipPrice: 38.00, 
         url: "/smoothing-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/smoothing-anti-frizz-shampoo-all-prod.png", 
         shopLink: "/shop/products/smoothing-anti-frizz-shampoo", 
@@ -558,8 +558,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE THE CHAMP™ CONDITIONING DRY SHAMPOO INFUSED WITH REJUVENIQE™", 
         line: "haircare",
-        rPrice: "42.00",
-        vipPrice: "36.00", 
+        rPrice: 42.00,
+        vipPrice: 36.00, 
         url: "/the-champ-dry-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/CONDITIONING-DRY-SHAMPOO.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -570,8 +570,8 @@ const allProducts = [
     {
         name: "PURIFYING VINEGAR RINSE", 
         line: "haircare",
-        rPrice: "40.00",
-        vipPrice: "34.00", 
+        rPrice: 40.00,
+        vipPrice: 34.00, 
         url: "/vinegar-rinse/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/04/Purifying-Vinegar-Rinset-all-prod.png", 
         shopLink: "/shop/products/purifying-vinegar-rinse-6000001827?taxon_id=30", 
@@ -581,8 +581,8 @@ const allProducts = [
     {
         name: "PURIFYING VINEGAR SHAMPOO", 
         line: "haircare",
-        rPrice: "45.00",
-        vipPrice: "38.00", 
+        rPrice: 45.00,
+        vipPrice: 38.00, 
         url: "/vinegar-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/PURIFYING-VINEGAR-SHAMPOO.png", 
         shopLink: "/shop/products/purifying-vinegar-shampoo", 
@@ -592,8 +592,8 @@ const allProducts = [
     {
         name: "SCALP PURIFYING SCRUB", 
         line: "haircare",
-        rPrice: "58.00",
-        vipPrice: "49.00", 
+        rPrice: 58.00,
+        vipPrice: 49.00, 
         url: "/vinegar-scrub-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/SCALP-PURIFYING-SCRUB.png", 
         shopLink: "/shop/products/scalp-purifying-scrub", 
@@ -603,8 +603,8 @@ const allProducts = [
     {
         name: "SOOTHING MICELLAR SHAMPOO", 
         line: "haircare",
-        rPrice: "30.00",
-        vipPrice: "26.00", 
+        rPrice: 30.00,
+        vipPrice: 26.00, 
         url: "/soothing-micellar-shampoo/", 
         img: "https://monatglobal.com/ca/wp-content/uploads/sites/5/2021/04/soothing-micellar-shampoo_876x1000-800x913.png", 
         shopLink: "/shop/products/soothing-micellar-shampoo", 
@@ -614,8 +614,8 @@ const allProducts = [
     {
         name: "MONAT FOR MEN™ MOLDING SHINE POMADE", 
         line: "haircare",
-        rPrice: "35.00",
-        vipPrice: "30.00", 
+        rPrice: 35.00,
+        vipPrice: 30.00, 
         url: "/men-hair-molding-pomade/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/02/monat-men-molding-shine-pomade-ecomm-2022.png", 
         shopLink: "/shop/products/men-molding-shine-pomade", 
@@ -625,8 +625,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ GLOSSY SHINE MIST", 
         line: "haircare",
-        rPrice: "39.00",
-        vipPrice: "33.00", 
+        rPrice: 39.00,
+        vipPrice: 33.00, 
         url: "/hair-glossy-shine-mist/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/GLOSSY-SHINE-MIST.png", 
         shopLink: "/shop/products/monat-studio-one-glossy-shine-mist", 
@@ -636,8 +636,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ DRY TEXTURIZING SPRAY INFUSED WITH REJUVENIQE™", 
         line: "haircare",
-        rPrice: "35.00",
-        vipPrice: "30.00", 
+        rPrice: 35.00,
+        vipPrice: 30.00, 
         url: "/dry-texturizing-spray/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/DRY-TEXTURIZING-SPRAY-ecomm-pic.png", 
         shopLink: "/shop/products/dry-texturizing-spray-6000000418", 
@@ -647,8 +647,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ HEAT PROTECTANT SPRAY", 
         line: "haircare",
-        rPrice: "45.00",
-        vipPrice: "38.00", 
+        rPrice: 45.00,
+        vipPrice: 38.00, 
         url: "/hair-thermal-protectant/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/HEAT-PROTECTANT-SPRAY.png", 
         shopLink: "/shop/products/monat-studio-one-heat-protectant-spray", 
@@ -658,8 +658,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ THE MOXIE MAGNIFYING MOUSSE", 
         line: "haircare",
-        rPrice: "45.00",
-        vipPrice: "38.00", 
+        rPrice: 45.00,
+        vipPrice: 38.00, 
         url: "/moxie-mousse/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/THE-MOXIE-MAGNIFYING-MOUSSE.png", 
         shopLink: "/shop/products/monat-studio-one-the-moxie-mouse", 
@@ -669,8 +669,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ VOLUME & LIFT SPRAY", 
         line: "haircare",
-        rPrice: "40.00",
-        vipPrice: "34.00", 
+        rPrice: 40.00,
+        vipPrice: 34.00, 
         url: "/volume-spray/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/VOLUME-LIFT-SPRAY.png", 
         shopLink: "/shop/products/new-volume-lift-spray", 
@@ -680,8 +680,8 @@ const allProducts = [
     {
         name: "VOLUMIZING REVITALIZE™ CONDITIONER", 
         line: "haircare",
-        rPrice: "52.00",
-        vipPrice: "44.00", 
+        rPrice: 52.00,
+        vipPrice: 44.00, 
         url: "/volumizing-revitalize-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/VOLUMIZING-REVITALIZE%E2%84%A2-CONDITIONER.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -692,8 +692,8 @@ const allProducts = [
     {
         name: "VOLUMIZING REVIVE™ SHAMPOO", 
         line: "haircare",
-        rPrice: "45.00",
-        vipPrice: "38.00", 
+        rPrice: 45.00,
+        vipPrice: 38.00, 
         url: "/volumizing-revive-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/VOLUMIZING-REVIVE%E2%84%A2-SHAMPOO.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -704,8 +704,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ WAVE SPRAY", 
         line: "haircare",
-        rPrice: "34.00",
-        vipPrice: "29.00", 
+        rPrice: 34.00,
+        vipPrice: 29.00, 
         url: "/wave-spray/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/studio-one-wave-spray_876x1000.png", 
         shopLink: "https://corp.mymonat.com/shop/products/wave-spray-product?taxon_id=21", 
@@ -715,8 +715,8 @@ const allProducts = [
     {
         name: "MONAT STUDIO ONE™ THERMAL PROTECT STYLING SHIELD", 
         line: "haircare",
-        rPrice: "39.00",
-        vipPrice: "33.00", 
+        rPrice: 39.00,
+        vipPrice: 33.00, 
         url: "/thermal-protect-styling-shield/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/09/THERMAL-PROTECT-STYLING-SHIELD-ecomm-hair.png", 
         shopLink: "/shop/products/thermal-protect-styling-shield?taxon_id=21", 
@@ -736,8 +736,8 @@ const allProducts = [
     {
         name: "BE PURIFIED™ SYSTEM", 
         line: "skincare",
-        rPrice: "218.00",
-        vipPrice: "186.00", 
+        rPrice: 218.00,
+        vipPrice: 186.00, 
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/BE-PURIFIED-SYSTEM_ecomm.png ", 
         shopLink: "/shop/products/be-purified-routine", 
@@ -749,8 +749,8 @@ const allProducts = [
     {
         name: "BE BALANCED™ System", 
         line: "skincare",
-        rPrice: "302.00",
-        vipPrice: "258.00", 
+        rPrice: 302.00,
+        vipPrice: 258.00, 
         url: "/be-balanced-routine/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-routine-skincare.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -763,8 +763,8 @@ const allProducts = [
     {
         name: "BE GENTLE™ System", 
         line: "skincare",
-        rPrice: "302.00",
-        vipPrice: "258.00", 
+        rPrice: 302.00,
+        vipPrice: 258.00, 
         url: "/be-gentle-routine/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-gentle-routine-1.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -777,8 +777,8 @@ const allProducts = [
     {
         name: "MAKEUP VANISHING BALM™", 
         line: "skincare",
-        rPrice: "67.00",
-        vipPrice: "57.00", 
+        rPrice: 67.00,
+        vipPrice: 57.00, 
         url: "/makeup-vanishing-balm/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/06/Makeup-Vanishing-Balm_web_.png", 
         shopLink: "/shop/products/makeup-vanishing-balm/", 
@@ -788,8 +788,8 @@ const allProducts = [
     {
         name: "BE GENTLE™ CREAMY CLEANSER", 
         line: "skincare",
-        rPrice: "50.00",
-        vipPrice: "43.00", 
+        rPrice: 50.00,
+        vipPrice: 43.00, 
         url: "/creamy-cleanser/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/monat-Be-Gentle-Cleanser-Skincare-1.png", 
         shopLink: "/shop/products/creamy-cleanser", 
@@ -799,8 +799,8 @@ const allProducts = [
     {
         name: "BE BALANCED™ FOAMY CLEANSER", 
         line: "skincare",
-        rPrice: "50.00",
-        vipPrice: "43.00", 
+        rPrice: 50.00,
+        vipPrice: 43.00, 
         url: "/foamy-cleanser/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-foamy-cleanser-.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -811,8 +811,8 @@ const allProducts = [
     {
         name: "BE PURIFIED™ CLARIFYING CLEANSER", 
         line: "skincare",
-        rPrice: "50.00",
-        vipPrice: "43.00",
+        rPrice: 50.00,
+        vipPrice: 43.00,
         url: "/skin-clarifying-cleanser/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/02/be-pcc.png", 
         shopLink: "/shop/products/be-purified-clarifying-cleanser", 
@@ -822,8 +822,8 @@ const allProducts = [
     {
         name: "BERRY REFINED SCRUB™", 
         line: "skincare",
-        rPrice: "62.00",
-        vipPrice: "53.00", 
+        rPrice: 62.00,
+        vipPrice: 53.00, 
         url: "/refined-skin-scrub/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/berry-refined-scrub.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -834,8 +834,8 @@ const allProducts = [
     {
         name: "BE PURIFIED™ COLD CHARCOAL MASK", 
         line: "skincare",
-        rPrice: "44.00",
-        vipPrice: "37.00", 
+        rPrice: 44.00,
+        vipPrice: 37.00, 
         url: "/charcoal-mask/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/02/be-pcharcoal-1.png", 
         shopLink: "/shop/products/be-purified-cold-charcoal-mask", 
@@ -845,8 +845,8 @@ const allProducts = [
     {
         name: "SKIN REVITALIZING ESSENCE™", 
         line: "skincare",
-        rPrice: "48.00",
-        vipPrice: "41.00", 
+        rPrice: 48.00,
+        vipPrice: 41.00, 
         url: "/skin-revitalizing/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/sking-revitalizing-essence.png", 
         shopLink: "/shop/products/skin-revitalizing-essence", 
@@ -856,8 +856,8 @@ const allProducts = [
     {
         name: "C. RADIANCE™ ILLUMINATING SERUM", 
         line: "skincare",
-        rPrice: "99.00",
-        vipPrice: "84.00", 
+        rPrice: 99.00,
+        vipPrice: 84.00, 
         url: "/skincare-c-radiance/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/11/c-radiance.png", 
         shopLink: "/shop/products/c-radiance-illuminating-serum", 
@@ -867,8 +867,8 @@ const allProducts = [
     {
         name: "REWIND™ AGE CONTROL NECTAR", 
         line: "skincare",
-        rPrice: "128.00",
-        vipPrice: "109.00", 
+        rPrice: 128.00,
+        vipPrice: 109.00, 
         url: "/age-control-nectar/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/rewind-age-control-nectar-1.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -879,8 +879,8 @@ const allProducts = [
     {
         name: "BOTANIC BAKUCHIOL VEGAN RETINOL ALTERNATIVE LOTION", 
         line: "skincare",
-        rPrice: "95.00",
-        vipPrice: "81.00", 
+        rPrice: 95.00,
+        vipPrice: 81.00, 
         url: "/bakuchiol/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/11/bbvr.png", 
         shopLink: "/shop/products/botanic-bakuchiol", 
@@ -890,8 +890,8 @@ const allProducts = [
     {
         name: "EYE SMOOTH™", 
         line: "skincare",
-        rPrice: "84.00",
-        vipPrice: "71.00", 
+        rPrice: 84.00,
+        vipPrice: 71.00, 
         url: "/eye-smooth/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/eye-smooth-nourishing-eye-cream.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -902,8 +902,8 @@ const allProducts = [
     {
         name: "30 SECOND MIRACLE™ INSTANT PERFECTOR", 
         line: "skincare",
-        rPrice: "90.00",
-        vipPrice: "77.00", 
+        rPrice: 90.00,
+        vipPrice: 77.00, 
         url: "/skincare-perfector/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/11/30-second-miracle.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -914,8 +914,8 @@ const allProducts = [
     {
         name: "HYDRATION BOOSTER™ HYALURONIC SERUM PLUS", 
         line: "skincare",
-        rPrice: "77.00",
-        vipPrice: "65.00", 
+        rPrice: 77.00,
+        vipPrice: 65.00, 
         url: "/hyaluronic-serum/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/08/Hydration-Booster-Hyaluronic-Serum-Plus_ecomm.png", 
         shopLink: "/shop/products/hydration-booster-serum", 
@@ -925,8 +925,8 @@ const allProducts = [
     {
         name: "BE GENTLE™ NOURISHING MOISTURIZER", 
         line: "skincare",
-        rPrice: "76.00",
-        vipPrice: "65.00", 
+        rPrice: 76.00,
+        vipPrice: 65.00, 
         url: "/nourishing-moisturizer/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-gentle-nurishing-moisturizer-1-1.png", 
         shopLink: "/shop/products/nourishing-moisturizer", 
@@ -936,8 +936,8 @@ const allProducts = [
     {
         name: "BE BALANCED™ LIGHTWEIGHT MOISTURIZER", 
         line: "skincare",
-        rPrice: "76.00",
-        vipPrice: "65.00",
+        rPrice: 76.00,
+        vipPrice: 65.00,
         url: "/lightweight-moisturizer/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-lightweight-moisturizer.png", 
         shopLink: "/shop/products/lightweight-moisturizer/", 
@@ -947,8 +947,8 @@ const allProducts = [
     {
         name: "BE PURIFIED™ OIL-FREE MOISTURIZER", 
         line: "skincare",
-        rPrice: "76.00",
-        vipPrice: "65.00",
+        rPrice: 76.00,
+        vipPrice: 65.00,
         url: "/skin-oil-free-moisturizer/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/02/be-pmois-1.png", 
         shopLink: "/shop/products/be-purified-oil-free-moisturizer", 
@@ -958,8 +958,8 @@ const allProducts = [
     {
         name: "NIGHT HAVEN™ OVERNIGHT AGE CONTROL CREAM", 
         line: "skincare",
-        rPrice: "87.00",
-        vipPrice: "74.00", 
+        rPrice: 87.00,
+        vipPrice: 74.00, 
         url: "/skincare-night-age-control-cream/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/11/night-haven.png", 
         shopLink: "/shop/products/night-heaven-overnight-age-control-cream", 
@@ -969,8 +969,8 @@ const allProducts = [
     {
         name: "SUN VEIL™ DAILY MINERAL PROTECTION SPF 30", 
         line: "skincare",
-        rPrice: "40.00",
-        vipPrice: "34.00", 
+        rPrice: 40.00,
+        vipPrice: 34.00, 
         url: "/sun-veil-sunscreen/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/08/sv-prod-1.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -981,8 +981,8 @@ const allProducts = [
     {
         name: "HYDRATE & REFRESH™ FACE MIST", 
         line: "skincare",
-        rPrice: "44.00",
-        vipPrice: "37.00", 
+        rPrice: 44.00,
+        vipPrice: 37.00, 
         url: "/face-mist/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/08/MONAT_HYDRATE-REFRESH_ecomm-optimized.png", 
         shopLink: "/shop/products/hydrate-refresh-face-mist", 
@@ -992,8 +992,8 @@ const allProducts = [
     {
         name: "BRIGHTEN AND RECOVER", 
         line: "skincare",
-        rPrice: "186.00",
-        vipPrice: "158.00", 
+        rPrice: 186.00,
+        vipPrice: 158.00, 
         url: "/skincare-duo/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/11/Brighten-Recover-Duo-1.png", 
         shopLink: "/shop/products/brighten-recover-duo", 
@@ -1003,8 +1003,8 @@ const allProducts = [
     {
         name: "MONAT BODY CARE™ MOISTURIZE & REPLENISH BODY WASH", 
         line: "skincare",
-        rPrice: "42.00",
-        vipPrice: "36.00", 
+        rPrice: 42.00,
+        vipPrice: 36.00, 
         url: "/body-wash/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/08/Moistturizw-replenish-body-wash-ecomm.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -1015,8 +1015,8 @@ const allProducts = [
     {
         name: "MONAT BODY CARE™ EXFOLIATE & REFINE BODY POLISH", 
         line: "skincare",
-        rPrice: "52.00",
-        vipPrice: "44.00", 
+        rPrice: 52.00,
+        vipPrice: 44.00, 
         url: "/body-exfoliator/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/08/exfoliate-refine-body-polish-ecomm.png", 
         shopLink: "/shop/products/monat-body-care-exfoliate-refine-body-polish-6000001821", 
@@ -1026,8 +1026,8 @@ const allProducts = [
     {
         name: "MONAT BODY CARE™ HYDRATE & REPAIR BODY SERUM", 
         line: "skincare",
-        rPrice: "67.00",
-        vipPrice: "57.00", 
+        rPrice: 67.00,
+        vipPrice: 57.00, 
         url: "/body-hydrate-serum/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/08/HYDRATE-REPAIR-BODY-SERUM-ecomm.png", 
         shopLink: "/shop/products/monat-body-care-hydrate-repair-serum-6000001822", 
@@ -1037,8 +1037,8 @@ const allProducts = [
     {
         name: "MONAT BODY CARE™ SMOOTH & RENEW BODY LOTION", 
         line: "skincare",
-        rPrice: "57.00",
-        vipPrice: "48.00", 
+        rPrice: 57.00,
+        vipPrice: 48.00, 
         url: "/body-lotion/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/08/SMOOTH-RENEW-BODY-LOTION-ecomm-1.png", 
         shopLink: "/shop/products/monat-body-care-smooth-renew-body-lotion-6000001820", 
@@ -1048,8 +1048,8 @@ const allProducts = [
     {
         name: "MONAT BODY CARE™ SILKY & SOOTHING HAND CREAM", 
         line: "skincare",
-        rPrice: "23.00",
-        vipPrice: "20.00", 
+        rPrice: 23.00,
+        vipPrice: 20.00, 
         url: "/hand-cream/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/08/SILKY-SOOTHING-HAND-CREAM-ecomm.png", 
         shopLink: "/shop/products/monat-body-care-silky-soothing-hand-cream-6000001963", 
@@ -1059,8 +1059,8 @@ const allProducts = [
     {
         name: "MONAT FOR MEN™ ESSENTIAL FACE WASH", 
         line: "skincare",
-        rPrice: "35.00",
-        vipPrice: "30.00", 
+        rPrice: 35.00,
+        vipPrice: 30.00, 
         url: "/men-face-wash/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/02/MB-ESSENTIAL-FACE-WASH-401x500.png", 
         shopLink: "/shop/products/essential-face-wash", 
@@ -1070,8 +1070,8 @@ const allProducts = [
     {
         name: "MONAT FOR MEN™ ESSENTIAL FACE SCRUB", 
         line: "skincare",
-        rPrice: "37.00",
-        vipPrice: "31.00", 
+        rPrice: 37.00,
+        vipPrice: 31.00, 
         url: "/men-face-scrub/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/02/MB-ESSENTIAL-FACE-SCRUB-401x500.png", 
         shopLink: "/shop/products/essential-face-scrub", 
@@ -1081,8 +1081,8 @@ const allProducts = [
     {
         name: "MONAT FOR MEN™ ESSENTIAL FACE MOISTURIZER", 
         line: "skincare",
-        rPrice: "45.00",
-        vipPrice: "38.00", 
+        rPrice: 45.00,
+        vipPrice: 38.00, 
         url: "/men-face-moisturizer/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/01/MB-ESSENTIAL-FACE-MOISTURIZER-1.7oz_eccom-1.png", 
         shopLink: "/shop/products/essential-face-moisturizer", 
@@ -1092,8 +1092,8 @@ const allProducts = [
     {
         name: "MONAT FOR MEN™ ESSENTIAL SHAVING CREAM", 
         line: "skincare",
-        rPrice: "29.00",
-        vipPrice: "25.00", 
+        rPrice: 29.00,
+        vipPrice: 25.00, 
         url: "/men-shaving-cream/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/10/essential-shaving-cream.png", 
         shopLink: "/shop/products/men-essential-shaving-cream", 
@@ -1123,8 +1123,8 @@ const allProducts = [
     {
         name: "WELLNESS STARTER SYSTEM", 
         line: "wellness",
-        rPrice: "193.00",
-        vipPrice: "164.00", 
+        rPrice: 193.00,
+        vipPrice: 164.00, 
         url: "", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/WELLNESS-STARTER-SYSTEM-ecomm.png", 
         shopLink: "/shop/products/wellness-starter-system-6000003042", 
@@ -1136,8 +1136,8 @@ const allProducts = [
     {
         name: "MONAT APPLE CIDER VINEGAR GUMMIES", 
         line: "wellness",
-        rPrice: "43.00",
-        vipPrice: "37.00", 
+        rPrice: 43.00,
+        vipPrice: 37.00, 
         url: "/apple-cider-vinegar-gummies/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/04/Apple-Cider-Vinegar-Gummies-comm-1.png", 
         shopLink: "/shop/products/monat-apple-cider-vinegar-gummies-6000002126", 
@@ -1147,8 +1147,8 @@ const allProducts = [
     {
         name: "MONAT VEGAN PROTEIN", 
         line: "wellness",
-        rPrice: "85.00",
-        vipPrice: "72.00", 
+        rPrice: 85.00,
+        vipPrice: 72.00, 
         url: "/vegan-protein/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/08/VEGAN-PROTEIN-POWDER-ECOM_-2021.png", 
         shopLink: "/shop/products/monat-vegan-protein", 
@@ -1158,8 +1158,8 @@ const allProducts = [
     {
         name: "TOTAL GREENS™", 
         line: "wellness",
-        rPrice: "59.00",
-        vipPrice: "50.00", 
+        rPrice: 59.00,
+        vipPrice: 50.00, 
         url: "/total-greens/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/total-greens-E-comm.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -1170,8 +1170,8 @@ const allProducts = [
     {
         name: "COLLAGEN KEY™", 
         line: "wellness",
-        rPrice: "65.00",
-        vipPrice: "55.00", 
+        rPrice: 65.00,
+        vipPrice: 55.00, 
         url: "/collagen/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/MONAT-Collagen-key-E-comm-1.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -1182,8 +1182,8 @@ const allProducts = [
     {
         name: "MONAT BALANCE™", 
         line: "wellness",
-        rPrice: "69.00",
-        vipPrice: "59.00",   
+        rPrice: 69.00,
+        vipPrice: 59.00,   
         url: "/balance/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/Balance-E-comm.png", 
         BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
@@ -1194,8 +1194,8 @@ const allProducts = [
     {
         name: "MONAT ENERGY™", 
         line: "wellness",
-        rPrice: "69.00",
-        vipPrice: "59.00", 
+        rPrice: 69.00,
+        vipPrice: 59.00, 
         url: "/energy/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/Energy-Ecomm-2.png", 
         shopLink: "/shop/products/monat-energy-berry", 
@@ -1205,8 +1205,8 @@ const allProducts = [
     {
         name: "SLEEP DROPS", 
         line: "wellness",
-        rPrice: "69.00",
-        vipPrice: "59.00", 
+        rPrice: 69.00,
+        vipPrice: 59.00, 
         url: "/sleep-drops/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/Sleep-drops-E-comm.png", 
         shopLink: "/shop/products/monat-sleep-drops-6000001060", 
@@ -1216,8 +1216,8 @@ const allProducts = [
     {
         name: "immune support*", 
         line: "wellness",
-        rPrice: "55.00",
-        vipPrice: "47.00", 
+        rPrice: 55.00,
+        vipPrice: 47.00, 
         url: "/immune-support/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/04/I-s-APR-2021-1.png", 
         shopLink: "/shop/products/monat-immunity-support", 
@@ -1332,15 +1332,22 @@ const showP = (arr, box, showInfoTag) =>{
     }
     
     activeItems = [...arr, ...activeItems];
-    array = activeItems;
     
-    let lowToH = activeItems.sort((a, b) => a.rPrice - b.rPrice);
-    let highToL = activeItems.sort((a, b) => b.rPrice - a.rPrice);
     
-    console.log(lowToH);
-    console.log(highToL);
+    let lowToH = [...activeItems].sort((a, b) => a.rPrice - b.rPrice);
+    let highToL = [...activeItems].sort((a, b) => b.rPrice - a.rPrice);
+    
+    if(orderSelected.innerText == "LOWER - HIGHER"){
+        array = lowToH;
+    }else if(orderSelected.innerText == "HIGHER - LOWER"){
+        array = highToL
+    }else{
+        array = activeItems;
+    }
     
     filterPBox.innerHTML = "";
+    
+    console.log(array);
     
     array.forEach(p => {
         let newItem = document.createElement("div");
@@ -1456,9 +1463,7 @@ const showP = (arr, box, showInfoTag) =>{
 
     });
     
-}
-
-const infoEvents = () =>{
+    
     let btns = document.querySelectorAll(".infoBtn");
     let info = document.querySelectorAll(".infoCard");
     btns.forEach((btn, index) =>{
@@ -1475,6 +1480,7 @@ const infoEvents = () =>{
         }
     })
 }
+
 let loaderOverlay = document.getElementById("loaderP");
 let loaderGif = document.querySelector("#loaderP > img");
 
@@ -1500,6 +1506,39 @@ const loader = () =>{
         }, 800)
     }
 }
+
+let orderByBtn = document.querySelector("#orderBy > p");
+let orderSelected = document.querySelector("#orderBy > p span");
+let orderList = document.querySelector("#orderBy > div");
+let orderOptions = document.querySelectorAll("#orderBy > div p");
+
+orderByBtn.addEventListener("click", () =>{
+    orderByBtn.classList.toggle("active")
+    orderList.classList.toggle("active")
+})
+
+orderOptions.forEach(option =>{
+    option.addEventListener("click", () =>{
+        orderByBtn.classList.remove("active")
+        orderList.classList.remove("active")
+        
+        if(orderSelected.innerText != option.innerText){
+            orderSelected.innerText = option.innerText;
+            
+            showP([], filterPBox, true);
+            
+            option.classList.add("selected");
+            
+            orderOptions.forEach(op =>{
+                if(option != op){
+                    op.classList.remove("selected");
+                }
+            });
+        }
+        
+    })
+});
+
 
 let activeItems = [];
 let activeTab = "";
@@ -1535,7 +1574,6 @@ filterTabs.forEach((tab, i) =>{
 
                 
                 showP(arr, filterPBox, true);
-                infoEvents();
             }
             
             uncheck(tab.id);
@@ -1634,8 +1672,6 @@ filterInputs.forEach(input => {
             });
             
             showP(dinamicArray, filterPBox);
-            
-            infoEvents();
 
             let newTag = document.createElement("div");
             newTag.id = "filterTag_" + valueFormat(input);
@@ -1677,7 +1713,6 @@ filterInputs.forEach(input => {
                 
 
             showP([], filterPBox);
-            infoEvents();
         }
         
 
@@ -1693,7 +1728,6 @@ filterInputs.forEach(input => {
                 showP(allWellness, filterPBox, true);
             }
 
-            infoEvents();
             tagsBar.classList.remove("active");
         }
         
@@ -1719,7 +1753,6 @@ filterInputs.forEach(input => {
 // Si no hay filtro se muestran todos los productos
 if (location.hash == ""){
     showP(allProducts, filterPBox, true);
-    infoEvents();
 }else{
     let hash = location.hash;
     
@@ -1794,7 +1827,7 @@ searchBar.addEventListener("submit", (e) =>{
     activeItems = [];
     loader();
     showP(dinamicArray, filterPBox, true);
-    infoEvents();
+
     searchBar.reset();
     
     closeAllLists();
@@ -1896,4 +1929,5 @@ clearFilter.forEach(btn =>{
         filterInputs.forEach(input => (input.checked) && input.click());
     });
 })
+
 

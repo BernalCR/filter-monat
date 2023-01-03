@@ -97,7 +97,60 @@
 /* search bar- */
 
 
+/* -ORDER BY */
 
+#orderBy{
+    margin-right: 2.5rem;
+    cursor: pointer;
+    position: relative;
+}
+
+#orderBy p{
+    margin: 0;
+    letter-spacing: 0.08em;
+    font-size: 0.95em;
+    font-family: 'SuisseIntl-Medium', Fallback, sans-serif;
+}
+
+#orderBy p.active:after{
+    transform: rotate(-180deg);
+}
+
+#orderBy > p span{
+    margin-right: 0.5em;
+}
+
+#orderBy > div{
+    position: absolute;
+    border: 1px solid #d5dae09c;
+    border-bottom: none;
+    border-top: none;
+    top: 38px;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px #d2d0e48a;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height .2s linear;
+}
+
+#orderBy > div.active{
+    max-height: 10em;
+}
+
+#orderBy > div p{
+	border-bottom: 1px solid #d5dae09c;
+	width: max-content;
+	padding: 1.5rem 2rem;
+	width: 20vw;
+}
+
+#orderBy > div p:hover,
+#orderBy > div p.selected{
+	background-color: #f9f9fb;
+}
+
+/* ORDER BY- */
 
 
 
@@ -231,9 +284,9 @@
 
 
 .filter_main_title {
-    color: #2f294b;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     font-size: 0.95em;
+    cursor: pointer;
     font-family: 'SuisseIntl-Medium', Fallback, sans-serif;
 }
 
@@ -289,6 +342,7 @@
 	height: 100%;
 	padding: 0 2.5rem;
 	border-right: solid 1px #d5dae09c;
+	cursor: pointer;
 	transition: width .3s ease-in-out;
 }
 
@@ -403,7 +457,7 @@
 }
 
 #state1_filter{
-    padding: 0 2em !important;
+    padding: 0 2.5rem !important;
     transition: all .3s ease-in-out;
 }
 
@@ -430,7 +484,7 @@
     top: 0;
     right: 0;
     width: 100%;
-  padding: 0 2em 0 2em ;
+  padding: 0 2.5rem 0 2.5rem ;
     background-color: #fff;
     transform: translateX(100%);
     display: none;
@@ -470,7 +524,8 @@
 }
 
 #state1_filter li:not(.head_state2) > p:after,
-#filterBtn:after {
+#filterBtn:after,
+#orderBy > p:after{
 	content: url(https://monatglobal.com/wp-content/uploads/2022/08/dropdown-arrow.svg);
 	width: 1rem;
 	float: right;
