@@ -1325,11 +1325,9 @@ window.addEventListener("scroll", () =>{
 });
 
 // Funcion que muestra los productos
-const showP = (arr, box, showInfoTag) =>{
+const showP = (arr, box, resetArr, showInfoTag) =>{
 
-    if(arr == allProducts || arr == allHair || arr == allSkin || arr == allWellness) {
-        activeItems = [];
-    }
+    if(resetArr) activeItems = [];
     
     activeItems = [...arr, ...activeItems];
     
@@ -1525,7 +1523,7 @@ orderOptions.forEach(option =>{
         if(orderSelected.innerText != option.innerText){
             orderSelected.innerText = option.innerText;
             
-            showP([], filterPBox, true);
+            showP([], filterPBox, false, true);
             
             option.classList.add("selected");
             
@@ -1548,7 +1546,7 @@ let previousTab = "";
 let filterInitial = document.getElementById("state1_filter");
 let containerBanners = document.getElementById("containerBanners");
 let banners = document.querySelectorAll("#containerBanners > div");
-let filterTabs = document.querySelectorAll("#state1_filter > li > p");
+let filterTabs = document.querySelectorAll("#state1_filter > li:not(.not_a_tab) > p");
 let backState1 = document.querySelectorAll(".head_state2 span");
 
 filterTabs.forEach((tab, i) =>{
@@ -1569,11 +1567,10 @@ filterTabs.forEach((tab, i) =>{
                 });
                 
                 (tab.id === "haircareTab_f") ? arr = allHair : (tab.id === "skincareTab_f") ? arr = allSkin : arr = allWellness ;
-                banners.forEach(banner => (tab.id.includes(banner.id.slice(0, 4))) ? banner.classList.add("active") : banner.classList.remove("active"));
-
-
                 
-                showP(arr, filterPBox, true);
+                banners.forEach(banner => (tab.id.includes(banner.id.slice(0, 4))) ? banner.classList.add("active") : banner.classList.remove("active"));
+                
+                showP(arr, filterPBox, true, true);
             }
             
             uncheck(tab.id);
@@ -1590,6 +1587,32 @@ filterTabs.forEach((tab, i) =>{
 });
 
 
+document.getElementById("seeAllBtn").addEventListener("click", ()=> {
+    loader();
+    showP(allProducts, filterPBox, true, true)
+    previousTab = "";
+});
+
+//aqui va a ir la funcion de los systems
+
+let systemBtn = document.querySelectorAll(".not_a_tab.systems");
+
+systemBtn.forEach(btn =>{
+    btn.addEventListener("click", ()=>{
+        loader();
+        
+        filterInputs.forEach(input => (input.checked) && input.click());
+        
+        let arr = []
+        allProducts.forEach(p =>{
+            if(p.line === activeTab && p.category.includes("systems")){
+                arr.push(p);
+            }
+        });
+
+        showP(arr, filterPBox, true, true);
+    });
+});
 
 
 let boxTags = document.getElementById("boxTags");
@@ -1671,7 +1694,7 @@ filterInputs.forEach(input => {
 
             });
             
-            showP(dinamicArray, filterPBox);
+            showP(dinamicArray, filterPBox );
 
             let newTag = document.createElement("div");
             newTag.id = "filterTag_" + valueFormat(input);
@@ -1720,12 +1743,12 @@ filterInputs.forEach(input => {
             tagsBar.classList.add("active");
         }else{
             if(activeTab === "haircare"){
-                showP(allHair, filterPBox, true);
+                showP(allHair, filterPBox, false, true);
             }else if(activeTab === "skincare"){
-                showP(allSkin, filterPBox, true);
+                showP(allSkin, filterPBox, false, true);
             }else{
                 console.log("paso por show allWellness");
-                showP(allWellness, filterPBox, true);
+                showP(allWellness, filterPBox, false, true);
             }
 
             tagsBar.classList.remove("active");
@@ -1752,7 +1775,7 @@ filterInputs.forEach(input => {
 
 // Si no hay filtro se muestran todos los productos
 if (location.hash == ""){
-    showP(allProducts, filterPBox, true);
+    showP(allProducts, filterPBox, true, true);
 }else{
     let hash = location.hash;
     
@@ -1826,7 +1849,7 @@ searchBar.addEventListener("submit", (e) =>{
     
     activeItems = [];
     loader();
-    showP(dinamicArray, filterPBox, true);
+    showP(dinamicArray, filterPBox, false, true);
 
     searchBar.reset();
     
@@ -1931,3 +1954,4 @@ clearFilter.forEach(btn =>{
 })
 
 
+ 
