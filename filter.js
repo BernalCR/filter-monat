@@ -1364,11 +1364,16 @@ const showP = (arr, box, resetArr, showInfoTag) =>{
             
             
             categories.forEach(cat =>{
-                inputsCateg.forEach(inp => {
-                    if(cat == inp.value){
-                        (inp.checked || showInfoTag) ? infoCard.innerHTML += `<p>${cat}</p>` : infoCard.innerHTML += `<p class="off">${cat}</p>`;
-                    }
-                });
+                
+                if(cat == "systems"){
+                    (showInfoTag) ? infoCard.innerHTML += `<p>${cat}</p>` : infoCard.innerHTML += `<p class="off">${cat}</p>`;
+                }else{
+                    inputsCateg.forEach(inp => {
+                        if(cat == inp.value){
+                            (inp.checked || showInfoTag) ? infoCard.innerHTML += `<p>${cat}</p>` : infoCard.innerHTML += `<p class="off">${cat}</p>`;
+                        }
+                    });
+                }
             })
         }
         
@@ -1505,6 +1510,12 @@ const loader = () =>{
     }
 }
 
+const seeAll = () =>{
+    loader();
+    showP(allProducts, filterPBox, true, true)
+    previousTab = "";
+}
+
 let orderByBtn = document.querySelector("#orderBy > p");
 let orderSelected = document.querySelector("#orderBy > p span");
 let orderList = document.querySelector("#orderBy > div");
@@ -1542,7 +1553,8 @@ let activeItems = [];
 let activeTab = "";
 let previousTab = "";
 
-
+let clearSearchBar = document.getElementById("clearSearchBar");
+let clearSearch = document.getElementById("clearSearch");
 let filterInitial = document.getElementById("state1_filter");
 let containerBanners = document.getElementById("containerBanners");
 let banners = document.querySelectorAll("#containerBanners > div");
@@ -1557,6 +1569,7 @@ filterTabs.forEach((tab, i) =>{
         
         if(activeTab != previousTab){
             loader();
+            clearSearchBar.classList.remove("active");
             
             const uncheck = (id) =>{
                 let inputsCateg = document.querySelectorAll("#state1_filter > li > p:not(#"+ id +") + ul input");
@@ -1587,11 +1600,7 @@ filterTabs.forEach((tab, i) =>{
 });
 
 
-document.getElementById("seeAllBtn").addEventListener("click", ()=> {
-    loader();
-    showP(allProducts, filterPBox, true, true)
-    previousTab = "";
-});
+document.getElementById("seeAllBtn").addEventListener("click", seeAll);
 
 //aqui va a ir la funcion de los systems
 
@@ -1741,16 +1750,16 @@ filterInputs.forEach(input => {
 
         if(checked){
             tagsBar.classList.add("active");
+            clearSearchBar.classList.remove("active");
         }else{
             if(activeTab === "haircare"){
                 showP(allHair, filterPBox, false, true);
             }else if(activeTab === "skincare"){
                 showP(allSkin, filterPBox, false, true);
             }else{
-                console.log("paso por show allWellness");
                 showP(allWellness, filterPBox, false, true);
             }
-
+            
             tagsBar.classList.remove("active");
         }
         
@@ -1832,6 +1841,11 @@ const closeAllLists = () =>{
     if(list) list.remove();
 }
     
+clearSearch.addEventListener("click", () =>{
+    clearSearchBar.classList.remove("active");
+    seeAll();
+});
+    
 searchBar.addEventListener("submit", (e) =>{
     e.preventDefault();
     
@@ -1849,6 +1863,7 @@ searchBar.addEventListener("submit", (e) =>{
     
     activeItems = [];
     loader();
+    clearSearchBar.classList.add("active");
     showP(dinamicArray, filterPBox, false, true);
 
     searchBar.reset();
@@ -1904,7 +1919,7 @@ function autocomplete(inp, arr) {
     /*execute a function presses a key on the keyboard:*/
     inp.addEventListener("keydown", function(e) {
         let list = document.getElementById("autocomplete-list");
-        if (list) list = list.getElementsByTagName("div");
+        if (list) list = list.querySelectorAll("div");
         
         if (e.keyCode == 40) {
             //If the arrow DOWN key is pressed, increase the currentFocus variable
@@ -1929,6 +1944,7 @@ function autocomplete(inp, arr) {
         if (!list) return false;
 
         removeActive(list);
+        
         if (currentFocus >= list.length) currentFocus = 0;
         if (currentFocus < 0) currentFocus = (list.length - 1);
         
@@ -1954,4 +1970,4 @@ clearFilter.forEach(btn =>{
 })
 
 
- 
+  
