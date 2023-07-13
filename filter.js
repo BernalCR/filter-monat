@@ -1228,6 +1228,7 @@ const allProducts = [
 
 ]; 
 
+// Creacion de los arrays para cada linea de producto
 let allHair = [];
 let allSkin = [];
 let allWellness = [];
@@ -1242,6 +1243,18 @@ allProducts.forEach(p =>{
     }
 });
 
+// Funcion que imprime el numero total de productos de cada linea
+function setAllP_Counts(className, array) {
+    // Obtén todos los elementos <span> con la clase dada
+    let spans = document.querySelectorAll("."+className);
+    // Asigna la cantidad de elementos del array a los spans con la clase dada
+    spans.forEach(span => span.innerText = "( " + array.length + " )");
+}
+
+// Llama a la función con los diferentes nombres de clase y arrays
+setAllP_Counts('allHair_count', allHair);
+setAllP_Counts('allSkin_count', allSkin);
+setAllP_Counts('allWellness_count', allWellness);
 
 window.addEventListener("hashchange", () =>{
     location.reload();
@@ -1261,22 +1274,16 @@ let containerPage = document.getElementById("containerPage");
 
 
 
-
-
-
-
-
-
-
-
-
 let filterBar = document.getElementById("filterBar");
 let filterBox = document.getElementById("filterBox");
+
 // Funcion que activa la caja de filtros
 filterBtn.addEventListener("click", () =>{
     filterBtn.classList.toggle("active"); 
     filterBox.classList.toggle("active"); 
     containerShop.classList.toggle("active");
+    
+    (window.scrollY < containerBanners.offsetHeight) && window.scrollTo(0, containerBanners.offsetHeight + 1)
 });
 
 
@@ -1289,9 +1296,8 @@ filterAccordion.forEach(accordion =>{
     });
 });
 
-
-//Funcion para cerrar el filtro
 let closeFilter = document.querySelectorAll(".closeFilter");
+//Funcion para cerrar el filtro
 closeFilter.forEach(close =>{
     close.addEventListener("click", () =>{
         filterBox.classList.remove("active");
@@ -1305,14 +1311,12 @@ closeFilter.forEach(close =>{
     });
 });
 
-
-
-
+// Funcion que elimina comas y reemplaza espacios por "-" del value de los imputs
 const valueFormat = (i) =>{
     return i.value.replace(/,/g, "").replace(/ /g,"-")
 }
 
-// Funcion que activa el sticky
+// Funcion que activa el sticky del filtro
 let stickyFilter = filterBar.offsetTop;
 window.addEventListener("scroll", () =>{
     if(window.pageYOffset >= stickyFilter){
@@ -1325,18 +1329,20 @@ window.addEventListener("scroll", () =>{
 });
 
 // Funcion que muestra los productos
-const showP = (arr, box, showInfoTag) =>{
-
-    if(arr == allProducts || arr == allHair || arr == allSkin || arr == allWellness) {
-        activeItems = [];
-    }
+// box = se refiere al grid, antes tienia varios grids pero ahora es solo uno y lo que cambian son las cards asi que eventualmente podria eliminarlo
+// resetArr = si es true borra el contenido del array de las cards vivas, si es false agrega nuevos elementos a dicho array
+// showInfoTag = Cuando empiezo a filtrar los tags del infoBtn los que no estan en la categoria/concern filtrado estaran mas opacas respecto a los que si estan
+const showP = (arr, box, resetArr, showInfoTag) =>{
     
+    // Cambia el estado de activeItems (cards activas dentro del grid)
+    if(resetArr) activeItems = [];
     activeItems = [...arr, ...activeItems];
     
-    
+    // Crea los arrays del filter by
     let lowToH = [...activeItems].sort((a, b) => a.rPrice - b.rPrice);
     let highToL = [...activeItems].sort((a, b) => b.rPrice - a.rPrice);
     
+    // Segun el order by que se tenga, se le asigna el valor a "array"
     if(orderSelected.innerText == "LOWER - HIGHER"){
         array = lowToH;
     }else if(orderSelected.innerText == "HIGHER - LOWER"){
@@ -1345,42 +1351,40 @@ const showP = (arr, box, showInfoTag) =>{
         array = activeItems;
     }
     
+    // limpia el grid
     filterPBox.innerHTML = "";
     
-    console.log(array);
+    // console.log(array);
     
     array.forEach(p => {
         let newItem = document.createElement("div");
         newItem.className = "card_product";
-        
-        let categories = p.category.split(" | ");
-        
+ 
+        // infoCard es el div que contiene todas las tags de las categorias/concerns a la que pertenece el producto
         let infoCard = document.createElement("div");
         infoCard.className = "infoCard";
         
-        const printCateg = (line) =>{
-            let inputsCateg;
-            (line === "haircare") ? inputsCateg = hairInputs : (line === "skincare") ? inputsCateg = skinInputs : inputsCateg = wellnessInputs ;
-            
-            
-            
-            
-            categories.forEach(cat =>{
-                inputsCateg.forEach(inp => {
+
+        let inputsLine;
+        (p.line === "haircare") ? inputsLine = hairInputs : (p.line === "skincare") ? inputsLine = skinInputs : inputsLine = wellnessInputs;
+        
+        let categories = p.category.split(" | ");
+        categories.forEach(cat =>{
+            if(cat == "systems"){
+                (showInfoTag) ? infoCard.innerHTML += `<p>${cat}</p>` : infoCard.innerHTML += `<p class="off">${cat}</p>`;
+            }else{
+                inputsLine.forEach(inp => {
                     if(cat == inp.value){
                         (inp.checked || showInfoTag) ? infoCard.innerHTML += `<p>${cat}</p>` : infoCard.innerHTML += `<p class="off">${cat}</p>`;
                     }
                 });
-            })
-        }
-        
-        printCateg(p.line);
+            }
+        })
         
         newItem.prepend(infoCard);
         
         if(p.category.includes("systems")){
             newItem.innerHTML += `
-            
                 <div class="infoBtn">
                     <span></span>
                     <span></span>
@@ -1409,7 +1413,6 @@ const showP = (arr, box, showInfoTag) =>{
             `;
         }else{
             newItem.innerHTML += `
-            
                 <div class="infoBtn">
                     <span></span>
                     <span></span>
@@ -1436,18 +1439,7 @@ const showP = (arr, box, showInfoTag) =>{
         
         box.appendChild(newItem)
         
-        // if(p.category.includes("best sellers")) {
-        //     let BSimg = document.createElement("a");
-        //     let BStag = document.createElement("span");
-        //     BStag.innerText = "BEST SELLERS";
-        //     BSimg.className = "BSimg";
-        //     BSimg.href = p.url;
-        //     BSimg.style.backgroundImage = "url('"+ p.img +"')";
-        //     BSimg.appendChild(BStag)
-        //     box.appendChild(BSimg)
-        // }
-        
-        
+        // si el producto es un best seller a continuacion se agrega otra card con una imagen especial del producto
         if(p.category.includes("best sellers")) {
             let BScard = document.createElement("a");
             BScard.className = "BScard";
@@ -1460,10 +1452,9 @@ const showP = (arr, box, showInfoTag) =>{
             BScard.href = p.url;
             box.appendChild(BScard)
         }
-
     });
     
-    
+    // Se le agrega funcionalidad al boton de la infocard
     let btns = document.querySelectorAll(".infoBtn");
     let info = document.querySelectorAll(".infoCard");
     btns.forEach((btn, index) =>{
@@ -1484,16 +1475,20 @@ const showP = (arr, box, showInfoTag) =>{
 let loaderOverlay = document.getElementById("loaderP");
 let loaderGif = document.querySelector("#loaderP > img");
 
-window.addEventListener("scroll", () =>{
-    if(loaderOverlay.className.includes("active") && window.scrollY > containerBanners.offsetHeight){
-        window.scrollTo(0, containerBanners.offsetHeight + 1)
-        document.documentElement.style.overflowY = "hidden";
-    }
-});
+// esto no estoy muy seguro que hace... revisar
+// window.addEventListener("scroll", () =>{
+//     if(loaderOverlay.className.includes("active") && window.scrollY > containerBanners.offsetHeight){
+//         window.scrollTo(0, containerBanners.offsetHeight + 1)
+//         document.documentElement.style.overflowY = "hidden";
+//         console.log("paso")
+//     }
+// });
 
+// Funcion que hace la animacion del loader
 const loader = () =>{
     if (window.matchMedia("(min-width: 700px)").matches) {
         loaderOverlay.classList.add("active");
+        // el Math.random() es para que cada vez que se active el loader el gif carge desde el principio
         loaderGif.src = "https://monatglobal.com/wp-content/uploads/2022/04/drop-preloader-11.gif"+"?a="+Math.random();
         if(window.scrollY > containerBanners.offsetHeight) {
             window.scrollTo(0, containerBanners.offsetHeight + 1)
@@ -1507,6 +1502,22 @@ const loader = () =>{
     }
 }
 
+const resetInputs = () =>{
+    filterInputs.forEach(input => (input.checked) && input.click());
+}
+
+// funcion para ver todos los productos
+const seeAll = (array) =>{
+    loader();
+    resetInputs();
+    showP(array, filterPBox, true, true)
+    // esto es para que se despues usar esta funcion, cuando volvamos a tocar una tab if(activeTab != previousTab) siempre sea true
+    previousTab = ""
+}
+
+document.getElementById("seeAllBtn").addEventListener("click", () => seeAll(allProducts));
+
+// Order by
 let orderByBtn = document.querySelector("#orderBy > p");
 let orderSelected = document.querySelector("#orderBy > p span");
 let orderList = document.querySelector("#orderBy > div");
@@ -1517,6 +1528,15 @@ orderByBtn.addEventListener("click", () =>{
     orderList.classList.toggle("active")
 })
 
+// Funcion que cierra del dropdown de orderby si hace click fuera de este
+document.addEventListener("click", (e) => {
+    // La condicion se cumple si el dropdown esta abierto y si hace click por fuera del orderByBtn y orderList
+    if (orderByBtn.classList.contains("active") && !orderByBtn.contains(e.target) && !orderList.contains(e.target)) {
+        orderByBtn.classList.remove("active");
+        orderList.classList.remove("active");
+    }
+});
+
 orderOptions.forEach(option =>{
     option.addEventListener("click", () =>{
         orderByBtn.classList.remove("active")
@@ -1525,7 +1545,7 @@ orderOptions.forEach(option =>{
         if(orderSelected.innerText != option.innerText){
             orderSelected.innerText = option.innerText;
             
-            showP([], filterPBox, true);
+            showP([], filterPBox, false, true);
             
             option.classList.add("selected");
             
@@ -1535,132 +1555,149 @@ orderOptions.forEach(option =>{
                 }
             });
         }
-        
     })
 });
 
 
 let activeItems = [];
+// let activeItems;
+
 let activeTab = "";
 let previousTab = "";
 
-
+let clearSearchBar = document.getElementById("clearSearchBar");
+let clearSearch = document.getElementById("clearSearch");
 let filterInitial = document.getElementById("state1_filter");
 let containerBanners = document.getElementById("containerBanners");
 let banners = document.querySelectorAll("#containerBanners > div");
-let filterTabs = document.querySelectorAll("#state1_filter > li > p");
-let backState1 = document.querySelectorAll(".head_state2 span");
+let filterTabs = document.querySelectorAll("#state1_filter > li:not(.not_a_tab) > p");
+let backState1 = document.querySelectorAll(".head_state2 > span");
 
+// Funcion que le da funcion a las tabs de cada linea de producto dentro del filtro
 filterTabs.forEach((tab, i) =>{
     tab.addEventListener("click", () =>{
         filterInitial.classList.add("tabActive");
         tab.nextElementSibling.style.display = "block";
+        // nextElementSibling devuelve el elemento inmediatamente posterior al especificado (en este caso el ul con los inputs)
         activeTab = tab.id.replace('Tab_f', '');
         
+        // Si el tab que seleccionaste es diferente al que estabas antes, borra todos los inpus seleccionados anteriormente y te muestra todos los productos de la linea seleccionada 
         if(activeTab != previousTab){
             loader();
+            clearSearchBar.classList.remove("active");
+            resetInputs();
+            // let inputsLine = document.querySelectorAll("#state1_filter > li > p:not(#"+ tab.id +") + ul input");
+            let arr;
             
-            const uncheck = (id) =>{
-                let inputsCateg = document.querySelectorAll("#state1_filter > li > p:not(#"+ id +") + ul input");
-                let arr;
-                
-                inputsCateg.forEach(i => {
-                    if(i.checked) i.click();
-                });
-                
-                (tab.id === "haircareTab_f") ? arr = allHair : (tab.id === "skincareTab_f") ? arr = allSkin : arr = allWellness ;
-                banners.forEach(banner => (tab.id.includes(banner.id.slice(0, 4))) ? banner.classList.add("active") : banner.classList.remove("active"));
-
-
-                
-                showP(arr, filterPBox, true);
-            }
+            // inputsLine.forEach(i => {
+            //     if(i.checked) i.click();
+            // });
             
-            uncheck(tab.id);
+            (tab.id === "haircareTab_f") ? arr = allHair : (tab.id === "skincareTab_f") ? arr = allSkin : arr = allWellness ;
+            
+            banners.forEach(banner => (tab.id.includes(banner.id.slice(0, 4))) ? banner.classList.add("active") : banner.classList.remove("active"));
+            
+            showP(arr, filterPBox, true, true);
+            
             // if(window.scrollY > containerBanners.offsetHeight) window.scrollTo(0, containerBanners.offsetHeight);
         }
         
         previousTab = tab.id.replace('Tab_f', '');
     });
     
+    // Dentro de cada linea de producto se le da la funcionalidad al boton de volver al estado inicial del filtro
     backState1[i].addEventListener("click", () =>{
         filterInitial.classList.remove("tabActive");
         setTimeout(() =>{document.querySelector("#" + tab.id + " + ul").style.display = "none"}, 301);
     });
 });
 
+// Funcion que muestra los systemas dentro de cada linea
+let systemBtn = document.querySelectorAll(".not_a_tab.systems");
 
+systemBtn.forEach(btn =>{
+    btn.addEventListener("click", ()=>{
+        loader();
+        resetInputs();
+        
+        let arr = []
+        allProducts.forEach(p =>{
+            if(p.line === activeTab && p.category.includes("systems")){
+                arr.push(p);
+            }
+        });
+
+        showP(arr, filterPBox, true, true);
+    });
+});
 
 
 let boxTags = document.getElementById("boxTags");
 let tagsBar = document.getElementById("tagsBar");
 let filtersCount = document.querySelectorAll(".filtersCount");
-let concernHCount = document.getElementById("concernHCount");
-let categoryHCount = document.getElementById("categoryHCount");
-let concernSCount = document.getElementById("concernSCount");
-let categorySCount = document.getElementById("categorySCount");
-let concernWCount = document.getElementById("concernWCount");
-let categoryWCount = document.getElementById("categoryWCount");
+
+
+const counterChecks = {
+  hair: { concern: 0, category: 0 },
+  skin: { concern: 0, category: 0 },
+  wellness: { concern: 0, category: 0 },
+  total: 0
+};
+
+let nameMap = {
+    "concernH": "hair.concern",
+    "concernS": "skin.concern",
+    "concernW": "wellness.concern",
+    "categoryH": "hair.category",
+    "categoryS": "skin.category",
+    "categoryW": "wellness.category"
+};
+
+let tabToArrays = {
+    "haircare": allHair,
+    "skincare": allSkin,
+    "wellness": allWellness
+};
 
 // Se le da funcionalidad a cada input
 filterInputs.forEach(input => {
-    
     input.addEventListener("input", () =>{
-        
-        let checked = 0;
-        let checkConcernH = 0;
-        let checkCategoryH = 0;
-        
-        let checkConcernS = 0;
-        let checkCategoryS = 0;
-
-        let checkConcernW = 0;
-        let checkCategoryW = 0;
-        
-        filterInputs.forEach(i =>{
-
-            if(i.checked) {
-                checked ++;
-                
-                switch(i.name) {
-                  case "concernH":
-                    checkConcernH++;
-                    break;
-                  case "concernS":
-                    checkConcernS++;
-                    break;
-                  case "concernW":
-                    checkConcernW++;
-                    break;
-                  case "categoryH":
-                    checkCategoryH++;
-                    break;
-                  case "categoryS":
-                    checkCategoryS++;
-                    break;
-                  case "categoryW":
-                    checkCategoryS++;
-                    break;
-                }
-            } 
             
-        });
+        if(input.checked) {
+        counterChecks.total++;
+        
+        // Obtener la propiedad del objeto counterChecks usando el nombre del elemento
+        let prop = nameMap[input.name];
+        
+        // Separar la propiedad en dos partes: el objeto y la subpropiedad
+        let [obj, subprop] = prop.split(".");
+        
+        // Incrementar el valor de la subpropiedad usando la notación de corchetes
+        counterChecks[obj][subprop]++;
+        } else {
+            counterChecks.total--;
+            // Lo mismo que antes, pero decrementando el valor
+            let prop = nameMap[input.name];
+            let [obj, subprop] = prop.split(".");
+            counterChecks[obj][subprop]--;
+        }
         
         loader();
         
-        
         if(input.checked === true){
-            
-            if(checked === 1) activeItems = [];
-            
+            // si counterChecks.total = 1 quiere decir que es el primer input seleccionado, activeItems de momento tiene todos los productos de la linea dentro asi que toca borrar todos sus datos para agregar los que cumplan con las condiciones del filtro
+            if(counterChecks.total === 1) activeItems = [];
             let dinamicArray = [];
+            
             
             allProducts.forEach(p => {
                 let categories = p.category.split(" | ");
                 categories.forEach(cat =>{
+                    // si un producto tiene alguna categoria/concern que coincida con el input seleccionado y el producto pertenece a la linea en la cual se esta filtrando, entonces se le habilita el paso para que entre a dinamicArray
                     if(cat == input.value && activeTab == p.line){
                         let pass = true;
                         
+                        // si el producto ya habia sido agregado anteriormente a dinamicArray entonces no se le permite el paso nuevamente
                         activeItems.forEach(item =>{
                             if(p.name == item.name) pass = false;
                         });
@@ -1671,6 +1708,7 @@ filterInputs.forEach(input => {
 
             });
             
+            // Se ejecuta la funcion de mostrar productos con los que cumplieron las condiciones anteriormente para entrar a dinamicArray
             showP(dinamicArray, filterPBox);
 
             let newTag = document.createElement("div");
@@ -1685,21 +1723,21 @@ filterInputs.forEach(input => {
             
             let closeTag = document.getElementById(`closeTag_${valueFormat(input)}`);
 
-            closeTag.addEventListener("click", () =>{
-                input.click();
-            });  
+            closeTag.addEventListener("click", () => input.click());  
 
         }else{
             document.getElementById(`filterTag_${valueFormat(input)}`).remove();
-
-            if(!checked){
-                    activeItems = [];
+            
+            if(!counterChecks.total){
+                showP(tabToArrays[activeTab], filterPBox, true, true);
+                tagsBar.classList.remove("active");
+                
             }else{
                 for (let i = 0; i < activeItems.length; i++) {
                     let deleteItem = true;
                     
                     filterInputs.forEach(inp => {
-                        if(inp.checked && activeItems[i].category.includes(inp.value) && inp != input){
+                        if(inp.checked && activeItems[i].category.includes(inp.value)){
                             deleteItem = false;
                         }
                     });  
@@ -1710,76 +1748,91 @@ filterInputs.forEach(input => {
                     }
                 }
             }
-                
-
+            
+            // como el array que se pasa como parametro esta vacio, se muestran los productos que quedaron en activeItems
             showP([], filterPBox);
         }
         
-
-        if(checked){
+        // si el contador de checks es mayor a 0, revela la tagsBar y oculta la clearSearchBar (en claso de ser necesario)
+        if(counterChecks.total){
             tagsBar.classList.add("active");
-        }else{
-            if(activeTab === "haircare"){
-                showP(allHair, filterPBox, true);
-            }else if(activeTab === "skincare"){
-                showP(allSkin, filterPBox, true);
-            }else{
-                console.log("paso por show allWellness");
-                showP(allWellness, filterPBox, true);
-            }
-
-            tagsBar.classList.remove("active");
+            clearSearchBar.classList.remove("active");
         }
         
+        // imprimir el valor de los contadores en el HTML
         filtersCount.forEach(count => {
-            (checked) ? count.innerText = "( " + checked + " )" : count.innerText = "";
+            (counterChecks.total) ? count.innerText = "( " + counterChecks.total + " )" : count.innerText = "";
         });
         
-        (checkConcernH) ? concernHCount.innerText = "( " + checkConcernH + " )" : concernHCount.innerText = "";
-        (checkCategoryH) ? categoryHCount.innerText = "( " + checkCategoryH + " )" : categoryHCount.innerText = "";
-        (checkConcernS) ? concernSCount.innerText = "( " + checkConcernS + " )" : concernSCount.innerText = "";
-        (checkCategoryS) ? categorySCount.innerText = "( " + checkCategoryS + " )" : categorySCount.innerText = "";
-        (checkConcernW) ? concernWCount.innerText = "( " + checkConcernW + " )" : concernWCount.innerText = "";
-        (checkCategoryW) ? categoryWCount.innerText = "( " + checkCategoryW + " )" : categoryWCount.innerText = "";
+        for (let prop in counterChecks) {
+            if (prop === "total") continue;
+            
+            // obtener el objeto interno (hair, skin o wellness)
+            let obj = counterChecks[prop];
+            let pLine = prop.charAt(0).toUpperCase()
+            // recorrer las subpropiedades (concern o category)
+            for (let subprop in obj) {
+                let value = obj[subprop];
+                // obtener el id del elemento HTML
+                let id = subprop + pLine + "Count";  // ej concern + H + Count
+                document.getElementById(id).innerText = value ? "( " + value + " )" : "";
+            }
+        }
         
         // if(window.scrollY > containerBanners.offsetHeight) window.scrollTo(0, containerBanners.offsetHeight);
     });
-    
-    // if(location.hash.includes(valueFormat(input))){
-    //     input.click();
-    // }
 });
 
+// Se le da funcionalidad al boton de borrar los filtros aplicados
+let clearFilter = document.querySelectorAll(".clearFilter")
+clearFilter.forEach(btn =>{
+    btn.addEventListener("click", resetInputs);
+})
+
+
 // Si no hay filtro se muestran todos los productos
+window.addEventListener("load", ()=>{
 if (location.hash == ""){
-    showP(allProducts, filterPBox, true);
+    showP(allProducts, filterPBox, true, true);
 }else{
     let hash = location.hash;
     
-    if(hash.includes("-hair")){
-        activeTab = "haircare"
-        hash = hash.replace('-hair', '');
-    }else if(hash.includes("-skin")){
-        activeTab = "skincare"
-        hash = hash.replace('-skin', '');
-    }else if (hash.includes("-wellness")){
-        activeTab = "wellness"
-        hash = hash.replace('-wellness', ''); 
-    }
+    // esto creo que es para cuando quiero que me muestre all-hair, all-skin... pero tengo que hacerle unos ajustes
+    // if(hash.includes("-hair")){
+    //     activeTab = "haircare"
+    //     hash = hash.replace('-hair', '');
+    // }else if(hash.includes("-skin")){
+    //     activeTab = "skincare"
+    //     hash = hash.replace('-skin', '');
+    // }else if (hash.includes("-wellness")){
+    //     activeTab = "wellness"
+    //     hash = hash.replace('-wellness', ''); 
+    // }
     
-    
+    // El substring(1) es para quitar el #
     hash = hash.replace(/-/g, ' ').substring(1);
 
-    
     let selectInput = document.querySelector("input[value='"+ hash +"']");
-    
-    console.log(selectInput);
-    if (!activeTab) {
-        (selectInput.name.slice(-1) === "H") ? activeTab = "haircare" : (selectInput.name.slice(-1) === "S") ? activeTab = "skincare" : activeTab = "wellness" ;
-    }
+    let tabMap = {
+        "H": "haircare",
+        "S": "skincare",
+        "W": "wellness"
+    };
 
+    if (!activeTab) {
+        let lastLetter = selectInput.name.slice(-1);
+        activeTab = tabMap[lastLetter];
+    }
+    
     selectInput.click();
+    if (window.scrollY < containerBanners.offsetHeight) {
+        window.scrollTo(0, containerBanners.offsetHeight + 1);
+    } 
 }
+})
+
+
+
 
 
 let searchBar = document.getElementById("searchBar");
@@ -1802,12 +1855,20 @@ overlayFilter.addEventListener("click", () =>{
     overlayTrigger(false);
 });
 
-searchValue.addEventListener("click", () => overlayTrigger(true));
+searchValue.addEventListener("click", () => {
+    overlayTrigger(true);
+    (window.scrollY < containerBanners.offsetHeight) && window.scrollTo(0, containerBanners.offsetHeight + 1)
+});
 
 const closeAllLists = () =>{
     let list = document.getElementById("autocomplete-list");
     if(list) list.remove();
 }
+    
+clearSearch.addEventListener("click", () =>{
+    clearSearchBar.classList.remove("active");
+    seeAll(tabToArrays[activeTab]);
+});
     
 searchBar.addEventListener("submit", (e) =>{
     e.preventDefault();
@@ -1826,7 +1887,8 @@ searchBar.addEventListener("submit", (e) =>{
     
     activeItems = [];
     loader();
-    showP(dinamicArray, filterPBox, true);
+    clearSearchBar.classList.add("active");
+    showP(dinamicArray, filterPBox, false, true);
 
     searchBar.reset();
     
@@ -1881,7 +1943,7 @@ function autocomplete(inp, arr) {
     /*execute a function presses a key on the keyboard:*/
     inp.addEventListener("keydown", function(e) {
         let list = document.getElementById("autocomplete-list");
-        if (list) list = list.getElementsByTagName("div");
+        if (list) list = list.querySelectorAll("div");
         
         if (e.keyCode == 40) {
             //If the arrow DOWN key is pressed, increase the currentFocus variable
@@ -1906,6 +1968,7 @@ function autocomplete(inp, arr) {
         if (!list) return false;
 
         removeActive(list);
+        
         if (currentFocus >= list.length) currentFocus = 0;
         if (currentFocus < 0) currentFocus = (list.length - 1);
         
@@ -1914,20 +1977,19 @@ function autocomplete(inp, arr) {
     
     //Function to remove the "active" class from all autocomplete items:
     const removeActive = list => list.forEach(div => div.classList.remove("autocomplete-active"));
-    
-
 }
   
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
 autocomplete(searchValue, allProducts);
 
 
-let clearFilter = document.querySelectorAll(".clearFilter")
-//Funcion para borrar todos los filtros
-clearFilter.forEach(btn =>{
-    btn.addEventListener("click", () =>{
-        filterInputs.forEach(input => (input.checked) && input.click());
-    });
-})
+// let clearFilter = document.querySelectorAll(".clearFilter")
+// //Funcion para borrar todos los filtros
+// clearFilter.forEach(btn =>{
+//     btn.addEventListener("click", () =>{
+//         filterInputs.forEach(input => (input.checked) && input.click());
+//     });
+// })
 
 
+  
