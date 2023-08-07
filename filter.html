@@ -66,7 +66,7 @@
         <div class="display_flex  a_i_center col_100 margin_auto">
             
             <!--Filter box trigger-->
-            <div id="filterBtn" class="display_flex a_i_center j_c_space_between">
+            <div id="filterBtn" class="display_flex a_i_center j_c_space_between hide_mobile">
                 <div class="display_flex">
                     <img decoding="async" id="filterIcon" src="https://monatglobal.com/wp-content/uploads/2022/12/filter-icon.svg">
                     <p style="margin: 0;" class="filter_main_title">FILTER BY <span class="filtersCount"></span></p>
@@ -75,20 +75,24 @@
             <!--Filter box trigger-->
             
             <!--Search bar-->
-            <div class="display_flex j_c_space_between a_i_center" style="flex-grow: 2;">
+            <div class="display_flex j_c_space_between a_i_center flex_wrap col_100_mobile" style="flex-grow: 2;">
                 <form id="searchBar" class="display_flex a_i_center">
-                    
                     <button type="submit" style="background: none; padding: none; border: none;"><img decoding="async" src="https://monatglobal.com/wp-content/uploads/2022/12/search-icon.svg" style="height: 13px; "></button>
                     <div class="p_relative">
                         <input autocomplete="off" type="text" placeholder="SEARCH" name="search">
                     </div>
                 </form>
                 
-                <div id="orderBy">
-                    <p>ORDER BY <span></span></p>
-                    <div>
-                        <p>LOWER - HIGHER</p>
-                        <p>HIGHER - LOWER</p>
+                <div class="col_100_mobile display_flex j_c_space_between">
+                    <button class="clearFilter clearBtn hide_desk">CLEAR FILTER</button>
+                    <button id="clearSearch" class="clearBtn hide_desk">CLEAR SEARCH</button> 
+                    
+                    <div id="orderBy">
+                        <p>ORDER BY <span></span></p>
+                        <div>
+                            <p>LOWER - HIGHER</p>
+                            <p>HIGHER - LOWER</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -175,6 +179,7 @@
                             <p class="filter_main_title">CONCERNS <span id="concernSCount" class="filtersCount"></span></p>
                             
                             <ul>
+                                <li><label><input type="checkbox" name="concernS" value="acne"><p>Acne</p></label></li>
                                 <li><label><input type="checkbox" name="concernS" value="dark spots"><p>Dark Spots</p></label></li>
                                 <li><label><input type="checkbox" name="concernS" value="dullness"><p>Dullness</p></label></li>
                                 <li><label><input type="checkbox" name="concernS" value="eye care"><p>Eye Care</p></label></li>
@@ -261,12 +266,12 @@
           
         <div id="containerShop" class="col_100">
             <div id="tagsBar" class="a_i_center">
-                <button class="clearFilter clearBtn">CLEAR FILTER</button> 
+                <button class="clearFilter clearBtn hide_mobile">CLEAR FILTER</button> 
                 <div id="boxTags" class="display_flex">
                 </div>
             </div>
 
-            <div id="clearSearchBar" class=" display_flex a_i_center">
+            <div id="clearSearchBar" class=" display_flex a_i_center hide_desk">
                 <button id="clearSearch" class="clearBtn">CLEAR SEARCH</button> 
             </div>
             

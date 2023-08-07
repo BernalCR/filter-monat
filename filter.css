@@ -333,7 +333,7 @@ html{
 #filterBar {
 	width: 100%;
 	border-bottom: solid 1px #d5dae09c;
-	height: 55px;
+	min-height: 55px;
 	background-color: #fff;
 	z-index: 12;
 	position: relative;
@@ -636,6 +636,7 @@ html{
 	width: 100%;
 	position: relative;
 	z-index: 5;
+	margin-top: 10px;
 }
 
 .container_img_product::before {
@@ -669,31 +670,9 @@ html{
 
 /* -PRODUCT ELEMENTS */
 
-.BScard img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.BScard span{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    border-radius: 2px;
-    color: #1C1932;
-    background-color: #fff;
-    padding: 5px 8px 2px;
-    font-family: 'SuisseIntl-Medium';
-    font-size: 0.8em;
-    letter-spacing: 0.08em;
-}
-
-.card_product,
-.BScard{
+.card_product{
     position: relative;
     z-index: 1;
-    border-bottom: solid 1px #d5dae09c;
-    border-right: solid 1px #d5dae09c;
 }
 
 .card_content {
@@ -704,20 +683,44 @@ html{
 	justify-content: space-between;
 	align-content: stretch;
     padding: 3.5rem 3vw 8rem;
+    
+    background-color: #fff;
+    border-bottom: solid 1px #d5dae09c;
+    border-right: solid 1px #d5dae09c;
 }
 
-.card_content:hover {
-    background-color: #f9f9fb;
+
+
+.head_card{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 15px 20px 0 20px;
+}
+
+.head_card > .right{
+    float: right;
+}
+
+.BSLabel{
+    border: 1px solid #2e2c49;
+    padding: 3px 6px 1px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    font-size: 12px;
+    height: fit-content;
+    border-radius: 2px;
 }
 
 .card_product .infoBtn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
+    /*position: absolute;*/
+    /*top: 15px;*/
+    /*right: 15px;*/
     padding: 3px;
     border-radius: 7px;
     cursor: pointer;
     z-index: 11;
+    border: 1px solid transparent;
 }
 
 .card_product .infoBtn:hover, 
@@ -864,11 +867,32 @@ color: #5456C4;
     opacity: 1;
 }
 
-/* PRODUCT ELEMENTS- */
+/* PRODUCT ELEMENTS- */ 
 
 @media screen and (min-width: 700px) {
 	#filterBtn.active {
 	    width: 25%;
+    }
+    
+    .BScard .clasic_btn_MONAT{
+        background-color: #fff;
+        color: #1C1932 !important;
+    }
+    
+    .BScard:hover .card_content{
+        background: linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(255,255,255,0) 55%);
+    }
+    
+    .BScard:hover .card_content p, .BScard:hover .card_content p span{
+        color: #fff;
+    }
+    
+    .BScard:hover .img_product{
+        opacity: 0;
+    }
+    
+    .BScard .img_product, .BScard .card_content, .BScard .card_content p, .card_content p span{
+        transition: all 0.2s ease-in-out;
     }
 }
 
@@ -937,6 +961,10 @@ color: #5456C4;
     	opacity: 1;
     }
     
+    #filterBar{
+        padding: 20px 0;
+    }
+
     #filterBar > div:last-child{
         justify-content: space-between;
         padding: 0 3vw;
@@ -947,6 +975,11 @@ color: #5456C4;
         overflow-y: auto;
     }
 
+    #searchBar{
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
     #searchBar input{
         width: 6em;
@@ -967,4 +1000,4 @@ color: #5456C4;
 		#filterBtn.active {
 	    width: 50%;
     }
-}     
+}    
