@@ -1,11 +1,11 @@
 <style>
     .col_3 { grid-template-columns: repeat(3, 1fr); }
     #containerShop.active .col_3 { grid-template-columns: repeat(2, 1fr); }
-    #filterBtn{ width: 33.3%;}
+    #filterBtn_bar{ width: 33.3%;}
     @media screen and (min-width: 1300px) {
     .col_4 { grid-template-columns: repeat(4, 1fr); }
     #containerShop.active .col_4 { grid-template-columns: repeat(3, 1fr); }
-    #filterBtn{ width: 25%;}
+    #filterBtn_bar{ width: 25%;}
     }
     @media screen and (max-width: 992px) {
     .med_col_2 { grid-template-columns: repeat(2, 1fr); }
@@ -17,7 +17,7 @@
     <!--banners-->
     <div id="containerBanners" class="background_image_banner">
         <div id="hairBanner" class="bkgnd display_flex a_i_center active">
-            <div class="col_70 margin_auto col_100_mobile">
+            <div class="col_70 margin_auto col_100_mobile"> 
                 <div class="col_60 col_80_tablet margin_mobile">
                     <div>
                             <div class="new_product_label_small ">NEW</div>
@@ -66,33 +66,28 @@
         <div class="display_flex  a_i_center col_100 margin_auto">
             
             <!--Filter box trigger-->
-            <div id="filterBtn" class="display_flex a_i_center j_c_space_between hide_mobile">
+            <div id="filterBtn_bar" class="display_flex a_i_center j_c_space_between filterBtns">
                 <div class="display_flex">
                     <img decoding="async" id="filterIcon" src="https://monatglobal.com/wp-content/uploads/2022/12/filter-icon.svg">
-                    <p style="margin: 0;" class="filter_main_title">FILTER BY <span class="filtersCount"></span></p>
+                    <p style="margin: 0;" class="filter_main_title">FILTER BY <span class="filtersCount SuisseIntl_Light"></span></p>
                 </div>
             </div>
             <!--Filter box trigger-->
             
             <!--Search bar-->
-            <div class="display_flex j_c_space_between a_i_center flex_wrap col_100_mobile" style="flex-grow: 2;">
+            <div class="display_flex j_c_space_between a_i_center p_relative" style="flex-grow: 2;">
                 <form id="searchBar" class="display_flex a_i_center">
                     <button type="submit" style="background: none; padding: none; border: none;"><img decoding="async" src="https://monatglobal.com/wp-content/uploads/2022/12/search-icon.svg" style="height: 13px; "></button>
-                    <div class="p_relative">
+                    <div class="p_relative col_100">
                         <input autocomplete="off" type="text" placeholder="SEARCH" name="search">
                     </div>
                 </form>
                 
-                <div class="col_100_mobile display_flex j_c_space_between">
-                    <button class="clearFilter clearBtn hide_desk">CLEAR FILTER</button>
-                    <button id="clearSearch" class="clearBtn hide_desk">CLEAR SEARCH</button> 
-                    
-                    <div id="orderBy">
-                        <p>ORDER BY <span></span></p>
-                        <div>
-                            <p>LOWER - HIGHER</p>
-                            <p>HIGHER - LOWER</p>
-                        </div>
+                <div id="orderBy">
+                    <p>ORDER BY <span></span></p>
+                    <div>
+                        <p>LOWER - HIGHER</p>
+                        <p>HIGHER - LOWER</p>
                     </div>
                 </div>
             </div>
@@ -117,16 +112,16 @@
                 
                 <!--Haircare canvas-->
                 <li>
-                    <p id="haircareTab_f" class="filter_main_title">HAIRCARE <span class="productsLine_count allHair_count"></span></p>
+                    <p id="haircareTab_f" class="filter_main_title">HAIRCARE <span class="allHair_count SuisseIntl_Light"></span></p>
                     
                     <ul id="hairInputs">
                         <li class="head_state2 display_flex a_i_center j_c_space_between">
-                            <p class="filter_main_title">HAIRCARE <span class="productsLine_count allHair_count"></span></p>
+                            <p class="filter_main_title">HAIRCARE <span class="allHair_count SuisseIntl_Light"></span></p>
                             <span><img decoding="async" src="https://monatglobal.com/wp-content/uploads/2022/12/back-arrow_.svg"></span>
                         </li>
                         
                         <li class="filterSection">
-                            <p class="filter_main_title">CONCERNS <span id="concernHCount" class="filtersCount"></span></p>
+                            <p class="filter_main_title">CONCERNS <span id="concernHCount" class="SuisseIntl_Light"></span></p>
                             
                             <ul>
                                 <li><label><input type="checkbox" name="concernH" value="color care"><p>Color Care</p></label></li>
@@ -146,7 +141,7 @@
                         </li>
                         
                         <li class="filterSection">
-                            <p class="filter_main_title">CATEGORIES <span id="categoryHCount" class="filtersCount"></span></p>
+                            <p class="filter_main_title">CATEGORIES <span id="categoryHCount" class="SuisseIntl_Light"></span></p>
                             <ul>
                                 <li><label><input type="checkbox" name="categoryH" value="best sellers"><p>Best Seller</p></label></li>
                                 <li><label><input type="checkbox" name="categoryH" value="shampoos"><p>Shampoos</p></label></li>
@@ -167,16 +162,16 @@
 
                 <!--Skincare canvas-->
                 <li>
-                    <p id="skincareTab_f" class="filter_main_title">SKINCARE <span class="productsLine_count allSkin_count"></span></p>
+                    <p id="skincareTab_f" class="filter_main_title">SKINCARE <span class="allSkin_count SuisseIntl_Light"></span></p>
                     
                     <ul id="skinInputs">
                         <li class="head_state2 display_flex a_i_center j_c_space_between">
-                            <p class="filter_main_title">SKINCARE <span class="productsLine_count allSkin_count"></span></p>
+                            <p class="filter_main_title">SKINCARE <span class="allSkin_count SuisseIntl_Light"></span></p>
                              <span><img decoding="async" src="https://monatglobal.com/wp-content/uploads/2022/12/back-arrow_.svg"></span>
                         </li>
                         
                         <li class="filterSection">
-                            <p class="filter_main_title">CONCERNS <span id="concernSCount" class="filtersCount"></span></p>
+                            <p class="filter_main_title">CONCERNS <span id="concernSCount" class="SuisseIntl_Light"></span></p>
                             
                             <ul>
                                 <li><label><input type="checkbox" name="concernS" value="acne"><p>Acne</p></label></li>
@@ -194,7 +189,7 @@
                         </li>
                         
                         <li class="filterSection">
-                            <p class="filter_main_title">CATEGORIES <span id="categorySCount" class="filtersCount"></span></p>
+                            <p class="filter_main_title">CATEGORIES <span id="categorySCount" class="SuisseIntl_Light"></span></p>
                             <ul>
                                 <li><label><input type="checkbox" name="categoryS" value="best sellers"><p>Best sellers</p></label></li>
                                 <li><label><input type="checkbox" name="categoryS" value="body care"><p>Body Care</p></label></li>
@@ -215,16 +210,16 @@
 
                 <!--Wellness canvas-->
                 <li>
-                    <p id="wellnessTab_f" class="filter_main_title">WELLNESS <span class="productsLine_count allWellness_count"></span></p>
+                    <p id="wellnessTab_f" class="filter_main_title">WELLNESS <span class="allWellness_count SuisseIntl_Light"></span></p>
                     
                     <ul id="wellnessInputs">
                         <li class="head_state2 display_flex a_i_center j_c_space_between">
-                            <p class="filter_main_title">WELLNESS <span class="productsLine_count allWellness_count"></span></p>
+                            <p class="filter_main_title">WELLNESS <span class="allWellness_count SuisseIntl_Light"></span></p>
                             <span><img decoding="async" src="https://monatglobal.com/wp-content/uploads/2022/12/back-arrow_.svg"></span>
                         </li>
                         
                         <li class="filterSection">
-                            <p class="filter_main_title">CONCERNS <span id="concernWCount" class="filtersCount"></span></p>
+                            <p class="filter_main_title">CONCERNS <span id="concernWCount" class="SuisseIntl_Light"></span></p>
                             
                             <ul>
                                 <li><label><input type="checkbox" name="concernW" value="digestive support"><p>Digestive Support</p></label></li>
@@ -239,7 +234,7 @@
                         </li>
                         
                         <li class="filterSection">
-                            <p class="filter_main_title">CATEGORIES <span id="categoryWCount" class="filtersCount"></span></p>
+                            <p class="filter_main_title">CATEGORIES <span id="categoryWCount" class="SuisseIntl_Light"></span></p>
                             <ul>
                                 <li><label><input type="checkbox" name="categoryW" value="active"><p>Active</p></label></li>
                                 <li><label><input type="checkbox" name="categoryW" value="beauty from within"><p>Beauty From Within</p></label></li>
@@ -259,19 +254,19 @@
             <!--First canvas-->
 
             <div id="btns_FMob">
-                <button id="applyFilters" class="closeFilter hide_desk">APPLY <span class="filtersCount"></span></button>
+                <button id="applyFilters" class="closeFilter hide_desk">APPLY <span class="filtersCount SuisseIntl_Light"></span></button>
                 <button class="clearFilter clearBtn hide_desk">CLEAR FILTER</button>
             </div>
         </div>
           
         <div id="containerShop" class="col_100">
             <div id="tagsBar" class="a_i_center">
-                <button class="clearFilter clearBtn hide_mobile">CLEAR FILTER</button> 
+                <button class="clearFilter clearBtn">CLEAR FILTER</button> 
                 <div id="boxTags" class="display_flex">
                 </div>
             </div>
 
-            <div id="clearSearchBar" class=" display_flex a_i_center hide_desk">
+            <div id="clearSearchBar" class=" display_flex a_i_center">
                 <button id="clearSearch" class="clearBtn">CLEAR SEARCH</button> 
             </div>
             
@@ -281,7 +276,12 @@
                 <!--filter grid-->
                 <div id="filterPBox" class="display_grid col_4 col_3 med_col_2"></div>
             <!--</div>-->
+            
+            <div id="filterBtn_mob" class="display_flex flex_center filterBtns hide_desk SuisseIntl_Light">
+                <p class="display_flex flex_center"><span class="filtersCount onlyNum">0</span></p>
+                <img decoding="async" id="filterIcon" src="https://monatglobal.com/wp-content/uploads/2022/12/filter-icon.svg">
+            </div>
         </div>
     </div>
     <!--Filter box-->
-</div>  
+</div> 

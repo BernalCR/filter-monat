@@ -1,3 +1,17 @@
+let filterBtn_mob = document.getElementById("filterBtn_mob");
+window.addEventListener("scroll", () =>{
+    if (window.matchMedia("(max-width: 700px)").matches) {
+        let currentScroll = window.scrollY; 
+        if (currentScroll < scrollPos){
+            filterBtn_mob.classList.add("active");
+        }else{
+            filterBtn_mob.classList.remove("active");
+        }
+        scrollPos = currentScroll;
+    }
+});
+
+
 const allProducts = [
     {
         name: "ADVANCED HYDRATING SYSTEM", 
@@ -133,7 +147,7 @@ const allProducts = [
         vipPrice: 99.00, 
         url: "/rejuveniqe-tm-oil-intensive/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVENIQE®-OIL-INTENSIVE.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2000/10/The_REJUVENIQE™_Story_HEADER_v1.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2000/10/The_REJUVENIQE™_Story_HEADER_v1.jpg",
         shopLink: "/shop/products/rejuveniqe-oil-intensive", 
         category: "curls, coils, and waves | dry hair | frizz | shine | best sellers | leave-in care | masques & treatments",
         newP: false,
@@ -145,7 +159,7 @@ const allProducts = [
         vipPrice: 99.00, 
         url: "/rejuveniqe-light/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVENIQE-LIGHT-BY-MONAT™.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2000/10/The_REJUVENIQE™_Story_HEADER.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2000/10/The_REJUVENIQE™_Story_HEADER.jpg",
         shopLink: "/shop/products/rejuveniqe-light", 
         category: "curls, coils, and waves | dry hair | frizz | shine | best sellers | leave-in care | masques & treatments",
         newP: false,
@@ -157,7 +171,7 @@ const allProducts = [
         vipPrice: 55.00, 
         url: "/rejuvabeads/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/REJUVABEADS®-BY-MONAT.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2022/12/rejuvabeads-banner-mobile.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2022/12/rejuvabeads-banner-mobile.jpg",
         shopLink: "/shop/products/rejuvabeads", 
         category: "damage, breakage, and split ends | best sellers | leave-in care | masques & treatments",
         newP: false,
@@ -202,7 +216,7 @@ const allProducts = [
         vipPrice: 54.00, 
         url: "/replenish-masque/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/REPLENISH-MASQUE-ecomm-pic.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2022/06/replenish-directions.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2022/06/replenish-directions.jpg",
         shopLink: "/shop/products/replenish-masque", 
         category: "curls, coils, and waves | dry hair | best sellers | masques & treatments",
         newP: false,
@@ -357,7 +371,7 @@ const allProducts = [
         vipPrice: 48.00, 
         url: "/intense-repair-treatment-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-THICKENING-CONDITIONER_ecomm-2022.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2022/08/IR-Clinical-Conditioner-directions.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2022/08/IR-Clinical-Conditioner-directions.jpg",
         shopLink: "/shop/products/ir-clinical-thickening-conditioner-6000002977", 
         category: "densifying | scalp Care | thinning | best sellers | conditioners",
         newP: false,
@@ -369,7 +383,7 @@ const allProducts = [
         vipPrice: 43.00, 
         url: "/irt-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-THICKENING-SHAMPOO_ecomm-2022.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2022/08/IR-Clinical-Conditioner-directions.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2022/08/IR-Clinical-Conditioner-directions.jpg",
         shopLink: "/shop/products/ir-clinical-thickening-shampoo-6000002975", 
         category: "densifying | scalp Care | thinning | best sellers | shampoos",
         newP: false,
@@ -381,7 +395,7 @@ const allProducts = [
         vipPrice: 70.00, 
         url: "/intense-repair-serum/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/08/IR-CLINICAL-HAIR-THINNING-DEFENSE-SERUM_ecomm-2022.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/ir-clinical-hair-thinning-defense", 
         category: "densifying | scalp Care | thinning | best sellers | leave-in care",
         newP: false,
@@ -404,7 +418,7 @@ const allProducts = [
         vipPrice: 43.00, 
         url: "/monat-black-shampoo-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/BLACK-2-in-1-Shampoo-Conditioner-ecomm-pic-.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/black-men-s-2-in-1", 
         category: "densifying | oily hair and scalp | best sellers | shampoos | conditioners | men",
         newP: false,
@@ -460,7 +474,7 @@ const allProducts = [
         vipPrice: 42.00, 
         url: "/renew-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/RENEW-SHAMPOO-ecomm-pic.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/renew-shampoo", 
         category: "dry hair | shine | best sellers | shampoos",
         newP: false,
@@ -472,7 +486,7 @@ const allProducts = [
         vipPrice: 37.00, 
         url: "/restore-leave-in-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/05/RESTORE-LEAVE-IN-CONDITIONER-ecomm-pic.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/restore-leave-in-conditioner", 
         category: "dry hair | best sellers | leave-in care",
         newP: false,
@@ -506,7 +520,7 @@ const allProducts = [
         vipPrice: 43.00, 
         url: "/flex-control-hairspray/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/STUDIO-ONE-FLEX-CONTROL-HAIRSPRAY.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/flex-control-hairspray", 
         category: "frizz | volume | texture | best sellers | styling",
         newP: false,
@@ -562,7 +576,7 @@ const allProducts = [
         vipPrice: 48.00, 
         url: "/smoothing-deep-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2022/06/smoothing-anti-frizz-deep-conditioner_all-prod-.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/smoothing-anti-frizz-deep-conditioner", 
         category: "frizz | shine | best sellers | conditioners",
         newP: false,
@@ -585,7 +599,7 @@ const allProducts = [
         vipPrice: 39.00, 
         url: "/conditioning-dry-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/CONDITIONING-DRY-SHAMPOO.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/the-champ-conditioning-dry-shampoo", 
         category: "oily hair and scalp | volume | texture | best sellers | shampoos | styling",
         newP: false,
@@ -707,7 +721,7 @@ const allProducts = [
         vipPrice: 48.00, 
         url: "/volumizing-revitalize-conditioner/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/VOLUMIZING-REVITALIZE%E2%84%A2-CONDITIONER.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/revitalize-conditioner",
         category: "volume | shine | best sellers | conditioners",
         newP: false,
@@ -719,7 +733,7 @@ const allProducts = [
         vipPrice: 42.00, 
         url: "/volumizing-revive-shampoo/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/07/VOLUMIZING-REVIVE%E2%84%A2-SHAMPOO.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/revive-shampoo", 
         category: "volume | shine | best sellers | shampoos",
         newP: false,
@@ -864,7 +878,7 @@ const allProducts = [
         vipPrice: 273.00, 
         url: "/be-balanced-routine/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-routine-skincare.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/be-balanced-routine", 
         use: "FOR NORMAL / COMBINATION&nbsp;SKIN",
         discount: "EXTRA 25% OFF WITH PURCHASE+&trade;",
@@ -878,7 +892,7 @@ const allProducts = [
         vipPrice: 273.00, 
         url: "/be-gentle-routine/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-gentle-routine-1.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/be-gentle-routine", 
         use: "FOR DRY / SENSITIVE&nbsp;SKIN",
         discount: "EXTRA 25% OFF WITH PURCHASE+&trade;",
@@ -925,7 +939,7 @@ const allProducts = [
         vipPrice: 45.00, 
         url: "/foamy-cleanser/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/be-balanced-foamy-cleanser-.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/be-balanced-foamy-cleanser", 
         category: "dryness & dehydration | best sellers | cleansers & scrubs",
         newP: false,
@@ -948,7 +962,7 @@ const allProducts = [
         vipPrice: 55.00, 
         url: "/refined-skin-scrub/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/berry-refined-scrub.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/berry-refined-scrub", 
         category: "dark spots | dullness | oil control | pores | uneven tone & texture | best sellers | cleansers & scrubs | serums, treatments, and masks",
         newP: false,
@@ -1015,7 +1029,7 @@ const allProducts = [
         vipPrice: 114.00, 
         url: "/age-control-nectar/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/rewind-age-control-nectar-1.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/rewind-age-control-nectar", 
         category: "dryness & dehydration | fine lines & wrinkles | prevention and protection | sensitive skin | best sellers | serums, treatments, and masks",
         newP: false,
@@ -1038,7 +1052,7 @@ const allProducts = [
         vipPrice: 76.00, 
         url: "/eye-smooth/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/09/eye-smooth-nourishing-eye-cream.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/eye-smooth", 
         category: "eye care | best sellers | serums, treatments, and masks",
         newP: false,
@@ -1050,7 +1064,7 @@ const allProducts = [
         vipPrice: 77.00, 
         url: "/skincare-perfector/", 
         img: "https://monatglobal.com/wp-content/uploads/2019/11/30-second-miracle.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/30-second-miracle-instant-eye-protector", 
         category: "eye care | fine lines & wrinkles | best sellers | serums, treatments, and masks",
         newP: false,
@@ -1077,17 +1091,17 @@ const allProducts = [
         category: "acne | dryness & dehydration | oil control | pores | prevention and protection | sensitive skin | routines | moisturizers",
         newP: true,
     },
-    {
-        name: "MONAT BB CREAM SPF 40™ BROAD-SPECTRUM MOISTURIZER", 
-        line: "skincare",
-        rPrice: 52.00,
-        vipPrice: 44.00, 
-        url: "/bb-creme/#sand", 
-        img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-sand-ecomm.png", 
-        shopLink: "/shop/products/monat-bb-cream-sand-us-6000002474", 
-        category: "dryness & dehydration | prevention and protection | sensitive skin | uneven tone & texture | best sellers | specialties",
-        newP: false,
-    },
+    // {
+    //     name: "MONAT BB CREAM SPF 40™ BROAD-SPECTRUM MOISTURIZER", 
+    //     line: "skincare",
+    //     rPrice: 52.00,
+    //     vipPrice: 44.00, 
+    //     url: "/bb-creme/#sand", 
+    //     img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-sand-ecomm.png", 
+    //     shopLink: "/shop/products/monat-bb-cream-sand-us-6000002474", 
+    //     category: "dryness & dehydration | prevention and protection | sensitive skin | uneven tone & texture | best sellers | specialties",
+    //     newP: false,
+    // },
     {
         name: "BE GENTLE™ NOURISHING MOISTURIZER", 
         line: "skincare",
@@ -1139,7 +1153,7 @@ const allProducts = [
         vipPrice: 36.00, 
         url: "/sun-veil-sunscreen/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/08/sv-prod-1.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/sun-veil-daily-mineral-protection", 
         category: "dark spots | dryness & dehydration | prevention and protection | uneven tone & texture | best sellers | specialties",
         newP: false,
@@ -1173,7 +1187,7 @@ const allProducts = [
         vipPrice: 38.00, 
         url: "/body-wash/", 
         img: "https://monatglobal.com/wp-content/uploads/2021/08/Moistturizw-replenish-body-wash-ecomm.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/monat-body-care-moisture-replenish-body-wash-6000001819", 
         category: "dryness & dehydration | best sellers | body care | cleansers & scrubs",
         newP: false,
@@ -1338,7 +1352,7 @@ const allProducts = [
         vipPrice: 55.00, 
         url: "/total-greens/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/total-greens-E-comm.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/total-greens", 
         category: "digestive support | energy support | mood support | brain health | best sellers",
         newP: false,
@@ -1350,7 +1364,7 @@ const allProducts = [
         vipPrice: 59.00, 
         url: "/collagen/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/MONAT-Collagen-key-E-comm-1.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/collagen_key", 
         category: "healthy aging | skin, hair, and nail health | beauty from within | best sellers",
         newP: false,
@@ -1362,7 +1376,7 @@ const allProducts = [
         vipPrice: 62.00,   
         url: "/balance/", 
         img: "https://monatglobal.com/wp-content/uploads/2020/12/Balance-E-comm.png", 
-        BSimg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
+        hoverImg: "https://monatglobal.com/wp-content/uploads/2021/08/grey-image-placeholder.jpg",
         shopLink: "/shop/products/monat-balance", 
         category: "digestive support | immune support | skin, hair, and nail health | beauty from within | brain health | best sellers",
         newP: false,
@@ -1402,11 +1416,139 @@ const allProducts = [
     },
 
 
+
+
+
+    
+    {
+        name: "MONAT BB Cream SPF 40™ Broad-Spectrum Moisturizer️", 
+        line: "skincare",
+        rPrice: 52.00,
+        vipPrice: 44.00, 
+        url: "/bb-creme/", 
+        category: "tones",
+        newP: false,
+        defaultTone: "sand",
+        inputName: "bbCream",
+        tones: {
+            porcelain: {
+                color: "#ecd0b2",
+                colorName: "Porcelain – LIGHT",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-porcelain-us-6000002470?taxon_id=127",
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-porcelain-ecomm.png",
+                    alt: "MONAT BB Cream SPF 40™️ Porcelain – LIGHT"
+                }
+            },
+            vanilla: {
+                color: "#e6bf9c",
+                colorName: "Vanilla – LIGHT",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-vanilla-us-6000002471?taxon_id=127", 
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-vanilla-ecomm.png",
+                    alt: "MONAT BB Cream SPF 40™️ Vanilla – LIGHT"
+                }
+            },
+            cashmere: {
+                color: "#ddaf87",
+                colorName: "Cashmere – LIGHT",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-cashmere-us-6000002472?taxon_id=127",
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-cashmere-ecomm.png",
+                    alt: "MONAT BB Cream SPF 40™️ Cashmere – LIGHT"
+                }
+            },
+            nude: {
+                color: "#dba27e",
+                colorName: "Nude – MEDIUM",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-nude-us-6000002473?taxon_id=127",
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-nude-ecomm.png",
+                    alt: "MONAT BB Cream SPF 40™️ Nude – MEDIUM"
+                }
+            },
+            sand: {
+                color: "#d3a376",
+                colorName: "Sand - MEDIUM",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-sand-us-6000002474?taxon_id=127",
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-sand-ecomm.png",
+                    alt: "MONAT BB Cream SPF 40™️ Sand - MEDIUM"
+                }
+            },
+            toastedAlmond: {
+                color: "#d19660",
+                colorName: "Toasted Almond - MEDIUM",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-toasted-almond-us-6000002475?taxon_id=127",
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-toasted-almond-ecomm.png",
+                    alt: "MONAT BB Cream SPF 40™️ Toasted Almond - MEDIUM"
+                }
+            },
+            caramel: {
+                color: "#c48353",
+                colorName: "Caramel - DARK",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-caramel-us-6000002641?taxon_id=127",
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-caramel-ecomm.png",
+                    alt: "MONAT BB Cream SPF 40™️ Caramel - DARK"
+                }
+            },
+            cappuccino: {
+                color: "#ac6837",
+                colorName: "Cappuccino – DARK",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-cappuccino-us-6000002642?taxon_id=127",
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-capuccino-ecomm.png",
+                    alt: "MONAT BB Cream SPF 40™️ Cappuccino – DARK"
+                }
+            },
+            cedar: {
+                color: "#8c4b2f",
+                colorName: "Cedar – DARK",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-cedar-us-6000002643?taxon_id=127",
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-cedar-ecomm.png",
+                    alt: "MONAT BB Cream SPF 40™️ Cedar – DARK"
+                }
+            }
+        }
+    },
+    {
+        name: "MONAT Perfecting Translucent Loose Powder™️", 
+        line: "skincare",
+        rPrice: 58.00,
+        vipPrice: 49.00, 
+        url: "/loose-powder/", 
+        category: "tones",
+        newP: false,
+        defaultTone: "translucentShade",
+        inputName: "loosePowder",
+        tones: {
+            translucentShade: {
+                color: "#ecd0b2",
+                colorName: "Translucent Shade",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-porcelain-us-6000002470?taxon_id=127",
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-porcelain-ecomm.png",
+                    alt: "MONAT Perfecting Translucent Loose Powder™ Translucent Shade"
+                }
+            },
+            honeyShade: {
+                color: "#e6bf9c",
+                colorName: "Honey Shade",
+                shopLink: "https://corp.mymonat.com/shop/products/monat-bb-cream-vanilla-us-6000002471?taxon_id=127", 
+                ecomm: {
+                    img: "https://monatglobal.com/wp-content/uploads/2022/08/bb-cream-vanilla-ecomm.png",
+                    alt: "MONAT Perfecting Translucent Loose Powder™ Honey Shade"
+                }
+            }
+        }
+    }
+
 ]; 
 
-function isMobile() {
-    return window.matchMedia("(max-width: 700px)").matches;
-}
+const isMobile = () => window.matchMedia("(max-width: 700px)").matches;
 
 // Creacion de los arrays para cada linea de producto
 let allHair = [];
@@ -1425,7 +1567,6 @@ allProducts.forEach(p =>{
 
 // Funcion que imprime el numero total de productos de cada linea
 function setAllP_Counts(className, array) {
-    // Obtén todos los elementos <span> con la clase dada
     let spans = document.querySelectorAll("."+className);
     // Asigna la cantidad de elementos del array a los spans con la clase dada
     spans.forEach(span => span.innerText = "( " + array.length + " )");
@@ -1446,7 +1587,7 @@ let filterInputs = document.querySelectorAll("#filterBox input");
 let hairInputs = document.querySelectorAll("#hairInputs input");
 let skinInputs = document.querySelectorAll("#skinInputs input");
 let wellnessInputs = document.querySelectorAll("#wellnessInputs input");
-let filterBtn = document.getElementById("filterBtn");
+let filterBtns = document.querySelectorAll(".filterBtns");
 let containerShop = document.getElementById("containerShop");
 let containerPage = document.getElementById("containerPage");
 
@@ -1457,14 +1598,26 @@ let containerPage = document.getElementById("containerPage");
 let filterBar = document.getElementById("filterBar");
 let filterBox = document.getElementById("filterBox");
 
+
+
+filterBtns.forEach(btn =>{
+    btn.addEventListener("click", () =>{
+        filterBtns[0].classList.toggle("active"); 
+        filterBox.classList.toggle("active"); 
+        containerShop.classList.toggle("active");
+        
+        (window.scrollY < containerBanners.offsetHeight && filterBtns[0].className.includes("active")) && window.scrollTo(0, containerBanners.offsetHeight + 1)
+    });
+})
+
 // Funcion que activa la caja de filtros
-filterBtn.addEventListener("click", () =>{
-    filterBtn.classList.toggle("active"); 
-    filterBox.classList.toggle("active"); 
-    containerShop.classList.toggle("active");
+// filterBtns.addEventListener("click", () =>{
+//     filterBtns.classList.toggle("active"); 
+//     filterBox.classList.toggle("active"); 
+//     containerShop.classList.toggle("active");
     
-    (window.scrollY < containerBanners.offsetHeight && filterBtn.className.includes("active")) && window.scrollTo(0, containerBanners.offsetHeight + 1)
-});
+//     (window.scrollY < containerBanners.offsetHeight && filterBtns.className.includes("active")) && window.scrollTo(0, containerBanners.offsetHeight + 1)
+// });
 
 
 //Funcion para los acordeones de filterbox 
@@ -1480,14 +1633,15 @@ let closeFilter = document.querySelectorAll(".closeFilter");
 //Funcion para cerrar el filtro
 closeFilter.forEach(close =>{
     close.addEventListener("click", () =>{
+        filterBtns[0].classList.remove("active"); 
         filterBox.classList.remove("active");
         containerShop.classList.remove("active");
         
         // cerrar dropdowns
-        filterAccordion.forEach(accordion =>{
-            accordion.classList.remove("active");
-            document.querySelector(`#${accordion.id} + ul`).classList.remove("active");
-        });
+        // filterAccordion.forEach(accordion =>{
+        //     accordion.classList.remove("active");
+        //     document.querySelector("#" + accordion.id + "+ ul").classList.remove("active");
+        // });
     });
 });
 
@@ -1507,6 +1661,67 @@ window.addEventListener("scroll", () =>{
         filterBox.classList.remove("stickyFilterBox");
     }
 });
+
+
+
+
+const setArrow = (card, inputs) =>{
+    const arrow1 = card.querySelector(".arrow1Tone");
+    const arrow2 = card.querySelector(".arrow2Tone");
+    
+    // si el primer input está chequeado, se añade la clase arrow_disabled al primer elemento, y si no, se quita
+    arrow1.classList.toggle("arrow_disabled", inputs[0].checked); 
+    // si el último input está chequeado, se añade la clase arrow_disabled al segundo elemento, y si no, se quita
+    arrow2.classList.toggle("arrow_disabled", inputs[inputs.length - 1].checked); 
+}
+
+const handleArrowClick = (card, inputs, direction) =>{
+    const step = (direction === "prev") ? -1 : 1;
+    const inputArray = [...inputs]; // Convierte la NodeList en un array
+    const index = inputArray.findIndex(input => input.checked);
+    
+    inputs[index + step].click(); // hace click en el input siguiente o anterior según la dirección
+    setArrow(card, inputs); // llama a la función setArrow
+}
+
+const setInputs = (card, obj) =>{
+    const inputs = card.querySelectorAll(".boxTones input")
+
+    setArrow(card, inputs);
+    card.querySelector(".arrow1Tone").addEventListener("click", () => handleArrowClick(card, inputs, "prev"));
+    card.querySelector(".arrow2Tone").addEventListener("click", () => handleArrowClick(card, inputs, "next"));
+    
+    const toneName = card.querySelector(".toneName");
+    const EcommImg = card.querySelector(".img_product");
+    const fadeTone = card.querySelectorAll(".fade_tone");
+    const toneBtn = card.querySelector(".clasic_btn_MONAT");
+    const toneLink = card.querySelector(".toneLink");
+    
+    inputs.forEach(input => {
+        const tone = obj["tones"][input.classList[0]];
+        input.style.backgroundColor = tone.color;
+        input.style.borderColor = tone.color;
+        
+        input.addEventListener("input", () => {
+          const { colorName, shopLink, ecomm } = tone;
+          let toneHash = "#" + colorName.replace(/[^a-zA-Z]+/g, '-').toLowerCase();
+
+            EcommImg.src = ecomm.img;
+            // reinicia la animacion de fadein cuando cambia la imagen
+            fadeTone.forEach(img => img.style.animation = "none");
+            setTimeout(() => fadeTone.forEach(fade => fade.style.animation = "fade-in 1.2s"), 10);
+            
+            toneName.innerText = colorName;
+            EcommImg.alt = ecomm.alt;
+            toneBtn.href = shopLink;
+            // toneLink.forEach(a => a.href = "https://monatglobal.com/bb-creme/#" + url);
+            // console.log(location.origin + urlMarket + obj.url + toneHash)
+            toneLink.href = location.origin + obj.url + toneHash;
+            setArrow(card, inputs);
+        });
+    });
+}
+
 
 // Funcion que muestra los productos
 // box = se refiere al grid, antes tienia varios grids pero ahora es solo uno y lo que cambian son las cards asi que eventualmente podria eliminarlo
@@ -1583,7 +1798,7 @@ const showP = (arr, box, resetArr, showInfoTag) =>{
 
                     <div class="module_text_product">
                         <p class="product_name">${p.name}</p>
-                        <p class="retail_price ">$${p.rPrice} <span class="vip_price">VIP $${p.vipPrice}</span></p>
+                        <p class="retail_price ">$${p.rPrice.toFixed(2)} <span class="vip_price">VIP $${p.vipPrice.toFixed(2)}</span></p>
                         
                         <div class="display_flex ">
                              <p class="purchase_label">${p.discount}</p>
@@ -1591,9 +1806,55 @@ const showP = (arr, box, resetArr, showInfoTag) =>{
                     </div>
                 </div>
                 
-                <div class="shop_btn"><a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a></div>
+                <a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a>
             `;
-        }else{
+        } else if(p.tones){
+            newItem.innerHTML += `
+            
+                <div class="head_card">
+                    <div class="right display_flex a_i_center">
+                        <div class="infoBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card_content tonesCard">
+                    <p class="toneName a_s_center fade_tone"></p> 
+                    <div class="display_flex flex_center p_relative">
+                        <a class="toneLink" href="${location.origin}${p.url}" aria-label="Go to ${p.name} page">
+                            <div class="container_img_product fade_tone display_flex flex_center"> 
+                                <img class="img_product" src="" alt="${p.name}""> 
+                            </div>
+                        </a>
+                
+                        <div class="tone_arrows col_100 display_flex j_c_space_between">
+                            <img class="arrow1Tone arrow_disabled" src="https://monatglobal.com/wp-content/uploads/2023/08/prev-arrow.svg">
+                            <img class="arrow2Tone" src="https://monatglobal.com/wp-content/uploads/2023/08/next-arrow.svg">
+                        </div>
+                    </div>
+                   
+                    <div class="boxTones display_flex j_c_center"></div>
+                    
+                    <div class="module_text_product">
+                        <p class="product_name">${p.name}️</p>
+                        <p class="retail_price">$${p.rPrice} / <span class="vip_price">VIP $${p.vipPrice} </span></p> 
+                    </div>
+                </div> 
+                
+                <a class="clasic_btn_MONAT" target="_blank" href="" aria-label="Go to ${p.name} shop">shop now</a> 
+            `;
+            
+            let boxInputs = newItem.querySelector(".boxTones");
+            for (var tono in p.tones) {
+                boxInputs.innerHTML += `<label><input class="${tono}" type="radio" name="${p.inputName}"></label>`;
+            }
+            
+            setInputs(newItem, p);
+            // newItem.querySelector(".boxTones input." + p.defaultTone).click();
+        } else{
             newItem.innerHTML += `
                 <div class="head_card">
                     <div class="right display_flex a_i_center">
@@ -1605,20 +1866,21 @@ const showP = (arr, box, resetArr, showInfoTag) =>{
                     </div>
                 </div>
             
-                <a class="card_content" href="${p.url}"  aria-label="Go to ${p.name} page">
+                <a class="card_content" href="${p.url}" aria-label="Go to ${p.name} page">
 
                         <div class="container_img_product display_flex j_c_center"><img class="img_product" src="${p.img}" alt="${p.name}"></div>
 
                     <div class="module_text_product">
 
-                            <p class="view_details_btn hide_desktop">VIEW DETAILS</p>
+                        <p class="view_details_btn hide_desktop">VIEW DETAILS</p>
 
                         <p class="product_name">${p.name}</p>
-                        <p class="retail_price ">$${p.rPrice} <span class="vip_price">VIP $${p.vipPrice}</span></p>
+                        <p class="retail_price ">$${p.rPrice.toFixed(2)} <span class="vip_price">VIP $${p.vipPrice.toFixed(2)}</span></p>
+
                     </div>
                 </a>
                 
-                <div class="shop_btn"><a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a></div>
+                <a class="clasic_btn_MONAT" target="_blank" href="https://corp.mymonat.com${p.shopLink}"  aria-label="Go to ${p.name} shop">shop now</a>
             `;   
         }
         
@@ -1633,7 +1895,7 @@ const showP = (arr, box, resetArr, showInfoTag) =>{
         // si el producto es un best seller se le agrega un label e imagen de fondo
         if (p.category.includes("best sellers")) {
             newItem.classList.add("BScard");
-            newItem.style.backgroundImage = `url('${p.BSimg}')`;
+            newItem.style.backgroundImage = `url('${p.hoverImg}')`;
             
             let BSLabel = document.createElement("p");
             BSLabel.className = "BSLabel";
@@ -1642,9 +1904,11 @@ const showP = (arr, box, resetArr, showInfoTag) =>{
             newItem.querySelector(".head_card > .right").prepend(BSLabel);
         } 
         
-        box.appendChild(newItem)
-
+        box.appendChild(newItem);
+        (p.category.includes("tones")) && newItem.querySelector(".boxTones input." + p.defaultTone).click();
     });
+    
+    
     
     // Se le agrega funcionalidad al boton de la infocard
     let btns = document.querySelectorAll(".infoBtn");
@@ -1694,16 +1958,17 @@ const loader = () =>{
         loaderOverlay.classList.add("active");
         // el Math.random() es para que cada vez que se active el loader el gif carge desde el principio
         loaderGif.src = "https://monatglobal.com/wp-content/uploads/2022/04/drop-preloader-11.gif"+"?a="+Math.random();
-        if(window.scrollY > containerBanners.offsetHeight) {
-            window.scrollTo(0, containerBanners.offsetHeight + 1)
+        
+        // if(window.scrollY > containerBanners.offsetHeight) {
             document.documentElement.style.overflowY = "hidden";
-        }
+        // }
         
         setTimeout(() =>{
             loaderOverlay.classList.remove("active");
             document.documentElement.style.overflowY = "visible";
         }, 800)
     }
+    if(window.scrollY > containerBanners.offsetHeight) window.scrollTo(0, containerBanners.offsetHeight + 1)
 }
 
 const resetInputs = () =>{
@@ -1770,7 +2035,7 @@ let activeTab = "";
 let previousTab = "";
 
 let clearSearchBar = document.getElementById("clearSearchBar");
-let clearSearchBtn = document.getElementById("clearSearch");
+let clearSearch = document.getElementById("clearSearch");
 let filterInitial = document.getElementById("state1_filter");
 let containerBanners = document.getElementById("containerBanners");
 let banners = document.querySelectorAll("#containerBanners > div");
@@ -1840,7 +2105,6 @@ let boxTags = document.getElementById("boxTags");
 let tagsBar = document.getElementById("tagsBar");
 let filtersCount = document.querySelectorAll(".filtersCount");
 
-
 const counterChecks = {
   hair: { concern: 0, category: 0 },
   skin: { concern: 0, category: 0 },
@@ -1868,16 +2132,16 @@ filterInputs.forEach(input => {
     input.addEventListener("input", () =>{
             
         if(input.checked) {
-        counterChecks.total++;
-        
-        // Obtener la propiedad del objeto counterChecks usando el nombre del elemento
-        let prop = nameMap[input.name];
-        
-        // Separar la propiedad en dos partes: el objeto y la subpropiedad
-        let [obj, subprop] = prop.split(".");
-        
-        // Incrementar el valor de la subpropiedad usando la notación de corchetes
-        counterChecks[obj][subprop]++;
+            counterChecks.total++;
+            
+            // Obtener la propiedad del objeto counterChecks usando el nombre del elemento
+            let prop = nameMap[input.name];
+            
+            // Separar la propiedad en dos partes: el objeto y la subpropiedad
+            let [obj, subprop] = prop.split(".");
+            
+            // Incrementar el valor de la subpropiedad usando la notación de corchetes
+            counterChecks[obj][subprop]++;
         } else {
             counterChecks.total--;
             // Lo mismo que antes, pero decrementando el valor
@@ -1969,7 +2233,16 @@ filterInputs.forEach(input => {
         });
         
         for (let prop in counterChecks) {
-            if (prop === "total") continue;
+            if (prop === "total") {
+                filtersCount.forEach(count => {
+                    if (counterChecks.total) {
+                        (count.classList.contains("onlyNum")) ? count.innerText = counterChecks.total : count.innerText = "( " + counterChecks.total + " )" ;
+                    } else{
+                        count.innerText = "";
+                    } 
+                });
+            }
+            // if (prop === "total") continue;
             
             // obtener el objeto interno (hair, skin o wellness)
             let obj = counterChecks[prop];
@@ -2069,13 +2342,11 @@ const closeAllLists = () =>{
     if(list) list.remove();
 }
 
-clearSearchBtn.forEach(btn =>{
-    btn.addEventListener("click", () =>{
-        clearSearchBar.classList.remove("active");
-        seeAll(tabToArrays[activeTab]);
-    });
-}) 
-    
+clearSearch.addEventListener("click", () =>{
+    clearSearchBar.classList.remove("active");
+    seeAll(tabToArrays[activeTab]);
+});
+
 searchBar.addEventListener("submit", (e) =>{
     e.preventDefault();
     
@@ -2198,4 +2469,4 @@ autocomplete(searchValue, allProducts);
 // })
 
 
-  
+   
